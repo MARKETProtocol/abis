@@ -1,0 +1,31 @@
+{
+  "name": "@marketprotocol/abis",
+  "version": "0.0.1",
+  "description": "MARKET Protocol truffle artifacts and ABIs",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MARKETProtocol/abis.git"
+  },
+  "keywords": [
+    "truffle",
+    "ethereum",
+    "abi",
+    "smart",
+    "contract",
+    "DEX",
+    "derivatives"
+  ],
+  "author": "Phil Elsasser",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MARKETProtocol/abis/issues"
+  },
+  "homepage": "https://marketprotocol.io",
+  "devDependencies": {
+    "@marketprotocol/marketprotocol": "^1.2.0"
+  }
+}
