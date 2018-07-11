@@ -7,8 +7,8 @@ const OrderLib = artifacts.require(
 const QueryTest = artifacts.require(
   '@marketprotocol/marketprotocol/OraclizeQueryTest.sol'
 );
-const CollateralToken = artifacts.require(
-  '@marketprotocol/marketprotocol/CollateralToken.sol'
+const InitialAllocationCollateralToken = artifacts.require(
+  '@marketprotocol/marketprotocol/InitialAllocationCollateralToken.sol'
 );
 const MarketContractOraclize = artifacts.require(
   '@marketprotocol/marketprotocol/MarketContractOraclize.sol'
@@ -67,8 +67,8 @@ module.exports = function(deployer, network) {
         )
         .then(function() {
           // deploy collateral token and a fake wrapped ETH
-          deployer.deploy(CollateralToken, 'Stable USD', 'USD', 1e9, 18);
-          deployer.deploy(CollateralToken, 'Wrapped ETH', 'WETH', 1e9, 18);
+          deployer.deploy(InitialAllocationCollateralToken, 'Stable USD', 'USD', 1e9, 18);
+          deployer.deploy(InitialAllocationCollateralToken, 'Fake Wrapped ETH', 'FWETH', 1e9, 18);
 
           const daysToExpiration = 28;
           const expirationDate = new Date();
