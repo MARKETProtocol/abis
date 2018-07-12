@@ -107,7 +107,7 @@ module.exports = function(deployer, network) {
                       return factory
                         .deployMarketContractOraclize(
                           'ETHUSD_' + new Date().toISOString().substring(0, 10),
-                          CollateralToken.address,
+                          InitialAllocationCollateralToken.address,
                           [50000, 150000, 2, 1e18, quickExpirationTimeStamp],
                           'URL',
                           'json(https://api.kraken.com/0/public/Ticker?pair=ETHUSD).result.XETHZUSD.c.0',
