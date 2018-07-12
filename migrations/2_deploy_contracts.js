@@ -91,8 +91,7 @@ module.exports = function(deployer, network) {
                   MarketToken.address,
                   collateralPoolFactory.address,
                   {
-                    gas: web3.eth.getBlock('latest').gasLimit,
-                    from: web3.eth.accounts[0]
+                    gas: web3.eth.getBlock('latest').gasLimit
                   }
                 )
                 .then(function(factory) {
@@ -111,7 +110,7 @@ module.exports = function(deployer, network) {
                           [50000, 150000, 2, 1e18, quickExpirationTimeStamp],
                           'URL',
                           'json(https://api.kraken.com/0/public/Ticker?pair=ETHUSD).result.XETHZUSD.c.0',
-                          { gas: gasLimit, from: web3.eth.accounts[0] }
+                          { gas: gasLimit}
                         )
                         .then(function(marketContractDeployResults) {
                           const marketContractDeployedAddress =
