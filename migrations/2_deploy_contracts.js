@@ -52,7 +52,6 @@ module.exports = function(deployer, network) {
         return queryTestInstance.testOracleQuery(
           'URL',
           'json(https://api.kraken.com/0/public/Ticker?pair=BCHUSD).result.BCHUSD.c.0',
-          { from: web3.eth.accounts[0] }
         );
       });
 
