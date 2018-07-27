@@ -90,7 +90,7 @@ module.exports = function(deployer, network) {
                   MarketToken.address,
                   collateralPoolFactory.address,
                   {
-                    gas: web3.eth.getBlock('latest').gasLimit
+                    gas: 7000000
                   }
                 )
                 .then(function(factory) {
