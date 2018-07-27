@@ -14,5 +14,7 @@ Join our [Discord Community](https://marketprotocol.io/discord) to interact with
 ### Rinkeby Token Faucets
 | Token  | Address |
 | ------ | -----   |
-| Fake USD | 0xee78ae82ab0bbbae6d99b36a999e7b6de2e8664b |
-| Fake Wrapped Eth | 0x2021c394e8fce5e56c166601a0428e4611147802 |
+| Fake USD | 0x8a58443F8FE877912B68dB454a1f583983FD8dBa |
+| Fake Wrapped Eth | 0x6371D022560B18Dc4A86702D6DE41B5a3c934DA0 |
+
+
