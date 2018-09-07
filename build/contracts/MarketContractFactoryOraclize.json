@@ -2957,49 +2957,14 @@
   },
   "networks": {
     "4": {
-      "events": {
-        "0x38ee3ff13b5d3453452a79e0799d83b2c8207bf126b2798fa512343680f643ee": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "creator",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "contractAddress",
-              "type": "address"
-            }
-          ],
-          "name": "MarketContractCreated",
-          "type": "event"
-        },
-        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "previousOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "OwnershipTransferred",
-          "type": "event"
-        }
-      },
+      "events": {},
       "links": {
-        "OrderLib": "0xf40577d3be99effc6634b44ee465e9efed7a6733"
+        "OrderLib": "0x5cfce3c76fa3528b87f27149c341b2add6904ea7"
       },
-      "address": "0x95f59498ceb2b4c9aa14cc470dddef4adafbe4c9",
-      "transactionHash": "0x0c780912cc25bebcb24c2ee51243ec131e5024b0798787cddf139f4de5898e86"
+      "address": "0xa9fd47ac90c86dc770219d040aa4311dda78a807",
+      "transactionHash": "0x32332dd11413cab050cd3b7e8a3d060f0090ab8ec31a9d8e3321397eb94331ef"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-07-27T19:00:06.644Z"
+  "updatedAt": "2018-09-07T18:28:49.236Z"
 }

@@ -1984,12 +1984,12 @@
     "4": {
       "events": {},
       "links": {
-        "MathLib": "0x10420151fa1d0676ca274d6e53435ec261190ff0"
+        "MathLib": "0x254962dd15db2c9b57e612f1aaefb2ae5e33f107"
       },
-      "address": "0x06dcc8dacc3e3d49cf680acb2600c6fb128acce3",
-      "transactionHash": "0x50a139656b6500551aacbac54e1b07259c92b56b1b17c7e0ba3213b20ca9a94b"
+      "address": "0x2b451dc7695d7c0800e14fdc3192e0ee7d2a7327",
+      "transactionHash": "0x708a1c89111188dc87a47e90a8a470d630b9cd0d7cdfa469d9b4260fa7142204"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-07-27T19:00:06.647Z"
+  "updatedAt": "2018-09-07T18:28:49.239Z"
 }

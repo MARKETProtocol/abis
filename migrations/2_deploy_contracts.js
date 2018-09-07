@@ -7,9 +7,6 @@ const OrderLib = artifacts.require(
 const QueryTest = artifacts.require(
   '@marketprotocol/marketprotocol/OraclizeQueryTest.sol'
 );
-const InitialAllocationCollateralToken = artifacts.require(
-  '@marketprotocol/marketprotocol/InitialAllocationCollateralToken.sol'
-);
 const MarketContractOraclize = artifacts.require(
   '@marketprotocol/marketprotocol/MarketContractOraclize.sol'
 );
@@ -66,8 +63,6 @@ module.exports = function(deployer, network) {
         )
         .then(function() {
           // deploy collateral token and a fake wrapped ETH
-          deployer.deploy(InitialAllocationCollateralToken, 'Stable USD', 'USD', 1e9, 18);
-          deployer.deploy(InitialAllocationCollateralToken, 'Fake Wrapped ETH', 'FWETH', 1e9, 18);
 
           const daysToExpiration = 28;
           const expirationDate = new Date();
@@ -97,30 +92,6 @@ module.exports = function(deployer, network) {
                   // white list the factory
                   return marketContractRegistry
                     .addFactoryAddress(factory.address)
-                    .then(function() {
-                      // deploy a single contract for testing purposes.
-                      const gasLimit = 4000000; // gas limit for contract deployment
-                      let quickExpirationTimeStamp =
-                        Math.floor(Date.now() / 1000) + 60 * 60; // expires in an hour
-                      return factory
-                        .deployMarketContractOraclize(
-                          'ETHUSD_' + new Date().toISOString().substring(0, 10),
-                          InitialAllocationCollateralToken.address,
-                          [50000, 150000, 2, 1e18, quickExpirationTimeStamp],
-                          'URL',
-                          'json(https://api.kraken.com/0/public/Ticker?pair=ETHUSD).result.XETHZUSD.c.0',
-                          { gas: gasLimit}
-                        )
-                        .then(function(marketContractDeployResults) {
-                          const marketContractDeployedAddress =
-                            marketContractDeployResults.logs[0].args
-                              .contractAddress;
-                          return collateralPoolFactory.deployMarketCollateralPool(
-                              marketContractDeployedAddress,
-                              { gas: 1900000 }
-                            );
-                        });
-                    });
                 });
             });
           });
