@@ -169,14 +169,14 @@
     "absolutePath": "/home/pelsasser/MARKETProtocol/contracts/oraclize/OraclizeQueryTest.sol",
     "exportedSymbols": {
       "OraclizeQueryTest": [
-        3108
+        3109
       ]
     },
-    "id": 3109,
+    "id": 3110,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2951,
+        "id": 2952,
         "literals": [
           "solidity",
           "^",
@@ -189,10 +189,10 @@
       {
         "absolutePath": "/home/pelsasser/MARKETProtocol/contracts/oraclize/oraclizeAPI.sol",
         "file": "./oraclizeAPI.sol",
-        "id": 2952,
+        "id": 2953,
         "nodeType": "ImportDirective",
-        "scope": 3109,
-        "sourceUnit": 3910,
+        "scope": 3110,
+        "sourceUnit": 3911,
         "src": "634:27:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -200,10 +200,10 @@
       {
         "absolutePath": "/home/pelsasser/MARKETProtocol/contracts/libraries/MathLib.sol",
         "file": "../libraries/MathLib.sol",
-        "id": 2953,
+        "id": 2954,
         "nodeType": "ImportDirective",
-        "scope": 3109,
-        "sourceUnit": 2233,
+        "scope": 3110,
+        "sourceUnit": 2234,
         "src": "662:34:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -214,53 +214,53 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 2954,
+              "id": 2955,
               "name": "usingOraclize",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3909,
+              "referencedDeclaration": 3910,
               "src": "884:13:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_usingOraclize_$3909",
+                "typeIdentifier": "t_contract$_usingOraclize_$3910",
                 "typeString": "contract usingOraclize"
               }
             },
-            "id": 2955,
+            "id": 2956,
             "nodeType": "InheritanceSpecifier",
             "src": "884:13:14"
           }
         ],
         "contractDependencies": [
-          3909
+          3910
         ],
         "contractKind": "contract",
         "documentation": "@title QueryTest small contract to allow users to test query structure prior to contract deployment\n @author Phil Elsasser <phil@marketprotocol.io>",
         "fullyImplemented": true,
-        "id": 3108,
+        "id": 3109,
         "linearizedBaseContracts": [
-          3108,
-          3909
+          3109,
+          3910
         ],
         "name": "OraclizeQueryTest",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 2958,
+            "id": 2959,
             "libraryName": {
               "contractScope": null,
-              "id": 2956,
+              "id": 2957,
               "name": "MathLib",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2232,
+              "referencedDeclaration": 2233,
               "src": "910:7:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MathLib_$2232",
+                "typeIdentifier": "t_contract$_MathLib_$2233",
                 "typeString": "library MathLib"
               }
             },
             "nodeType": "UsingForDirective",
             "src": "904:23:14",
             "typeName": {
-              "id": 2957,
+              "id": 2958,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "922:4:14",
@@ -272,10 +272,10 @@
           },
           {
             "constant": true,
-            "id": 2961,
+            "id": 2962,
             "name": "QUERY_CALLBACK_GAS",
             "nodeType": "VariableDeclaration",
-            "scope": 3108,
+            "scope": 3109,
             "src": "950:48:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -284,7 +284,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 2959,
+              "id": 2960,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "950:4:14",
@@ -296,7 +296,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313530303030",
-              "id": 2960,
+              "id": 2961,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -315,10 +315,10 @@
           },
           {
             "constant": false,
-            "id": 2965,
+            "id": 2966,
             "name": "validScheduledQueryIDs",
             "nodeType": "VariableDeclaration",
-            "scope": 3108,
+            "scope": 3109,
             "src": "1028:47:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -327,9 +327,9 @@
               "typeString": "mapping(bytes32 => bool)"
             },
             "typeName": {
-              "id": 2964,
+              "id": 2965,
               "keyType": {
-                "id": 2962,
+                "id": 2963,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "1036:7:14",
@@ -345,7 +345,7 @@
                 "typeString": "mapping(bytes32 => bool)"
               },
               "valueType": {
-                "id": 2963,
+                "id": 2964,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
                 "src": "1047:4:14",
@@ -360,10 +360,10 @@
           },
           {
             "constant": false,
-            "id": 2969,
+            "id": 2970,
             "name": "queryResults",
             "nodeType": "VariableDeclaration",
-            "scope": 3108,
+            "scope": 3109,
             "src": "1081:39:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -372,9 +372,9 @@
               "typeString": "mapping(bytes32 => string)"
             },
             "typeName": {
-              "id": 2968,
+              "id": 2969,
               "keyType": {
-                "id": 2966,
+                "id": 2967,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "1089:7:14",
@@ -390,7 +390,7 @@
                 "typeString": "mapping(bytes32 => string)"
               },
               "valueType": {
-                "id": 2967,
+                "id": 2968,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "1100:6:14",
@@ -406,20 +406,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 2973,
+            "id": 2974,
             "name": "QueryCompleted",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 2972,
+              "id": 2973,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2971,
+                  "id": 2972,
                   "indexed": true,
                   "name": "queryIDCompleted",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2973,
+                  "scope": 2974,
                   "src": "1162:32:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -428,7 +428,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 2970,
+                    "id": 2971,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1162:7:14",
@@ -448,20 +448,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 2977,
+            "id": 2978,
             "name": "QueryScheduled",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 2976,
+              "id": 2977,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2975,
+                  "id": 2976,
                   "indexed": true,
                   "name": "queryIDScheduled",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2977,
+                  "scope": 2978,
                   "src": "1222:32:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -470,7 +470,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 2974,
+                    "id": 2975,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1222:7:14",
@@ -490,20 +490,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 2981,
+            "id": 2982,
             "name": "QueryPrice",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 2980,
+              "id": 2981,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2979,
+                  "id": 2980,
                   "indexed": false,
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2981,
+                  "scope": 2982,
                   "src": "1278:10:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -512,7 +512,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2978,
+                    "id": 2979,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1278:4:14",
@@ -531,7 +531,7 @@
           },
           {
             "body": {
-              "id": 2990,
+              "id": 2991,
               "nodeType": "Block",
               "src": "1317:111:14",
               "statements": [
@@ -545,18 +545,18 @@
                           "typeIdentifier": "t_bytes1",
                           "typeString": "bytes1"
                         },
-                        "id": 2987,
+                        "id": 2988,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 2985,
+                          "id": 2986,
                           "name": "proofType_TLSNotary",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3329,
+                          "referencedDeclaration": 3330,
                           "src": "1345:19:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes1",
@@ -567,11 +567,11 @@
                         "operator": "|",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 2986,
+                          "id": 2987,
                           "name": "proofStorage_IPFS",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3332,
+                          "referencedDeclaration": 3333,
                           "src": "1367:17:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes1",
@@ -592,18 +592,18 @@
                           "typeString": "bytes1"
                         }
                       ],
-                      "id": 2984,
+                      "id": 2985,
                       "name": "oraclize_setProof",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3767,
+                      "referencedDeclaration": 3768,
                       "src": "1327:17:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes1_$returns$__$",
                         "typeString": "function (bytes1)"
                       }
                     },
-                    "id": 2988,
+                    "id": 2989,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -617,14 +617,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2989,
+                  "id": 2990,
                   "nodeType": "ExpressionStatement",
                   "src": "1327:58:14"
                 }
               ]
             },
             "documentation": null,
-            "id": 2991,
+            "id": 2992,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -632,19 +632,19 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2982,
+              "id": 2983,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1307:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 2983,
+              "id": 2984,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1317:0:14"
             },
-            "scope": 3108,
+            "scope": 3109,
             "src": "1296:132:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -652,21 +652,21 @@
           },
           {
             "body": {
-              "id": 3040,
+              "id": 3041,
               "nodeType": "Block",
               "src": "2073:452:14",
               "statements": [
                 {
                   "assignments": [
-                    3001
+                    3002
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3001,
+                      "id": 3002,
                       "name": "cost",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3041,
+                      "scope": 3042,
                       "src": "2083:9:14",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -675,7 +675,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 3000,
+                        "id": 3001,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "2083:4:14",
@@ -688,17 +688,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3006,
+                  "id": 3007,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3003,
+                        "id": 3004,
                         "name": "oracleDataSource",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2993,
+                        "referencedDeclaration": 2994,
                         "src": "2113:16:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -707,11 +707,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3004,
+                        "id": 3005,
                         "name": "QUERY_CALLBACK_GAS",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2961,
+                        "referencedDeclaration": 2962,
                         "src": "2131:18:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -730,21 +730,21 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3002,
+                      "id": 3003,
                       "name": "oraclize_getPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3596,
-                        3614
+                        3597,
+                        3615
                       ],
-                      "referencedDeclaration": 3614,
+                      "referencedDeclaration": 3615,
                       "src": "2095:17:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (string memory,uint256) returns (uint256)"
                       }
                     },
-                    "id": 3005,
+                    "id": 3006,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -771,7 +771,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 3011,
+                        "id": 3012,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -780,18 +780,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 3008,
+                            "id": 3009,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5192,
+                            "referencedDeclaration": 5193,
                             "src": "2168:3:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 3009,
+                          "id": 3010,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -809,11 +809,11 @@
                         "operator": ">=",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 3010,
+                          "id": 3011,
                           "name": "cost",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3001,
+                          "referencedDeclaration": 3002,
                           "src": "2181:4:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -834,21 +834,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3007,
+                      "id": 3008,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        5195,
-                        5196
+                        5196,
+                        5197
                       ],
-                      "referencedDeclaration": 5195,
+                      "referencedDeclaration": 5196,
                       "src": "2160:7:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3012,
+                    "id": 3013,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -862,21 +862,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3013,
+                  "id": 3014,
                   "nodeType": "ExpressionStatement",
                   "src": "2160:26:14"
                 },
                 {
                   "assignments": [
-                    3015
+                    3016
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3015,
+                      "id": 3016,
                       "name": "queryId",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3041,
+                      "scope": 3042,
                       "src": "2248:15:14",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -885,7 +885,7 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 3014,
+                        "id": 3015,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
                         "src": "2248:7:14",
@@ -898,17 +898,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3021,
+                  "id": 3022,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3017,
+                        "id": 3018,
                         "name": "oracleDataSource",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2993,
+                        "referencedDeclaration": 2994,
                         "src": "2294:16:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -917,11 +917,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3018,
+                        "id": 3019,
                         "name": "oracleQuery",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2995,
+                        "referencedDeclaration": 2996,
                         "src": "2324:11:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -930,11 +930,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3019,
+                        "id": 3020,
                         "name": "QUERY_CALLBACK_GAS",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2961,
+                        "referencedDeclaration": 2962,
                         "src": "2349:18:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -957,23 +957,23 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3016,
+                      "id": 3017,
                       "name": "oraclize_query",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3643,
-                        3674,
-                        3709,
-                        3742
+                        3644,
+                        3675,
+                        3710,
+                        3743
                       ],
-                      "referencedDeclaration": 3742,
+                      "referencedDeclaration": 3743,
                       "src": "2266:14:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$returns$_t_bytes32_$",
                         "typeString": "function (string memory,string memory,uint256) returns (bytes32)"
                       }
                     },
-                    "id": 3020,
+                    "id": 3021,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1000,18 +1000,18 @@
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
                         },
-                        "id": 3025,
+                        "id": 3026,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 3023,
+                          "id": 3024,
                           "name": "queryId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3015,
+                          "referencedDeclaration": 3016,
                           "src": "2395:7:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -1023,7 +1023,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 3024,
+                          "id": 3025,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1052,21 +1052,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3022,
+                      "id": 3023,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        5195,
-                        5196
+                        5196,
+                        5197
                       ],
-                      "referencedDeclaration": 5195,
+                      "referencedDeclaration": 5196,
                       "src": "2387:7:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3026,
+                    "id": 3027,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1080,14 +1080,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3027,
+                  "id": 3028,
                   "nodeType": "ExpressionStatement",
                   "src": "2387:21:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3032,
+                    "id": 3033,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1096,25 +1096,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 3028,
+                        "id": 3029,
                         "name": "validScheduledQueryIDs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2965,
+                        "referencedDeclaration": 2966,
                         "src": "2418:22:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                           "typeString": "mapping(bytes32 => bool)"
                         }
                       },
-                      "id": 3030,
+                      "id": 3031,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 3029,
+                        "id": 3030,
                         "name": "queryId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3015,
+                        "referencedDeclaration": 3016,
                         "src": "2441:7:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -1137,7 +1137,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 3031,
+                      "id": 3032,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1158,7 +1158,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 3033,
+                  "id": 3034,
                   "nodeType": "ExpressionStatement",
                   "src": "2418:38:14"
                 },
@@ -1168,11 +1168,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3035,
+                        "id": 3036,
                         "name": "queryId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3015,
+                        "referencedDeclaration": 3016,
                         "src": "2486:7:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -1187,18 +1187,18 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 3034,
+                      "id": 3035,
                       "name": "QueryScheduled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2977,
+                      "referencedDeclaration": 2978,
                       "src": "2471:14:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$returns$__$",
                         "typeString": "function (bytes32)"
                       }
                     },
-                    "id": 3036,
+                    "id": 3037,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1212,33 +1212,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3037,
+                  "id": 3038,
                   "nodeType": "EmitStatement",
                   "src": "2466:28:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3038,
+                    "id": 3039,
                     "name": "queryId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3015,
+                    "referencedDeclaration": 3016,
                     "src": "2511:7:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 2999,
-                  "id": 3039,
+                  "functionReturnParameters": 3000,
+                  "id": 3040,
                   "nodeType": "Return",
                   "src": "2504:14:14"
                 }
               ]
             },
             "documentation": "@notice allows a user to create a query and get a callback asap as to the result to ensure their query\n is structured as expected\n @param oracleDataSource a data-source such as \"URL\", \"WolframAlpha\", \"IPFS\"\n see http://docs.oraclize.it/#ethereum-quick-start-simple-query\n @param oracleQuery see http://docs.oraclize.it/#ethereum-quick-start-simple-query for examples\n @return unique identifier to allow them to retrieve the query results once completed.",
-            "id": 3041,
+            "id": 3042,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1246,15 +1246,15 @@
             "name": "testOracleQuery",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2996,
+              "id": 2997,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2993,
+                  "id": 2994,
                   "name": "oracleDataSource",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3041,
+                  "scope": 3042,
                   "src": "1993:23:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1263,7 +1263,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2992,
+                    "id": 2993,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1993:6:14",
@@ -1277,10 +1277,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2995,
+                  "id": 2996,
                   "name": "oracleQuery",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3041,
+                  "scope": 3042,
                   "src": "2018:18:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1289,7 +1289,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2994,
+                    "id": 2995,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2018:6:14",
@@ -1306,15 +1306,15 @@
             },
             "payable": true,
             "returnParameters": {
-              "id": 2999,
+              "id": 3000,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2998,
+                  "id": 2999,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3041,
+                  "scope": 3042,
                   "src": "2064:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1323,7 +1323,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 2997,
+                    "id": 2998,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2064:7:14",
@@ -1338,7 +1338,7 @@
               ],
               "src": "2063:9:14"
             },
-            "scope": 3108,
+            "scope": 3109,
             "src": "1968:557:14",
             "stateMutability": "payable",
             "superFunction": null,
@@ -1346,7 +1346,7 @@
           },
           {
             "body": {
-              "id": 3052,
+              "id": 3053,
               "nodeType": "Block",
               "src": "2781:45:14",
               "statements": [
@@ -1355,25 +1355,25 @@
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 3048,
+                      "id": 3049,
                       "name": "queryResults",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2969,
+                      "referencedDeclaration": 2970,
                       "src": "2798:12:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
                         "typeString": "mapping(bytes32 => string storage ref)"
                       }
                     },
-                    "id": 3050,
+                    "id": 3051,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 3049,
+                      "id": 3050,
                       "name": "queryID",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3043,
+                      "referencedDeclaration": 3044,
                       "src": "2811:7:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -1391,15 +1391,15 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "functionReturnParameters": 3047,
-                  "id": 3051,
+                  "functionReturnParameters": 3048,
+                  "id": 3052,
                   "nodeType": "Return",
                   "src": "2791:28:14"
                 }
               ]
             },
             "documentation": "@notice allows a user to retrieve results from their test query.\n @param queryID unique identifier for the query.\n @return results (if any) from the query",
-            "id": 3053,
+            "id": 3054,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1407,15 +1407,15 @@
             "name": "getQueryResults",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3044,
+              "id": 3045,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3043,
+                  "id": 3044,
                   "name": "queryID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3053,
+                  "scope": 3054,
                   "src": "2733:15:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1424,7 +1424,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3042,
+                    "id": 3043,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2733:7:14",
@@ -1441,15 +1441,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3047,
+              "id": 3048,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3046,
+                  "id": 3047,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3053,
+                  "scope": 3054,
                   "src": "2773:6:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1458,7 +1458,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 3045,
+                    "id": 3046,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2773:6:14",
@@ -1473,7 +1473,7 @@
               ],
               "src": "2772:8:14"
             },
-            "scope": 3108,
+            "scope": 3109,
             "src": "2708:118:14",
             "stateMutability": "view",
             "superFunction": null,
@@ -1481,7 +1481,7 @@
           },
           {
             "body": {
-              "id": 3065,
+              "id": 3066,
               "nodeType": "Block",
               "src": "3171:79:14",
               "statements": [
@@ -1491,11 +1491,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3061,
+                        "id": 3062,
                         "name": "oracleDataSource",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3055,
+                        "referencedDeclaration": 3056,
                         "src": "3206:16:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -1504,11 +1504,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3062,
+                        "id": 3063,
                         "name": "QUERY_CALLBACK_GAS",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2961,
+                        "referencedDeclaration": 2962,
                         "src": "3224:18:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1527,21 +1527,21 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3060,
+                      "id": 3061,
                       "name": "oraclize_getPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3596,
-                        3614
+                        3597,
+                        3615
                       ],
-                      "referencedDeclaration": 3614,
+                      "referencedDeclaration": 3615,
                       "src": "3188:17:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (string memory,uint256) returns (uint256)"
                       }
                     },
-                    "id": 3063,
+                    "id": 3064,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1555,15 +1555,15 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 3059,
-                  "id": 3064,
+                  "functionReturnParameters": 3060,
+                  "id": 3065,
                   "nodeType": "Return",
                   "src": "3181:62:14"
                 }
               ]
             },
             "documentation": "@notice allows a user to retrieve current pricing from oraclize API\n @param oracleDataSource a data-source such as \"URL\", \"WolframAlpha\", \"IPFS\"\n see http://docs.oraclize.it/#ethereum-quick-start-simple-query\n @return cost in wei of query",
-            "id": 3066,
+            "id": 3067,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1571,15 +1571,15 @@
             "name": "getQueryCost",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3056,
+              "id": 3057,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3055,
+                  "id": 3056,
                   "name": "oracleDataSource",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3066,
+                  "scope": 3067,
                   "src": "3122:23:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1588,7 +1588,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 3054,
+                    "id": 3055,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "3122:6:14",
@@ -1605,15 +1605,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3059,
+              "id": 3060,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3058,
+                  "id": 3059,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3066,
+                  "scope": 3067,
                   "src": "3165:4:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1622,7 +1622,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3057,
+                    "id": 3058,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "3165:4:14",
@@ -1637,7 +1637,7 @@
               ],
               "src": "3164:6:14"
             },
-            "scope": 3108,
+            "scope": 3109,
             "src": "3100:150:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1645,7 +1645,7 @@
           },
           {
             "body": {
-              "id": 3106,
+              "id": 3107,
               "nodeType": "Block",
               "src": "3565:345:14",
               "statements": [
@@ -1659,7 +1659,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 3080,
+                        "id": 3081,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1668,18 +1668,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 3076,
+                            "id": 3077,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5192,
+                            "referencedDeclaration": 5193,
                             "src": "3583:3:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 3077,
+                          "id": 3078,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1700,18 +1700,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 3078,
+                            "id": 3079,
                             "name": "oraclize_cbAddress",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3754,
+                            "referencedDeclaration": 3755,
                             "src": "3597:18:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$__$returns$_t_address_$",
                               "typeString": "function () returns (address)"
                             }
                           },
-                          "id": 3079,
+                          "id": 3080,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1739,21 +1739,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3075,
+                      "id": 3076,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        5195,
-                        5196
+                        5196,
+                        5197
                       ],
-                      "referencedDeclaration": 5195,
+                      "referencedDeclaration": 5196,
                       "src": "3575:7:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3081,
+                    "id": 3082,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1767,7 +1767,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3082,
+                  "id": 3083,
                   "nodeType": "ExpressionStatement",
                   "src": "3575:43:14"
                 },
@@ -1779,25 +1779,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 3084,
+                          "id": 3085,
                           "name": "validScheduledQueryIDs",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2965,
+                          "referencedDeclaration": 2966,
                           "src": "3636:22:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                             "typeString": "mapping(bytes32 => bool)"
                           }
                         },
-                        "id": 3086,
+                        "id": 3087,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 3085,
+                          "id": 3086,
                           "name": "queryID",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3068,
+                          "referencedDeclaration": 3069,
                           "src": "3659:7:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -1823,21 +1823,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3083,
+                      "id": 3084,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        5195,
-                        5196
+                        5196,
+                        5197
                       ],
-                      "referencedDeclaration": 5195,
+                      "referencedDeclaration": 5196,
                       "src": "3628:7:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3087,
+                    "id": 3088,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1851,14 +1851,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3088,
+                  "id": 3089,
                   "nodeType": "ExpressionStatement",
                   "src": "3628:40:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3092,
+                    "id": 3093,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1871,25 +1871,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 3089,
+                        "id": 3090,
                         "name": "validScheduledQueryIDs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2965,
+                        "referencedDeclaration": 2966,
                         "src": "3685:22:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                           "typeString": "mapping(bytes32 => bool)"
                         }
                       },
-                      "id": 3091,
+                      "id": 3092,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 3090,
+                        "id": 3091,
                         "name": "queryID",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3068,
+                        "referencedDeclaration": 3069,
                         "src": "3708:7:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -1912,14 +1912,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3093,
+                  "id": 3094,
                   "nodeType": "ExpressionStatement",
                   "src": "3678:38:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3098,
+                    "id": 3099,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1928,25 +1928,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 3094,
+                        "id": 3095,
                         "name": "queryResults",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2969,
+                        "referencedDeclaration": 2970,
                         "src": "3726:12:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
                           "typeString": "mapping(bytes32 => string storage ref)"
                         }
                       },
-                      "id": 3096,
+                      "id": 3097,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 3095,
+                        "id": 3096,
                         "name": "queryID",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3068,
+                        "referencedDeclaration": 3069,
                         "src": "3739:7:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -1968,11 +1968,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 3097,
+                      "id": 3098,
                       "name": "result",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3070,
+                      "referencedDeclaration": 3071,
                       "src": "3750:6:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -1985,7 +1985,7 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 3099,
+                  "id": 3100,
                   "nodeType": "ExpressionStatement",
                   "src": "3726:30:14"
                 },
@@ -1995,11 +1995,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3101,
+                        "id": 3102,
                         "name": "queryID",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3068,
+                        "referencedDeclaration": 3069,
                         "src": "3800:7:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -2014,18 +2014,18 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 3100,
+                      "id": 3101,
                       "name": "QueryCompleted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2973,
+                      "referencedDeclaration": 2974,
                       "src": "3785:14:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$returns$__$",
                         "typeString": "function (bytes32)"
                       }
                     },
-                    "id": 3102,
+                    "id": 3103,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2039,32 +2039,32 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3103,
+                  "id": 3104,
                   "nodeType": "EmitStatement",
                   "src": "3780:28:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3104,
+                    "id": 3105,
                     "name": "proof",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3072,
+                    "referencedDeclaration": 3073,
                     "src": "3868:5:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
                       "typeString": "bytes memory"
                     }
                   },
-                  "id": 3105,
+                  "id": 3106,
                   "nodeType": "ExpressionStatement",
                   "src": "3868:5:14"
                 }
               ]
             },
             "documentation": "@notice only public for callbacks from oraclize, do not call\n @param queryID of the returning query, this should match our own internal mapping\n @param result query to be processed\n @param proof result proof",
-            "id": 3107,
+            "id": 3108,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2072,15 +2072,15 @@
             "name": "__callback",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3073,
+              "id": 3074,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3068,
+                  "id": 3069,
                   "name": "queryID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3107,
+                  "scope": 3108,
                   "src": "3513:15:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2089,7 +2089,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3067,
+                    "id": 3068,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "3513:7:14",
@@ -2103,10 +2103,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 3070,
+                  "id": 3071,
                   "name": "result",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3107,
+                  "scope": 3108,
                   "src": "3530:13:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2115,7 +2115,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 3069,
+                    "id": 3070,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "3530:6:14",
@@ -2129,10 +2129,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 3072,
+                  "id": 3073,
                   "name": "proof",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3107,
+                  "scope": 3108,
                   "src": "3545:11:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2141,7 +2141,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 3071,
+                    "id": 3072,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3545:5:14",
@@ -2158,19 +2158,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3074,
+              "id": 3075,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3565:0:14"
             },
-            "scope": 3108,
+            "scope": 3109,
             "src": "3493:417:14",
             "stateMutability": "nonpayable",
-            "superFunction": 3581,
+            "superFunction": 3582,
             "visibility": "public"
           }
         ],
-        "scope": 3109,
+        "scope": 3110,
         "src": "854:3058:14"
       }
     ],
@@ -2180,14 +2180,14 @@
     "absolutePath": "/home/pelsasser/MARKETProtocol/contracts/oraclize/OraclizeQueryTest.sol",
     "exportedSymbols": {
       "OraclizeQueryTest": [
-        3108
+        3109
       ]
     },
-    "id": 3109,
+    "id": 3110,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2951,
+        "id": 2952,
         "literals": [
           "solidity",
           "^",
@@ -2200,10 +2200,10 @@
       {
         "absolutePath": "/home/pelsasser/MARKETProtocol/contracts/oraclize/oraclizeAPI.sol",
         "file": "./oraclizeAPI.sol",
-        "id": 2952,
+        "id": 2953,
         "nodeType": "ImportDirective",
-        "scope": 3109,
-        "sourceUnit": 3910,
+        "scope": 3110,
+        "sourceUnit": 3911,
         "src": "634:27:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2211,10 +2211,10 @@
       {
         "absolutePath": "/home/pelsasser/MARKETProtocol/contracts/libraries/MathLib.sol",
         "file": "../libraries/MathLib.sol",
-        "id": 2953,
+        "id": 2954,
         "nodeType": "ImportDirective",
-        "scope": 3109,
-        "sourceUnit": 2233,
+        "scope": 3110,
+        "sourceUnit": 2234,
         "src": "662:34:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2225,53 +2225,53 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 2954,
+              "id": 2955,
               "name": "usingOraclize",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3909,
+              "referencedDeclaration": 3910,
               "src": "884:13:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_usingOraclize_$3909",
+                "typeIdentifier": "t_contract$_usingOraclize_$3910",
                 "typeString": "contract usingOraclize"
               }
             },
-            "id": 2955,
+            "id": 2956,
             "nodeType": "InheritanceSpecifier",
             "src": "884:13:14"
           }
         ],
         "contractDependencies": [
-          3909
+          3910
         ],
         "contractKind": "contract",
         "documentation": "@title QueryTest small contract to allow users to test query structure prior to contract deployment\n @author Phil Elsasser <phil@marketprotocol.io>",
         "fullyImplemented": true,
-        "id": 3108,
+        "id": 3109,
         "linearizedBaseContracts": [
-          3108,
-          3909
+          3109,
+          3910
         ],
         "name": "OraclizeQueryTest",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 2958,
+            "id": 2959,
             "libraryName": {
               "contractScope": null,
-              "id": 2956,
+              "id": 2957,
               "name": "MathLib",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2232,
+              "referencedDeclaration": 2233,
               "src": "910:7:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MathLib_$2232",
+                "typeIdentifier": "t_contract$_MathLib_$2233",
                 "typeString": "library MathLib"
               }
             },
             "nodeType": "UsingForDirective",
             "src": "904:23:14",
             "typeName": {
-              "id": 2957,
+              "id": 2958,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "922:4:14",
@@ -2283,10 +2283,10 @@
           },
           {
             "constant": true,
-            "id": 2961,
+            "id": 2962,
             "name": "QUERY_CALLBACK_GAS",
             "nodeType": "VariableDeclaration",
-            "scope": 3108,
+            "scope": 3109,
             "src": "950:48:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2295,7 +2295,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 2959,
+              "id": 2960,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "950:4:14",
@@ -2307,7 +2307,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313530303030",
-              "id": 2960,
+              "id": 2961,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2326,10 +2326,10 @@
           },
           {
             "constant": false,
-            "id": 2965,
+            "id": 2966,
             "name": "validScheduledQueryIDs",
             "nodeType": "VariableDeclaration",
-            "scope": 3108,
+            "scope": 3109,
             "src": "1028:47:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2338,9 +2338,9 @@
               "typeString": "mapping(bytes32 => bool)"
             },
             "typeName": {
-              "id": 2964,
+              "id": 2965,
               "keyType": {
-                "id": 2962,
+                "id": 2963,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "1036:7:14",
@@ -2356,7 +2356,7 @@
                 "typeString": "mapping(bytes32 => bool)"
               },
               "valueType": {
-                "id": 2963,
+                "id": 2964,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
                 "src": "1047:4:14",
@@ -2371,10 +2371,10 @@
           },
           {
             "constant": false,
-            "id": 2969,
+            "id": 2970,
             "name": "queryResults",
             "nodeType": "VariableDeclaration",
-            "scope": 3108,
+            "scope": 3109,
             "src": "1081:39:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2383,9 +2383,9 @@
               "typeString": "mapping(bytes32 => string)"
             },
             "typeName": {
-              "id": 2968,
+              "id": 2969,
               "keyType": {
-                "id": 2966,
+                "id": 2967,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "1089:7:14",
@@ -2401,7 +2401,7 @@
                 "typeString": "mapping(bytes32 => string)"
               },
               "valueType": {
-                "id": 2967,
+                "id": 2968,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "1100:6:14",
@@ -2417,20 +2417,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 2973,
+            "id": 2974,
             "name": "QueryCompleted",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 2972,
+              "id": 2973,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2971,
+                  "id": 2972,
                   "indexed": true,
                   "name": "queryIDCompleted",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2973,
+                  "scope": 2974,
                   "src": "1162:32:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2439,7 +2439,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 2970,
+                    "id": 2971,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1162:7:14",
@@ -2459,20 +2459,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 2977,
+            "id": 2978,
             "name": "QueryScheduled",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 2976,
+              "id": 2977,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2975,
+                  "id": 2976,
                   "indexed": true,
                   "name": "queryIDScheduled",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2977,
+                  "scope": 2978,
                   "src": "1222:32:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2481,7 +2481,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 2974,
+                    "id": 2975,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1222:7:14",
@@ -2501,20 +2501,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 2981,
+            "id": 2982,
             "name": "QueryPrice",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 2980,
+              "id": 2981,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2979,
+                  "id": 2980,
                   "indexed": false,
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2981,
+                  "scope": 2982,
                   "src": "1278:10:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2523,7 +2523,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2978,
+                    "id": 2979,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1278:4:14",
@@ -2542,7 +2542,7 @@
           },
           {
             "body": {
-              "id": 2990,
+              "id": 2991,
               "nodeType": "Block",
               "src": "1317:111:14",
               "statements": [
@@ -2556,18 +2556,18 @@
                           "typeIdentifier": "t_bytes1",
                           "typeString": "bytes1"
                         },
-                        "id": 2987,
+                        "id": 2988,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 2985,
+                          "id": 2986,
                           "name": "proofType_TLSNotary",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3329,
+                          "referencedDeclaration": 3330,
                           "src": "1345:19:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes1",
@@ -2578,11 +2578,11 @@
                         "operator": "|",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 2986,
+                          "id": 2987,
                           "name": "proofStorage_IPFS",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3332,
+                          "referencedDeclaration": 3333,
                           "src": "1367:17:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes1",
@@ -2603,18 +2603,18 @@
                           "typeString": "bytes1"
                         }
                       ],
-                      "id": 2984,
+                      "id": 2985,
                       "name": "oraclize_setProof",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3767,
+                      "referencedDeclaration": 3768,
                       "src": "1327:17:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes1_$returns$__$",
                         "typeString": "function (bytes1)"
                       }
                     },
-                    "id": 2988,
+                    "id": 2989,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2628,14 +2628,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2989,
+                  "id": 2990,
                   "nodeType": "ExpressionStatement",
                   "src": "1327:58:14"
                 }
               ]
             },
             "documentation": null,
-            "id": 2991,
+            "id": 2992,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -2643,19 +2643,19 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2982,
+              "id": 2983,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1307:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 2983,
+              "id": 2984,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1317:0:14"
             },
-            "scope": 3108,
+            "scope": 3109,
             "src": "1296:132:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2663,21 +2663,21 @@
           },
           {
             "body": {
-              "id": 3040,
+              "id": 3041,
               "nodeType": "Block",
               "src": "2073:452:14",
               "statements": [
                 {
                   "assignments": [
-                    3001
+                    3002
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3001,
+                      "id": 3002,
                       "name": "cost",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3041,
+                      "scope": 3042,
                       "src": "2083:9:14",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2686,7 +2686,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 3000,
+                        "id": 3001,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "2083:4:14",
@@ -2699,17 +2699,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3006,
+                  "id": 3007,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3003,
+                        "id": 3004,
                         "name": "oracleDataSource",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2993,
+                        "referencedDeclaration": 2994,
                         "src": "2113:16:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -2718,11 +2718,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3004,
+                        "id": 3005,
                         "name": "QUERY_CALLBACK_GAS",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2961,
+                        "referencedDeclaration": 2962,
                         "src": "2131:18:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2741,21 +2741,21 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3002,
+                      "id": 3003,
                       "name": "oraclize_getPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3596,
-                        3614
+                        3597,
+                        3615
                       ],
-                      "referencedDeclaration": 3614,
+                      "referencedDeclaration": 3615,
                       "src": "2095:17:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (string memory,uint256) returns (uint256)"
                       }
                     },
-                    "id": 3005,
+                    "id": 3006,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2782,7 +2782,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 3011,
+                        "id": 3012,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2791,18 +2791,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 3008,
+                            "id": 3009,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5192,
+                            "referencedDeclaration": 5193,
                             "src": "2168:3:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 3009,
+                          "id": 3010,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2820,11 +2820,11 @@
                         "operator": ">=",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 3010,
+                          "id": 3011,
                           "name": "cost",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3001,
+                          "referencedDeclaration": 3002,
                           "src": "2181:4:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2845,21 +2845,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3007,
+                      "id": 3008,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        5195,
-                        5196
+                        5196,
+                        5197
                       ],
-                      "referencedDeclaration": 5195,
+                      "referencedDeclaration": 5196,
                       "src": "2160:7:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3012,
+                    "id": 3013,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2873,21 +2873,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3013,
+                  "id": 3014,
                   "nodeType": "ExpressionStatement",
                   "src": "2160:26:14"
                 },
                 {
                   "assignments": [
-                    3015
+                    3016
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3015,
+                      "id": 3016,
                       "name": "queryId",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3041,
+                      "scope": 3042,
                       "src": "2248:15:14",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2896,7 +2896,7 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 3014,
+                        "id": 3015,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
                         "src": "2248:7:14",
@@ -2909,17 +2909,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3021,
+                  "id": 3022,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3017,
+                        "id": 3018,
                         "name": "oracleDataSource",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2993,
+                        "referencedDeclaration": 2994,
                         "src": "2294:16:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -2928,11 +2928,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3018,
+                        "id": 3019,
                         "name": "oracleQuery",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2995,
+                        "referencedDeclaration": 2996,
                         "src": "2324:11:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -2941,11 +2941,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3019,
+                        "id": 3020,
                         "name": "QUERY_CALLBACK_GAS",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2961,
+                        "referencedDeclaration": 2962,
                         "src": "2349:18:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2968,23 +2968,23 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3016,
+                      "id": 3017,
                       "name": "oraclize_query",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3643,
-                        3674,
-                        3709,
-                        3742
+                        3644,
+                        3675,
+                        3710,
+                        3743
                       ],
-                      "referencedDeclaration": 3742,
+                      "referencedDeclaration": 3743,
                       "src": "2266:14:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint256_$returns$_t_bytes32_$",
                         "typeString": "function (string memory,string memory,uint256) returns (bytes32)"
                       }
                     },
-                    "id": 3020,
+                    "id": 3021,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3011,18 +3011,18 @@
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
                         },
-                        "id": 3025,
+                        "id": 3026,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 3023,
+                          "id": 3024,
                           "name": "queryId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3015,
+                          "referencedDeclaration": 3016,
                           "src": "2395:7:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -3034,7 +3034,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 3024,
+                          "id": 3025,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3063,21 +3063,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3022,
+                      "id": 3023,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        5195,
-                        5196
+                        5196,
+                        5197
                       ],
-                      "referencedDeclaration": 5195,
+                      "referencedDeclaration": 5196,
                       "src": "2387:7:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3026,
+                    "id": 3027,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3091,14 +3091,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3027,
+                  "id": 3028,
                   "nodeType": "ExpressionStatement",
                   "src": "2387:21:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3032,
+                    "id": 3033,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3107,25 +3107,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 3028,
+                        "id": 3029,
                         "name": "validScheduledQueryIDs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2965,
+                        "referencedDeclaration": 2966,
                         "src": "2418:22:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                           "typeString": "mapping(bytes32 => bool)"
                         }
                       },
-                      "id": 3030,
+                      "id": 3031,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 3029,
+                        "id": 3030,
                         "name": "queryId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3015,
+                        "referencedDeclaration": 3016,
                         "src": "2441:7:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -3148,7 +3148,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 3031,
+                      "id": 3032,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3169,7 +3169,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 3033,
+                  "id": 3034,
                   "nodeType": "ExpressionStatement",
                   "src": "2418:38:14"
                 },
@@ -3179,11 +3179,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3035,
+                        "id": 3036,
                         "name": "queryId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3015,
+                        "referencedDeclaration": 3016,
                         "src": "2486:7:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -3198,18 +3198,18 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 3034,
+                      "id": 3035,
                       "name": "QueryScheduled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2977,
+                      "referencedDeclaration": 2978,
                       "src": "2471:14:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$returns$__$",
                         "typeString": "function (bytes32)"
                       }
                     },
-                    "id": 3036,
+                    "id": 3037,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3223,33 +3223,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3037,
+                  "id": 3038,
                   "nodeType": "EmitStatement",
                   "src": "2466:28:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3038,
+                    "id": 3039,
                     "name": "queryId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3015,
+                    "referencedDeclaration": 3016,
                     "src": "2511:7:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 2999,
-                  "id": 3039,
+                  "functionReturnParameters": 3000,
+                  "id": 3040,
                   "nodeType": "Return",
                   "src": "2504:14:14"
                 }
               ]
             },
             "documentation": "@notice allows a user to create a query and get a callback asap as to the result to ensure their query\n is structured as expected\n @param oracleDataSource a data-source such as \"URL\", \"WolframAlpha\", \"IPFS\"\n see http://docs.oraclize.it/#ethereum-quick-start-simple-query\n @param oracleQuery see http://docs.oraclize.it/#ethereum-quick-start-simple-query for examples\n @return unique identifier to allow them to retrieve the query results once completed.",
-            "id": 3041,
+            "id": 3042,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3257,15 +3257,15 @@
             "name": "testOracleQuery",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2996,
+              "id": 2997,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2993,
+                  "id": 2994,
                   "name": "oracleDataSource",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3041,
+                  "scope": 3042,
                   "src": "1993:23:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3274,7 +3274,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2992,
+                    "id": 2993,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1993:6:14",
@@ -3288,10 +3288,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2995,
+                  "id": 2996,
                   "name": "oracleQuery",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3041,
+                  "scope": 3042,
                   "src": "2018:18:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3300,7 +3300,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2994,
+                    "id": 2995,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2018:6:14",
@@ -3317,15 +3317,15 @@
             },
             "payable": true,
             "returnParameters": {
-              "id": 2999,
+              "id": 3000,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2998,
+                  "id": 2999,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3041,
+                  "scope": 3042,
                   "src": "2064:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3334,7 +3334,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 2997,
+                    "id": 2998,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2064:7:14",
@@ -3349,7 +3349,7 @@
               ],
               "src": "2063:9:14"
             },
-            "scope": 3108,
+            "scope": 3109,
             "src": "1968:557:14",
             "stateMutability": "payable",
             "superFunction": null,
@@ -3357,7 +3357,7 @@
           },
           {
             "body": {
-              "id": 3052,
+              "id": 3053,
               "nodeType": "Block",
               "src": "2781:45:14",
               "statements": [
@@ -3366,25 +3366,25 @@
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 3048,
+                      "id": 3049,
                       "name": "queryResults",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2969,
+                      "referencedDeclaration": 2970,
                       "src": "2798:12:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
                         "typeString": "mapping(bytes32 => string storage ref)"
                       }
                     },
-                    "id": 3050,
+                    "id": 3051,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 3049,
+                      "id": 3050,
                       "name": "queryID",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3043,
+                      "referencedDeclaration": 3044,
                       "src": "2811:7:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -3402,15 +3402,15 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "functionReturnParameters": 3047,
-                  "id": 3051,
+                  "functionReturnParameters": 3048,
+                  "id": 3052,
                   "nodeType": "Return",
                   "src": "2791:28:14"
                 }
               ]
             },
             "documentation": "@notice allows a user to retrieve results from their test query.\n @param queryID unique identifier for the query.\n @return results (if any) from the query",
-            "id": 3053,
+            "id": 3054,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3418,15 +3418,15 @@
             "name": "getQueryResults",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3044,
+              "id": 3045,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3043,
+                  "id": 3044,
                   "name": "queryID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3053,
+                  "scope": 3054,
                   "src": "2733:15:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3435,7 +3435,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3042,
+                    "id": 3043,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2733:7:14",
@@ -3452,15 +3452,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3047,
+              "id": 3048,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3046,
+                  "id": 3047,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3053,
+                  "scope": 3054,
                   "src": "2773:6:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3469,7 +3469,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 3045,
+                    "id": 3046,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2773:6:14",
@@ -3484,7 +3484,7 @@
               ],
               "src": "2772:8:14"
             },
-            "scope": 3108,
+            "scope": 3109,
             "src": "2708:118:14",
             "stateMutability": "view",
             "superFunction": null,
@@ -3492,7 +3492,7 @@
           },
           {
             "body": {
-              "id": 3065,
+              "id": 3066,
               "nodeType": "Block",
               "src": "3171:79:14",
               "statements": [
@@ -3502,11 +3502,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3061,
+                        "id": 3062,
                         "name": "oracleDataSource",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3055,
+                        "referencedDeclaration": 3056,
                         "src": "3206:16:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_calldata_ptr",
@@ -3515,11 +3515,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 3062,
+                        "id": 3063,
                         "name": "QUERY_CALLBACK_GAS",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2961,
+                        "referencedDeclaration": 2962,
                         "src": "3224:18:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3538,21 +3538,21 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3060,
+                      "id": 3061,
                       "name": "oraclize_getPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3596,
-                        3614
+                        3597,
+                        3615
                       ],
-                      "referencedDeclaration": 3614,
+                      "referencedDeclaration": 3615,
                       "src": "3188:17:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (string memory,uint256) returns (uint256)"
                       }
                     },
-                    "id": 3063,
+                    "id": 3064,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3566,15 +3566,15 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 3059,
-                  "id": 3064,
+                  "functionReturnParameters": 3060,
+                  "id": 3065,
                   "nodeType": "Return",
                   "src": "3181:62:14"
                 }
               ]
             },
             "documentation": "@notice allows a user to retrieve current pricing from oraclize API\n @param oracleDataSource a data-source such as \"URL\", \"WolframAlpha\", \"IPFS\"\n see http://docs.oraclize.it/#ethereum-quick-start-simple-query\n @return cost in wei of query",
-            "id": 3066,
+            "id": 3067,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3582,15 +3582,15 @@
             "name": "getQueryCost",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3056,
+              "id": 3057,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3055,
+                  "id": 3056,
                   "name": "oracleDataSource",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3066,
+                  "scope": 3067,
                   "src": "3122:23:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3599,7 +3599,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 3054,
+                    "id": 3055,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "3122:6:14",
@@ -3616,15 +3616,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3059,
+              "id": 3060,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3058,
+                  "id": 3059,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3066,
+                  "scope": 3067,
                   "src": "3165:4:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3633,7 +3633,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3057,
+                    "id": 3058,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "3165:4:14",
@@ -3648,7 +3648,7 @@
               ],
               "src": "3164:6:14"
             },
-            "scope": 3108,
+            "scope": 3109,
             "src": "3100:150:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3656,7 +3656,7 @@
           },
           {
             "body": {
-              "id": 3106,
+              "id": 3107,
               "nodeType": "Block",
               "src": "3565:345:14",
               "statements": [
@@ -3670,7 +3670,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 3080,
+                        "id": 3081,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3679,18 +3679,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 3076,
+                            "id": 3077,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5192,
+                            "referencedDeclaration": 5193,
                             "src": "3583:3:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 3077,
+                          "id": 3078,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3711,18 +3711,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 3078,
+                            "id": 3079,
                             "name": "oraclize_cbAddress",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3754,
+                            "referencedDeclaration": 3755,
                             "src": "3597:18:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$__$returns$_t_address_$",
                               "typeString": "function () returns (address)"
                             }
                           },
-                          "id": 3079,
+                          "id": 3080,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3750,21 +3750,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3075,
+                      "id": 3076,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        5195,
-                        5196
+                        5196,
+                        5197
                       ],
-                      "referencedDeclaration": 5195,
+                      "referencedDeclaration": 5196,
                       "src": "3575:7:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3081,
+                    "id": 3082,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3778,7 +3778,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3082,
+                  "id": 3083,
                   "nodeType": "ExpressionStatement",
                   "src": "3575:43:14"
                 },
@@ -3790,25 +3790,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 3084,
+                          "id": 3085,
                           "name": "validScheduledQueryIDs",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2965,
+                          "referencedDeclaration": 2966,
                           "src": "3636:22:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                             "typeString": "mapping(bytes32 => bool)"
                           }
                         },
-                        "id": 3086,
+                        "id": 3087,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 3085,
+                          "id": 3086,
                           "name": "queryID",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3068,
+                          "referencedDeclaration": 3069,
                           "src": "3659:7:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -3834,21 +3834,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3083,
+                      "id": 3084,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        5195,
-                        5196
+                        5196,
+                        5197
                       ],
-                      "referencedDeclaration": 5195,
+                      "referencedDeclaration": 5196,
                       "src": "3628:7:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3087,
+                    "id": 3088,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3862,14 +3862,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3088,
+                  "id": 3089,
                   "nodeType": "ExpressionStatement",
                   "src": "3628:40:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3092,
+                    "id": 3093,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3882,25 +3882,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 3089,
+                        "id": 3090,
                         "name": "validScheduledQueryIDs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2965,
+                        "referencedDeclaration": 2966,
                         "src": "3685:22:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                           "typeString": "mapping(bytes32 => bool)"
                         }
                       },
-                      "id": 3091,
+                      "id": 3092,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 3090,
+                        "id": 3091,
                         "name": "queryID",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3068,
+                        "referencedDeclaration": 3069,
                         "src": "3708:7:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -3923,14 +3923,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3093,
+                  "id": 3094,
                   "nodeType": "ExpressionStatement",
                   "src": "3678:38:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3098,
+                    "id": 3099,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3939,25 +3939,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 3094,
+                        "id": 3095,
                         "name": "queryResults",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2969,
+                        "referencedDeclaration": 2970,
                         "src": "3726:12:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
                           "typeString": "mapping(bytes32 => string storage ref)"
                         }
                       },
-                      "id": 3096,
+                      "id": 3097,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 3095,
+                        "id": 3096,
                         "name": "queryID",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3068,
+                        "referencedDeclaration": 3069,
                         "src": "3739:7:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -3979,11 +3979,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 3097,
+                      "id": 3098,
                       "name": "result",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3070,
+                      "referencedDeclaration": 3071,
                       "src": "3750:6:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -3996,7 +3996,7 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 3099,
+                  "id": 3100,
                   "nodeType": "ExpressionStatement",
                   "src": "3726:30:14"
                 },
@@ -4006,11 +4006,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3101,
+                        "id": 3102,
                         "name": "queryID",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3068,
+                        "referencedDeclaration": 3069,
                         "src": "3800:7:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -4025,18 +4025,18 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 3100,
+                      "id": 3101,
                       "name": "QueryCompleted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2973,
+                      "referencedDeclaration": 2974,
                       "src": "3785:14:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$returns$__$",
                         "typeString": "function (bytes32)"
                       }
                     },
-                    "id": 3102,
+                    "id": 3103,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4050,32 +4050,32 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3103,
+                  "id": 3104,
                   "nodeType": "EmitStatement",
                   "src": "3780:28:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3104,
+                    "id": 3105,
                     "name": "proof",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3072,
+                    "referencedDeclaration": 3073,
                     "src": "3868:5:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
                       "typeString": "bytes memory"
                     }
                   },
-                  "id": 3105,
+                  "id": 3106,
                   "nodeType": "ExpressionStatement",
                   "src": "3868:5:14"
                 }
               ]
             },
             "documentation": "@notice only public for callbacks from oraclize, do not call\n @param queryID of the returning query, this should match our own internal mapping\n @param result query to be processed\n @param proof result proof",
-            "id": 3107,
+            "id": 3108,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -4083,15 +4083,15 @@
             "name": "__callback",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3073,
+              "id": 3074,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3068,
+                  "id": 3069,
                   "name": "queryID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3107,
+                  "scope": 3108,
                   "src": "3513:15:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4100,7 +4100,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3067,
+                    "id": 3068,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "3513:7:14",
@@ -4114,10 +4114,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 3070,
+                  "id": 3071,
                   "name": "result",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3107,
+                  "scope": 3108,
                   "src": "3530:13:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4126,7 +4126,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 3069,
+                    "id": 3070,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "3530:6:14",
@@ -4140,10 +4140,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 3072,
+                  "id": 3073,
                   "name": "proof",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3107,
+                  "scope": 3108,
                   "src": "3545:11:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4152,7 +4152,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 3071,
+                    "id": 3072,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3545:5:14",
@@ -4169,19 +4169,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3074,
+              "id": 3075,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3565:0:14"
             },
-            "scope": 3108,
+            "scope": 3109,
             "src": "3493:417:14",
             "stateMutability": "nonpayable",
-            "superFunction": 3581,
+            "superFunction": 3582,
             "visibility": "public"
           }
         ],
-        "scope": 3109,
+        "scope": 3110,
         "src": "854:3058:14"
       }
     ],
@@ -4232,10 +4232,10 @@
         }
       },
       "links": {},
-      "address": "0xfb4272316da77b63d8c70d8635849473fe24c011",
-      "transactionHash": "0xe5dc97aed47f22c06a9bcee6f3510642e521875430f2c43ffdb407ca618649bd"
+      "address": "0x898d2cfe4d9bbdde9967f1ab2ce10d68a44d6ab7",
+      "transactionHash": "0x99a1547141bec3fa9ca698b8d3253d9eb913ddf0a26b4eef369081c8c2e8223c"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-09-07T18:28:49.222Z"
+  "updatedAt": "2018-10-05T14:03:26.614Z"
 }
