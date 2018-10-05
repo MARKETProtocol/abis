@@ -62,12 +62,6 @@ module.exports = function(deployer, network) {
           marketTokenAmountForContractCreation
         )
         .then(function() {
-          // deploy collateral token and a fake wrapped ETH
-
-          const daysToExpiration = 28;
-          const expirationDate = new Date();
-          expirationDate.setDate(expirationDate.getDate() + daysToExpiration);
-
           // deploy and set up main factory to create MARKET Protocol smart contracts.
           return MarketContractRegistry.deployed().then(function(
             marketContractRegistry
