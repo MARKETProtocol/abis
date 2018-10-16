@@ -1,6 +1,6 @@
 {
   "name": "@marketprotocol/abis",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "MARKET Protocol truffle artifacts and ABIs",
   "main": "truffle-config.js",
   "scripts": {
