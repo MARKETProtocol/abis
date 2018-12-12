@@ -4,6 +4,9 @@ const MathLib = artifacts.require(
 const MarketContractOraclize = artifacts.require(
   '@marketprotocol/marketprotocol/MarketContractOraclize.sol'
 );
+const MarketContract = artifacts.require(
+  '@marketprotocol/marketprotocol/MarketContract.sol'
+);
 const MarketContractFactory = artifacts.require(
   '@marketprotocol/marketprotocol/MarketContractFactoryOraclize.sol'
 );
@@ -19,7 +22,9 @@ const MarketToken = artifacts.require(
 const CollateralToken = artifacts.require(
   '@marketprotocol/marketprotocol/InitialAllocationCollateralToken.sol'
 );
-
+const OracleHub = artifacts.require(
+  '@marketprotocol/marketprotocol/OracleHubOraclize.sol'
+);
 
 module.exports = function (deployer, network) {
   if (network !== 'live') {
@@ -57,27 +62,30 @@ module.exports = function (deployer, network) {
               return deployer.deploy(
                 MarketContractFactory,
                 MarketContractRegistry.address,
+                MarketCollateralPool.address,
                 {gas: 7000000}
               ).then(function (factory) {
-                // white list the factory
-                return marketContractRegistry.addFactoryAddress(factory.address).then(function () {
-                  // deploy our oracle hub
-                  return deployer.deploy(
-                    OracleHub,
-                    factory.address,
-                    {gas: gasLimit, from: web3.eth.accounts[0], value: 1e18}
-                  ).then(function (oracleHub) {
-                    return factory.setOracleHubAddress(oracleHub.address).then(function () {
-                      // deploy the first market contract for testing purposes
-                      return factory
-                        .deployMarketContractOraclize(
-                          'BTC_USDT_BIN_1548979199_BETA',
-                          CollateralToken.address,
-                          [150000000000, 600000000000, 8, 10000000000, 1548979199],
-                          'URL',
-                          'json(https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT).price',
-                          {gas: 3000000}
-                        );
+                return MarketContractRegistry.deployed().then(function (marketContractRegistry) {
+                  // white list the factory
+                  return marketContractRegistry.addFactoryAddress(factory.address).then(function () {
+                    // deploy our oracle hub
+                    return deployer.deploy(
+                      OracleHub,
+                      factory.address,
+                      {gas: 7000000, value: 1e18} // sends ETH to fund oracle requests in the future
+                    ).then(function (oracleHub) {
+                      return factory.setOracleHubAddress(oracleHub.address).then(function () {
+                        // deploy the first market contract for testing purposes
+                        return factory
+                          .deployMarketContractOraclize(
+                            'BTC_USDT_BIN_1548979199_BETA',
+                            CollateralToken.address,
+                            [150000000000, 600000000000, 8, 10000000000, 1548979199],
+                            'URL',
+                            'json(https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT).price',
+                            {gas: 7000000}
+                          );
+                      });
                     });
                   });
                 });

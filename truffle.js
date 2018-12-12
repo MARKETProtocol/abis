@@ -7,12 +7,12 @@ module.exports = {
       port: 9545,
       network_id: '*' // Match any network id
     },
-    rinkeby: {
+    kovan: {
       host: '127.0.0.1',
       port: 8545,
-      from: '0x8a6C7Ea2C27827093825e5FdD57BD564312c6a2c',
-      network_id: 4,
-      gasPrice: 3000000000 // Specified in Wei
+      from: '0x0088BD180722C48602770d355E692D2EBFbA86Ac',
+      network_id: 42,
+      gasPrice: 1000000000 // Specified in Wei
     }
   }
 };
