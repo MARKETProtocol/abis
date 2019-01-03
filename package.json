@@ -1,6 +1,6 @@
 {
   "name": "@marketprotocol/abis",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "MARKET Protocol truffle artifacts and ABIs",
   "main": "truffle-config.js",
   "scripts": {
@@ -26,6 +26,9 @@
   },
   "homepage": "https://marketprotocol.io",
   "devDependencies": {
-    "@marketprotocol/marketprotocol": "^2.0.0-alpha"
+    "@marketprotocol/marketprotocol": "^2.0.1-alpha"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.1"
   }
 }

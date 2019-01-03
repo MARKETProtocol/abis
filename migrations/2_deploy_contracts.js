@@ -78,9 +78,9 @@ module.exports = function (deployer, network) {
                         // deploy the first market contract for testing purposes
                         return factory
                           .deployMarketContractOraclize(
-                            'BTC_USDT_BIN_1548979199_BETA',
+                            'BTC_USD_BIN_1551398399_BETA',
                             CollateralToken.address,
-                            [150000000000, 600000000000, 8, 10000000000, 1548979199],
+                            [150000000000, 600000000000, 8, 100000, 1551398399],
                             'URL',
                             'json(https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT).price',
                             {gas: 7000000}
