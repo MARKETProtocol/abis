@@ -27,5 +27,8 @@
   "homepage": "https://marketprotocol.io",
   "devDependencies": {
     "@marketprotocol/marketprotocol": "^2.0.1-alpha"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.1"
   }
 }
