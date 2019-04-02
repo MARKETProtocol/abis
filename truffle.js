@@ -11,7 +11,7 @@ module.exports = {
       network_id: '*' // Match any network id
     },
     kovan: {
-      provider: () => new HDWalletProvider(privateKey, "https://kovan.infura.io/v3/cd4068358ac743c082c994387eac4644"),
+      provider: () => new HDWalletProvider(privateKey, "https://kovan.infura.io/v3/8e01b33727674833a42e0b1157f5ff9b"),
       //host: '127.0.0.1',
       //port: 8545,
       //from: '0x0088BD180722C48602770d355E692D2EBFbA86Ac',
@@ -20,3 +20,5 @@ module.exports = {
     }
   }
 };
+
+
