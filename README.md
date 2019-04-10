@@ -1,4 +1,4 @@
-<img src="https://github.com/MARKETProtocol/dApp/blob/master/src/img/MARKETProtocol-Light.png?raw=true" align="middle">
+<img src="https://github.com/MARKETProtocol/MARKETProtocol/blob/develop/assets/MARKETProtocol-Dark.png?raw=true" align="middle">
 
 [![npm version](https://badge.fury.io/js/%40marketprotocol%2Fabis.svg)](https://badge.fury.io/js/%40marketprotocol%2Fabis)
 
