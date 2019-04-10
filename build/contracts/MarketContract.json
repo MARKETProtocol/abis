@@ -465,7 +465,7 @@
         "id": 572,
         "nodeType": "ImportDirective",
         "scope": 975,
-        "sourceUnit": 2903,
+        "sourceUnit": 2909,
         "src": "633:63:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -498,7 +498,7 @@
         "id": 575,
         "nodeType": "ImportDirective",
         "scope": 975,
-        "sourceUnit": 2540,
+        "sourceUnit": 2546,
         "src": "768:36:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -512,10 +512,10 @@
               "id": 576,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2902,
+              "referencedDeclaration": 2908,
               "src": "1104:7:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$2902",
+                "typeIdentifier": "t_contract$_Ownable_$2908",
                 "typeString": "contract Ownable"
               }
             },
@@ -525,8 +525,8 @@
           }
         ],
         "contractDependencies": [
-          2539,
-          2902
+          2545,
+          2908
         ],
         "contractKind": "contract",
         "documentation": "@title MarketContract base contract implement all needed functionality for trading.\n @notice this is the abstract base contract that all contracts should inherit from to\n implement different oracle solutions.\n @author Phil Elsasser <phil@marketprotocol.io>",
@@ -534,7 +534,7 @@
         "id": 974,
         "linearizedBaseContracts": [
           974,
-          2902
+          2908
         ],
         "name": "MarketContract",
         "nodeType": "ContractDefinition",
@@ -1366,10 +1366,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "3722:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1664,7 +1664,7 @@
                           "name": "now",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3608,
+                          "referencedDeclaration": 3614,
                           "src": "3917:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -1711,10 +1711,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3610,
+                      "referencedDeclaration": 3616,
                       "src": "3896:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2702,10 +2702,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3610,
+                      "referencedDeclaration": 3616,
                       "src": "4703:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2876,7 +2876,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PositionToken_$2539",
+                        "typeIdentifier": "t_contract$_PositionToken_$2545",
                         "typeString": "contract PositionToken"
                       },
                       "typeName": {
@@ -2884,10 +2884,10 @@
                         "id": 761,
                         "name": "PositionToken",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2539,
+                        "referencedDeclaration": 2545,
                         "src": "4885:13:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -3057,7 +3057,7 @@
                       "nodeType": "NewExpression",
                       "src": "4914:17:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2539_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2545_$",
                         "typeString": "function (string memory,string memory,uint8) returns (contract PositionToken)"
                       },
                       "typeName": {
@@ -3065,10 +3065,10 @@
                         "id": 763,
                         "name": "PositionToken",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2539,
+                        "referencedDeclaration": 2545,
                         "src": "4918:13:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       }
@@ -3083,7 +3083,7 @@
                     "nodeType": "FunctionCall",
                     "src": "4914:94:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PositionToken_$2539",
+                      "typeIdentifier": "t_contract$_PositionToken_$2545",
                       "typeString": "contract PositionToken"
                     }
                   },
@@ -3105,7 +3105,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PositionToken_$2539",
+                        "typeIdentifier": "t_contract$_PositionToken_$2545",
                         "typeString": "contract PositionToken"
                       },
                       "typeName": {
@@ -3113,10 +3113,10 @@
                         "id": 775,
                         "name": "PositionToken",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2539,
+                        "referencedDeclaration": 2545,
                         "src": "5018:13:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -3286,7 +3286,7 @@
                       "nodeType": "NewExpression",
                       "src": "5048:17:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2539_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2545_$",
                         "typeString": "function (string memory,string memory,uint8) returns (contract PositionToken)"
                       },
                       "typeName": {
@@ -3294,10 +3294,10 @@
                         "id": 777,
                         "name": "PositionToken",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2539,
+                        "referencedDeclaration": 2545,
                         "src": "5052:13:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       }
@@ -3312,7 +3312,7 @@
                     "nodeType": "FunctionCall",
                     "src": "5048:95:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PositionToken_$2539",
+                      "typeIdentifier": "t_contract$_PositionToken_$2545",
                       "typeString": "contract PositionToken"
                     }
                   },
@@ -3354,7 +3354,7 @@
                           "referencedDeclaration": 762,
                           "src": "5184:12:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_PositionToken_$2539",
+                            "typeIdentifier": "t_contract$_PositionToken_$2545",
                             "typeString": "contract PositionToken"
                           }
                         }
@@ -3362,7 +3362,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_PositionToken_$2539",
+                            "typeIdentifier": "t_contract$_PositionToken_$2545",
                             "typeString": "contract PositionToken"
                           }
                         ],
@@ -3438,7 +3438,7 @@
                           "referencedDeclaration": 776,
                           "src": "5238:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_PositionToken_$2539",
+                            "typeIdentifier": "t_contract$_PositionToken_$2545",
                             "typeString": "contract PositionToken"
                           }
                         }
@@ -3446,7 +3446,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_PositionToken_$2539",
+                            "typeIdentifier": "t_contract$_PositionToken_$2545",
                             "typeString": "contract PositionToken"
                           }
                         ],
@@ -3548,7 +3548,7 @@
                       "name": "transferOwnership",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2878,
+                      "referencedDeclaration": 2884,
                       "src": "5263:17:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
@@ -3811,10 +3811,10 @@
                           "name": "PositionToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2539,
+                          "referencedDeclaration": 2545,
                           "src": "5818:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2539_$",
+                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2545_$",
                             "typeString": "type(contract PositionToken)"
                           }
                         },
@@ -3828,7 +3828,7 @@
                         "nodeType": "FunctionCall",
                         "src": "5818:34:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -3839,7 +3839,7 @@
                       "lValueRequested": false,
                       "memberName": "mintAndSendToken",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2523,
+                      "referencedDeclaration": 2529,
                       "src": "5818:51:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -3934,10 +3934,10 @@
                           "name": "PositionToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2539,
+                          "referencedDeclaration": 2545,
                           "src": "5898:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2539_$",
+                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2545_$",
                             "typeString": "type(contract PositionToken)"
                           }
                         },
@@ -3951,7 +3951,7 @@
                         "nodeType": "FunctionCall",
                         "src": "5898:35:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -3962,7 +3962,7 @@
                       "lValueRequested": false,
                       "memberName": "mintAndSendToken",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2523,
+                      "referencedDeclaration": 2529,
                       "src": "5898:52:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -4165,10 +4165,10 @@
                           "name": "PositionToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2539,
+                          "referencedDeclaration": 2545,
                           "src": "6406:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2539_$",
+                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2545_$",
                             "typeString": "type(contract PositionToken)"
                           }
                         },
@@ -4182,7 +4182,7 @@
                         "nodeType": "FunctionCall",
                         "src": "6406:34:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -4193,7 +4193,7 @@
                       "lValueRequested": false,
                       "memberName": "redeemToken",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2538,
+                      "referencedDeclaration": 2544,
                       "src": "6406:46:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -4396,10 +4396,10 @@
                           "name": "PositionToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2539,
+                          "referencedDeclaration": 2545,
                           "src": "6914:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2539_$",
+                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2545_$",
                             "typeString": "type(contract PositionToken)"
                           }
                         },
@@ -4413,7 +4413,7 @@
                         "nodeType": "FunctionCall",
                         "src": "6914:35:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -4424,7 +4424,7 @@
                       "lValueRequested": false,
                       "memberName": "redeemToken",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2538,
+                      "referencedDeclaration": 2544,
                       "src": "6914:47:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -4604,7 +4604,7 @@
                             "name": "now",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3608,
+                            "referencedDeclaration": 3614,
                             "src": "7222:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4813,10 +4813,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "7540:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -4894,7 +4894,7 @@
                       "name": "now",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3608,
+                      "referencedDeclaration": 3614,
                       "src": "7627:3:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -5483,7 +5483,7 @@
                       "name": "now",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3608,
+                      "referencedDeclaration": 3614,
                       "src": "8576:3:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -5685,7 +5685,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3606,
+                            "referencedDeclaration": 3612,
                             "src": "8871:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -5739,10 +5739,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "8863:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -5820,7 +5820,7 @@
         "id": 572,
         "nodeType": "ImportDirective",
         "scope": 975,
-        "sourceUnit": 2903,
+        "sourceUnit": 2909,
         "src": "633:63:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5853,7 +5853,7 @@
         "id": 575,
         "nodeType": "ImportDirective",
         "scope": 975,
-        "sourceUnit": 2540,
+        "sourceUnit": 2546,
         "src": "768:36:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5867,10 +5867,10 @@
               "id": 576,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2902,
+              "referencedDeclaration": 2908,
               "src": "1104:7:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$2902",
+                "typeIdentifier": "t_contract$_Ownable_$2908",
                 "typeString": "contract Ownable"
               }
             },
@@ -5880,8 +5880,8 @@
           }
         ],
         "contractDependencies": [
-          2539,
-          2902
+          2545,
+          2908
         ],
         "contractKind": "contract",
         "documentation": "@title MarketContract base contract implement all needed functionality for trading.\n @notice this is the abstract base contract that all contracts should inherit from to\n implement different oracle solutions.\n @author Phil Elsasser <phil@marketprotocol.io>",
@@ -5889,7 +5889,7 @@
         "id": 974,
         "linearizedBaseContracts": [
           974,
-          2902
+          2908
         ],
         "name": "MarketContract",
         "nodeType": "ContractDefinition",
@@ -6721,10 +6721,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "3722:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -7019,7 +7019,7 @@
                           "name": "now",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3608,
+                          "referencedDeclaration": 3614,
                           "src": "3917:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -7066,10 +7066,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3610,
+                      "referencedDeclaration": 3616,
                       "src": "3896:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -8057,10 +8057,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3610,
+                      "referencedDeclaration": 3616,
                       "src": "4703:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -8231,7 +8231,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PositionToken_$2539",
+                        "typeIdentifier": "t_contract$_PositionToken_$2545",
                         "typeString": "contract PositionToken"
                       },
                       "typeName": {
@@ -8239,10 +8239,10 @@
                         "id": 761,
                         "name": "PositionToken",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2539,
+                        "referencedDeclaration": 2545,
                         "src": "4885:13:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -8412,7 +8412,7 @@
                       "nodeType": "NewExpression",
                       "src": "4914:17:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2539_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2545_$",
                         "typeString": "function (string memory,string memory,uint8) returns (contract PositionToken)"
                       },
                       "typeName": {
@@ -8420,10 +8420,10 @@
                         "id": 763,
                         "name": "PositionToken",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2539,
+                        "referencedDeclaration": 2545,
                         "src": "4918:13:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       }
@@ -8438,7 +8438,7 @@
                     "nodeType": "FunctionCall",
                     "src": "4914:94:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PositionToken_$2539",
+                      "typeIdentifier": "t_contract$_PositionToken_$2545",
                       "typeString": "contract PositionToken"
                     }
                   },
@@ -8460,7 +8460,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PositionToken_$2539",
+                        "typeIdentifier": "t_contract$_PositionToken_$2545",
                         "typeString": "contract PositionToken"
                       },
                       "typeName": {
@@ -8468,10 +8468,10 @@
                         "id": 775,
                         "name": "PositionToken",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2539,
+                        "referencedDeclaration": 2545,
                         "src": "5018:13:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -8641,7 +8641,7 @@
                       "nodeType": "NewExpression",
                       "src": "5048:17:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2539_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2545_$",
                         "typeString": "function (string memory,string memory,uint8) returns (contract PositionToken)"
                       },
                       "typeName": {
@@ -8649,10 +8649,10 @@
                         "id": 777,
                         "name": "PositionToken",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2539,
+                        "referencedDeclaration": 2545,
                         "src": "5052:13:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       }
@@ -8667,7 +8667,7 @@
                     "nodeType": "FunctionCall",
                     "src": "5048:95:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PositionToken_$2539",
+                      "typeIdentifier": "t_contract$_PositionToken_$2545",
                       "typeString": "contract PositionToken"
                     }
                   },
@@ -8709,7 +8709,7 @@
                           "referencedDeclaration": 762,
                           "src": "5184:12:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_PositionToken_$2539",
+                            "typeIdentifier": "t_contract$_PositionToken_$2545",
                             "typeString": "contract PositionToken"
                           }
                         }
@@ -8717,7 +8717,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_PositionToken_$2539",
+                            "typeIdentifier": "t_contract$_PositionToken_$2545",
                             "typeString": "contract PositionToken"
                           }
                         ],
@@ -8793,7 +8793,7 @@
                           "referencedDeclaration": 776,
                           "src": "5238:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_PositionToken_$2539",
+                            "typeIdentifier": "t_contract$_PositionToken_$2545",
                             "typeString": "contract PositionToken"
                           }
                         }
@@ -8801,7 +8801,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_PositionToken_$2539",
+                            "typeIdentifier": "t_contract$_PositionToken_$2545",
                             "typeString": "contract PositionToken"
                           }
                         ],
@@ -8903,7 +8903,7 @@
                       "name": "transferOwnership",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2878,
+                      "referencedDeclaration": 2884,
                       "src": "5263:17:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
@@ -9166,10 +9166,10 @@
                           "name": "PositionToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2539,
+                          "referencedDeclaration": 2545,
                           "src": "5818:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2539_$",
+                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2545_$",
                             "typeString": "type(contract PositionToken)"
                           }
                         },
@@ -9183,7 +9183,7 @@
                         "nodeType": "FunctionCall",
                         "src": "5818:34:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -9194,7 +9194,7 @@
                       "lValueRequested": false,
                       "memberName": "mintAndSendToken",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2523,
+                      "referencedDeclaration": 2529,
                       "src": "5818:51:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -9289,10 +9289,10 @@
                           "name": "PositionToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2539,
+                          "referencedDeclaration": 2545,
                           "src": "5898:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2539_$",
+                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2545_$",
                             "typeString": "type(contract PositionToken)"
                           }
                         },
@@ -9306,7 +9306,7 @@
                         "nodeType": "FunctionCall",
                         "src": "5898:35:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -9317,7 +9317,7 @@
                       "lValueRequested": false,
                       "memberName": "mintAndSendToken",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2523,
+                      "referencedDeclaration": 2529,
                       "src": "5898:52:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -9520,10 +9520,10 @@
                           "name": "PositionToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2539,
+                          "referencedDeclaration": 2545,
                           "src": "6406:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2539_$",
+                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2545_$",
                             "typeString": "type(contract PositionToken)"
                           }
                         },
@@ -9537,7 +9537,7 @@
                         "nodeType": "FunctionCall",
                         "src": "6406:34:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -9548,7 +9548,7 @@
                       "lValueRequested": false,
                       "memberName": "redeemToken",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2538,
+                      "referencedDeclaration": 2544,
                       "src": "6406:46:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -9751,10 +9751,10 @@
                           "name": "PositionToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2539,
+                          "referencedDeclaration": 2545,
                           "src": "6914:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2539_$",
+                            "typeIdentifier": "t_type$_t_contract$_PositionToken_$2545_$",
                             "typeString": "type(contract PositionToken)"
                           }
                         },
@@ -9768,7 +9768,7 @@
                         "nodeType": "FunctionCall",
                         "src": "6914:35:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2539",
+                          "typeIdentifier": "t_contract$_PositionToken_$2545",
                           "typeString": "contract PositionToken"
                         }
                       },
@@ -9779,7 +9779,7 @@
                       "lValueRequested": false,
                       "memberName": "redeemToken",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2538,
+                      "referencedDeclaration": 2544,
                       "src": "6914:47:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_address_$returns$__$",
@@ -9959,7 +9959,7 @@
                             "name": "now",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3608,
+                            "referencedDeclaration": 3614,
                             "src": "7222:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -10168,10 +10168,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "7540:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -10249,7 +10249,7 @@
                       "name": "now",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3608,
+                      "referencedDeclaration": 3614,
                       "src": "7627:3:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -10838,7 +10838,7 @@
                       "name": "now",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3608,
+                      "referencedDeclaration": 3614,
                       "src": "8576:3:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -11040,7 +11040,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3606,
+                            "referencedDeclaration": 3612,
                             "src": "8871:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -11094,10 +11094,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "8863:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -11157,10 +11157,10 @@
     "42": {
       "events": {},
       "links": {
-        "MathLib": "0xe9c0553f3525acbc5e46e25ad9a6a9eb39612d61"
+        "MathLib": "0xfe8b5bcf5aca9c0d0648aa19567301737888ac3c"
       }
     }
   },
   "schemaVersion": "2.0.2",
-  "updatedAt": "2019-04-10T14:25:29.479Z"
+  "updatedAt": "2019-04-10T20:47:20.818Z"
 }

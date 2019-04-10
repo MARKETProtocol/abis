@@ -305,7 +305,7 @@
         "id": 977,
         "nodeType": "ImportDirective",
         "scope": 1175,
-        "sourceUnit": 2903,
+        "sourceUnit": 2909,
         "src": "633:63:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -330,10 +330,10 @@
               "id": 979,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2902,
+              "referencedDeclaration": 2908,
               "src": "867:7:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$2902",
+                "typeIdentifier": "t_contract$_Ownable_$2908",
                 "typeString": "contract Ownable"
               }
             },
@@ -362,7 +362,7 @@
         ],
         "contractDependencies": [
           1189,
-          2902
+          2908
         ],
         "contractKind": "contract",
         "documentation": "@title MarketContractRegistry\n @author Phil Elsasser <phil@marketprotocol.io>",
@@ -371,7 +371,7 @@
         "linearizedBaseContracts": [
           1174,
           1189,
-          2902
+          2908
         ],
         "name": "MarketContractRegistry",
         "nodeType": "ContractDefinition",
@@ -958,10 +958,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "2492:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1074,10 +1074,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "2541:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1471,7 +1471,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2836,
+                  "referencedDeclaration": 2842,
                   "src": "2453:9:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1613,7 +1613,7 @@
                             "name": "isOwner",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2847,
+                            "referencedDeclaration": 2853,
                             "src": "3289:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_bool_$",
@@ -1660,7 +1660,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3606,
+                              "referencedDeclaration": 3612,
                               "src": "3326:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1732,10 +1732,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3610,
+                      "referencedDeclaration": 3616,
                       "src": "3281:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1832,10 +1832,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "3389:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2218,10 +2218,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3610,
+                      "referencedDeclaration": 3616,
                       "src": "3879:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2395,7 +2395,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2836,
+                  "referencedDeclaration": 2842,
                   "src": "3859:9:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -2516,10 +2516,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "4286:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2693,7 +2693,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2836,
+                  "referencedDeclaration": 2842,
                   "src": "4266:9:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -2785,7 +2785,7 @@
         "id": 977,
         "nodeType": "ImportDirective",
         "scope": 1175,
-        "sourceUnit": 2903,
+        "sourceUnit": 2909,
         "src": "633:63:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2810,10 +2810,10 @@
               "id": 979,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2902,
+              "referencedDeclaration": 2908,
               "src": "867:7:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$2902",
+                "typeIdentifier": "t_contract$_Ownable_$2908",
                 "typeString": "contract Ownable"
               }
             },
@@ -2842,7 +2842,7 @@
         ],
         "contractDependencies": [
           1189,
-          2902
+          2908
         ],
         "contractKind": "contract",
         "documentation": "@title MarketContractRegistry\n @author Phil Elsasser <phil@marketprotocol.io>",
@@ -2851,7 +2851,7 @@
         "linearizedBaseContracts": [
           1174,
           1189,
-          2902
+          2908
         ],
         "name": "MarketContractRegistry",
         "nodeType": "ContractDefinition",
@@ -3438,10 +3438,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "2492:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3554,10 +3554,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "2541:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3951,7 +3951,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2836,
+                  "referencedDeclaration": 2842,
                   "src": "2453:9:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -4093,7 +4093,7 @@
                             "name": "isOwner",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2847,
+                            "referencedDeclaration": 2853,
                             "src": "3289:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_bool_$",
@@ -4140,7 +4140,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3606,
+                              "referencedDeclaration": 3612,
                               "src": "3326:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -4212,10 +4212,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3610,
+                      "referencedDeclaration": 3616,
                       "src": "3281:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -4312,10 +4312,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "3389:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -4698,10 +4698,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3610,
+                      "referencedDeclaration": 3616,
                       "src": "3879:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -4875,7 +4875,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2836,
+                  "referencedDeclaration": 2842,
                   "src": "3859:9:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -4996,10 +4996,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "4286:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -5173,7 +5173,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2836,
+                  "referencedDeclaration": 2842,
                   "src": "4266:9:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -5313,10 +5313,10 @@
         }
       },
       "links": {},
-      "address": "0xf81bc0b790e54409c106bb845c6dcccd0009c615",
-      "transactionHash": "0x7c2800b215b9f4610ab5ee75a642568912b7781df52d428d3da274824e127dfa"
+      "address": "0x77729992837b00a6104c4b35074ecf386a3269ea",
+      "transactionHash": "0xb2a3081fa34dc91920df55d1b9deeac3a5d194f60291840c31dbcc6d23e51df5"
     }
   },
   "schemaVersion": "2.0.2",
-  "updatedAt": "2019-04-10T14:25:29.486Z"
+  "updatedAt": "2019-04-10T20:47:20.822Z"
 }

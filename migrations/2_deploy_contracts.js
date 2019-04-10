@@ -25,6 +25,7 @@ const CollateralToken = artifacts.require(
 
 module.exports = function (deployer, network) {
   if (network !== 'live') {
+    const mpxKovanOracleAddress = '0xe1408083Fab18bD024e4770f8907A2b39D2a4084';
     return deployer.deploy([MathLib, MarketContractRegistry]).then(function () {
 
       deployer.link(
@@ -53,6 +54,7 @@ module.exports = function (deployer, network) {
             MarketContractFactory,
             MarketContractRegistry.address,
             MarketCollateralPool.address,
+            mpxKovanOracleAddress,
             {gas: 6200000}
           ).then(function (factory) {
             return MarketContractRegistry.deployed().then(function (marketContractRegistry) {

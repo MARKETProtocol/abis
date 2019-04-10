@@ -539,14 +539,14 @@
     "absolutePath": "/home/travis/build/MARKETProtocol/MARKETProtocol/contracts/mpx/MarketContractMPX.sol",
     "exportedSymbols": {
       "MarketContractMPX": [
-        2292
+        2298
       ]
     },
-    "id": 2293,
+    "id": 2299,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2166,
+        "id": 2172,
         "literals": [
           "solidity",
           "0.4",
@@ -558,9 +558,9 @@
       {
         "absolutePath": "/home/travis/build/MARKETProtocol/MARKETProtocol/contracts/MarketContract.sol",
         "file": "../MarketContract.sol",
-        "id": 2167,
+        "id": 2173,
         "nodeType": "ImportDirective",
-        "scope": 2293,
+        "scope": 2299,
         "sourceUnit": 975,
         "src": "633:31:8",
         "symbolAliases": [],
@@ -572,7 +572,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 2168,
+              "id": 2174,
               "name": "MarketContract",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 974,
@@ -582,33 +582,33 @@
                 "typeString": "contract MarketContract"
               }
             },
-            "id": 2169,
+            "id": 2175,
             "nodeType": "InheritanceSpecifier",
             "src": "848:14:8"
           }
         ],
         "contractDependencies": [
           974,
-          2902
+          2908
         ],
         "contractKind": "contract",
         "documentation": "@title MarketContractMPX - a MarketContract designed to be used with our internal oracle service\n @author Phil Elsasser <phil@marketprotocol.io>",
         "fullyImplemented": true,
-        "id": 2292,
+        "id": 2298,
         "linearizedBaseContracts": [
-          2292,
+          2298,
           974,
-          2902
+          2908
         ],
         "name": "MarketContractMPX",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 2171,
+            "id": 2177,
             "name": "ORACLE_HUB_ADDRESS",
             "nodeType": "VariableDeclaration",
-            "scope": 2292,
+            "scope": 2298,
             "src": "870:33:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -617,7 +617,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 2170,
+              "id": 2176,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "870:7:8",
@@ -631,10 +631,10 @@
           },
           {
             "constant": false,
-            "id": 2173,
+            "id": 2179,
             "name": "ORACLE_URL",
             "nodeType": "VariableDeclaration",
-            "scope": 2292,
+            "scope": 2298,
             "src": "909:24:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -643,7 +643,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 2172,
+              "id": 2178,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "909:6:8",
@@ -657,10 +657,10 @@
           },
           {
             "constant": false,
-            "id": 2175,
+            "id": 2181,
             "name": "ORACLE_STATISTIC",
             "nodeType": "VariableDeclaration",
-            "scope": 2292,
+            "scope": 2298,
             "src": "939:30:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -669,7 +669,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 2174,
+              "id": 2180,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "939:6:8",
@@ -683,25 +683,25 @@
           },
           {
             "body": {
-              "id": 2211,
+              "id": 2217,
               "nodeType": "Block",
               "src": "2856:130:8",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2201,
+                    "id": 2207,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2199,
+                      "id": 2205,
                       "name": "ORACLE_URL",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2173,
+                      "referencedDeclaration": 2179,
                       "src": "2866:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -712,11 +712,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2200,
+                      "id": 2206,
                       "name": "oracleURL",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2189,
+                      "referencedDeclaration": 2195,
                       "src": "2879:9:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -729,25 +729,25 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 2202,
+                  "id": 2208,
                   "nodeType": "ExpressionStatement",
                   "src": "2866:22:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2205,
+                    "id": 2211,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2203,
+                      "id": 2209,
                       "name": "ORACLE_STATISTIC",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2175,
+                      "referencedDeclaration": 2181,
                       "src": "2898:16:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -758,11 +758,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2204,
+                      "id": 2210,
                       "name": "oracleStatistic",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2191,
+                      "referencedDeclaration": 2197,
                       "src": "2917:15:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -775,25 +775,25 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 2206,
+                  "id": 2212,
                   "nodeType": "ExpressionStatement",
                   "src": "2898:34:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2209,
+                    "id": 2215,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2207,
+                      "id": 2213,
                       "name": "ORACLE_HUB_ADDRESS",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2171,
+                      "referencedDeclaration": 2177,
                       "src": "2942:18:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -804,11 +804,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2208,
+                      "id": 2214,
                       "name": "oracleHubAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2183,
+                      "referencedDeclaration": 2189,
                       "src": "2963:16:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -821,14 +821,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 2210,
+                  "id": 2216,
                   "nodeType": "ExpressionStatement",
                   "src": "2942:37:8"
                 }
               ]
             },
             "documentation": "@param contractNames comma separated list of 3 names \"contractName,longTokenSymbol,shortTokenSymbol\"\n @param baseAddresses array of 2 addresses needed for our contract including:\n     ownerAddress                    address of the owner of these contracts.\n     collateralTokenAddress          address of the ERC20 token that will be used for collateral and pricing\n     collateralPoolAddress           address of our collateral pool contract\n @param oracleHubAddress     address of our oracle hub providing the callbacks\n @param contractSpecs array of unsigned integers including:\n     floorPrice              minimum tradeable price of this contract, contract enters settlement if breached\n     capPrice                maximum tradeable price of this contract, contract enters settlement if breached\n     priceDecimalPlaces      number of decimal places to convert our queried price from a floating point to\n                             an integer\n     qtyMultiplier           multiply traded qty by this value from base units of collateral token.\n     feeInBasisPoints    fee amount in basis points (Collateral token denominated) for minting.\n     mktFeeInBasisPoints fee amount in basis points (MKT denominated) for minting.\n     expirationTimeStamp     seconds from epoch that this contract expires and enters settlement\n @param oracleURL url of data\n @param oracleStatistic statistic type (lastPrice, vwap, etc)",
-            "id": 2212,
+            "id": 2218,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -837,11 +837,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 2194,
+                    "id": 2200,
                     "name": "contractNames",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2177,
+                    "referencedDeclaration": 2183,
                     "src": "2778:13:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -850,11 +850,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 2195,
+                    "id": 2201,
                     "name": "baseAddresses",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2181,
+                    "referencedDeclaration": 2187,
                     "src": "2801:13:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$3_memory_ptr",
@@ -863,11 +863,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 2196,
+                    "id": 2202,
                     "name": "contractSpecs",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2187,
+                    "referencedDeclaration": 2193,
                     "src": "2824:13:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$7_memory_ptr",
@@ -875,10 +875,10 @@
                     }
                   }
                 ],
-                "id": 2197,
+                "id": 2203,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 2193,
+                  "id": 2199,
                   "name": "MarketContract",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -896,15 +896,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2192,
+              "id": 2198,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2177,
+                  "id": 2183,
                   "name": "contractNames",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2535:27:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -913,7 +913,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2176,
+                    "id": 2182,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2535:6:8",
@@ -927,10 +927,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2181,
+                  "id": 2187,
                   "name": "baseAddresses",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2572:31:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -940,7 +940,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 2178,
+                      "id": 2184,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "2572:7:8",
@@ -949,11 +949,11 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 2180,
+                    "id": 2186,
                     "length": {
                       "argumentTypes": null,
                       "hexValue": "33",
-                      "id": 2179,
+                      "id": 2185,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -980,10 +980,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2183,
+                  "id": 2189,
                   "name": "oracleHubAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2613:24:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -992,7 +992,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2182,
+                    "id": 2188,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2613:7:8",
@@ -1006,10 +1006,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2187,
+                  "id": 2193,
                   "name": "contractSpecs",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2647:28:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1019,7 +1019,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 2184,
+                      "id": 2190,
                       "name": "uint",
                       "nodeType": "ElementaryTypeName",
                       "src": "2647:4:8",
@@ -1028,11 +1028,11 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 2186,
+                    "id": 2192,
                     "length": {
                       "argumentTypes": null,
                       "hexValue": "37",
-                      "id": 2185,
+                      "id": 2191,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1059,10 +1059,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2189,
+                  "id": 2195,
                   "name": "oracleURL",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2685:23:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1071,7 +1071,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2188,
+                    "id": 2194,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2685:6:8",
@@ -1085,10 +1085,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2191,
+                  "id": 2197,
                   "name": "oracleStatistic",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2718:29:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1097,7 +1097,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2190,
+                    "id": 2196,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2718:6:8",
@@ -1114,12 +1114,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2198,
+              "id": 2204,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2856:0:8"
             },
-            "scope": 2292,
+            "scope": 2298,
             "src": "2514:472:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1127,7 +1127,7 @@
           },
           {
             "body": {
-              "id": 2235,
+              "id": 2241,
               "nodeType": "Block",
               "src": "3242:195:8",
               "statements": [
@@ -1137,7 +1137,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2221,
+                        "id": 2227,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1148,7 +1148,7 @@
                         "src": "3260:10:8",
                         "subExpression": {
                           "argumentTypes": null,
-                          "id": 2220,
+                          "id": 2226,
                           "name": "isSettled",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -1172,21 +1172,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2219,
+                      "id": 2225,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "3252:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2222,
+                    "id": 2228,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1200,21 +1200,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2223,
+                  "id": 2229,
                   "nodeType": "ExpressionStatement",
                   "src": "3252:19:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2226,
+                    "id": 2232,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2224,
+                      "id": 2230,
                       "name": "lastPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1229,11 +1229,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2225,
+                      "id": 2231,
                       "name": "price",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2214,
+                      "referencedDeclaration": 2220,
                       "src": "3293:5:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1246,7 +1246,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 2227,
+                  "id": 2233,
                   "nodeType": "ExpressionStatement",
                   "src": "3281:17:8"
                 },
@@ -1256,11 +1256,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2229,
+                        "id": 2235,
                         "name": "price",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2214,
+                        "referencedDeclaration": 2220,
                         "src": "3330:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1275,7 +1275,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 2228,
+                      "id": 2234,
                       "name": "UpdatedLastPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1286,7 +1286,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 2230,
+                    "id": 2236,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1300,7 +1300,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2231,
+                  "id": 2237,
                   "nodeType": "EmitStatement",
                   "src": "3308:28:8"
                 },
@@ -1310,7 +1310,7 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 2232,
+                      "id": 2238,
                       "name": "checkSettlement",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1321,7 +1321,7 @@
                         "typeString": "function ()"
                       }
                     },
-                    "id": 2233,
+                    "id": 2239,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1335,28 +1335,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2234,
+                  "id": 2240,
                   "nodeType": "ExpressionStatement",
                   "src": "3346:17:8"
                 }
               ]
             },
             "documentation": "@dev called only by our oracle hub when a new price is available provided by our oracle.\n @param price lastPrice provided by the oracle.",
-            "id": 2236,
+            "id": 2242,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 2217,
+                "id": 2223,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 2216,
+                  "id": 2222,
                   "name": "onlyOracleHub",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2271,
+                  "referencedDeclaration": 2277,
                   "src": "3228:13:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1370,15 +1370,15 @@
             "name": "oracleCallBack",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2215,
+              "id": 2221,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2214,
+                  "id": 2220,
                   "name": "price",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2236,
+                  "scope": 2242,
                   "src": "3206:13:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1387,7 +1387,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2213,
+                    "id": 2219,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3206:7:8",
@@ -1404,12 +1404,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2218,
+              "id": 2224,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3242:0:8"
             },
-            "scope": 2292,
+            "scope": 2298,
             "src": "3182:255:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1417,21 +1417,21 @@
           },
           {
             "body": {
-              "id": 2259,
+              "id": 2265,
               "nodeType": "Block",
               "src": "3844:129:8",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2245,
+                    "id": 2251,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2243,
+                      "id": 2249,
                       "name": "lastPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1446,11 +1446,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2244,
+                      "id": 2250,
                       "name": "price",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2238,
+                      "referencedDeclaration": 2244,
                       "src": "3866:5:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1463,7 +1463,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 2246,
+                  "id": 2252,
                   "nodeType": "ExpressionStatement",
                   "src": "3854:17:8"
                 },
@@ -1473,11 +1473,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2248,
+                        "id": 2254,
                         "name": "price",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2238,
+                        "referencedDeclaration": 2244,
                         "src": "3903:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1492,7 +1492,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 2247,
+                      "id": 2253,
                       "name": "UpdatedLastPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1503,7 +1503,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 2249,
+                    "id": 2255,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1517,7 +1517,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2250,
+                  "id": 2256,
                   "nodeType": "EmitStatement",
                   "src": "3881:28:8"
                 },
@@ -1527,11 +1527,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2252,
+                        "id": 2258,
                         "name": "price",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2238,
+                        "referencedDeclaration": 2244,
                         "src": "3934:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1546,7 +1546,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 2251,
+                      "id": 2257,
                       "name": "settleContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1557,7 +1557,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 2253,
+                    "id": 2259,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1571,21 +1571,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2254,
+                  "id": 2260,
                   "nodeType": "ExpressionStatement",
                   "src": "3919:21:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2257,
+                    "id": 2263,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2255,
+                      "id": 2261,
                       "name": "isSettled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1601,7 +1601,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 2256,
+                      "id": 2262,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1622,28 +1622,28 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 2258,
+                  "id": 2264,
                   "nodeType": "ExpressionStatement",
                   "src": "3950:16:8"
                 }
               ]
             },
             "documentation": "@dev allows us to arbitrate a settlement price by updating the settlement value, and resetting the\n delay for funds to be released. Could also be used to allow us to force a contract into early settlement\n if a dispute arises that we believe is best resolved by early settlement.\n @param price settlement price",
-            "id": 2260,
+            "id": 2266,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 2241,
+                "id": 2247,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 2240,
+                  "id": 2246,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2836,
+                  "referencedDeclaration": 2842,
                   "src": "3834:9:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1657,15 +1657,15 @@
             "name": "arbitrateSettlement",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2239,
+              "id": 2245,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2238,
+                  "id": 2244,
                   "name": "price",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2260,
+                  "scope": 2266,
                   "src": "3812:13:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1674,7 +1674,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2237,
+                    "id": 2243,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3812:7:8",
@@ -1691,12 +1691,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2242,
+              "id": 2248,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3844:0:8"
             },
-            "scope": 2292,
+            "scope": 2298,
             "src": "3783:190:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1704,7 +1704,7 @@
           },
           {
             "body": {
-              "id": 2270,
+              "id": 2276,
               "nodeType": "Block",
               "src": "4056:69:8",
               "statements": [
@@ -1718,7 +1718,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 2266,
+                        "id": 2272,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1727,18 +1727,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 2263,
+                            "id": 2269,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3606,
+                            "referencedDeclaration": 3612,
                             "src": "4074:3:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 2264,
+                          "id": 2270,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1756,11 +1756,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 2265,
+                          "id": 2271,
                           "name": "ORACLE_HUB_ADDRESS",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2171,
+                          "referencedDeclaration": 2177,
                           "src": "4088:18:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1781,21 +1781,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2262,
+                      "id": 2268,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "4066:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2267,
+                    "id": 2273,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1809,23 +1809,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2268,
+                  "id": 2274,
                   "nodeType": "ExpressionStatement",
                   "src": "4066:41:8"
                 },
                 {
-                  "id": 2269,
+                  "id": 2275,
                   "nodeType": "PlaceholderStatement",
                   "src": "4117:1:8"
                 }
               ]
             },
             "documentation": "@dev allows calls only from the oracle hub.",
-            "id": 2271,
+            "id": 2277,
             "name": "onlyOracleHub",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 2261,
+              "id": 2267,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "4053:2:8"
@@ -1835,7 +1835,7 @@
           },
           {
             "body": {
-              "id": 2290,
+              "id": 2296,
               "nodeType": "Block",
               "src": "4296:103:8",
               "statements": [
@@ -1849,18 +1849,18 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 2283,
+                        "id": 2289,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 2279,
+                          "id": 2285,
                           "name": "oracleHubAddress",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2273,
+                          "referencedDeclaration": 2279,
                           "src": "4314:16:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1875,7 +1875,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 2281,
+                              "id": 2287,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1898,7 +1898,7 @@
                                 "typeString": "int_const 0"
                               }
                             ],
-                            "id": 2280,
+                            "id": 2286,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1911,7 +1911,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 2282,
+                          "id": 2288,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1939,21 +1939,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2278,
+                      "id": 2284,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "4306:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2284,
+                    "id": 2290,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1967,25 +1967,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2285,
+                  "id": 2291,
                   "nodeType": "ExpressionStatement",
                   "src": "4306:39:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2288,
+                    "id": 2294,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2286,
+                      "id": 2292,
                       "name": "ORACLE_HUB_ADDRESS",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2171,
+                      "referencedDeclaration": 2177,
                       "src": "4355:18:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1996,11 +1996,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2287,
+                      "id": 2293,
                       "name": "oracleHubAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2273,
+                      "referencedDeclaration": 2279,
                       "src": "4376:16:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -2013,28 +2013,28 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 2289,
+                  "id": 2295,
                   "nodeType": "ExpressionStatement",
                   "src": "4355:37:8"
                 }
               ]
             },
             "documentation": "@dev allows for the owner of the contract to change the oracle hub address if needed",
-            "id": 2291,
+            "id": 2297,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 2276,
+                "id": 2282,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 2275,
+                  "id": 2281,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2836,
+                  "referencedDeclaration": 2842,
                   "src": "4286:9:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -2048,15 +2048,15 @@
             "name": "setOracleHubAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2274,
+              "id": 2280,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2273,
+                  "id": 2279,
                   "name": "oracleHubAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2291,
+                  "scope": 2297,
                   "src": "4253:24:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2065,7 +2065,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2272,
+                    "id": 2278,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4253:7:8",
@@ -2082,19 +2082,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2277,
+              "id": 2283,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "4296:0:8"
             },
-            "scope": 2292,
+            "scope": 2298,
             "src": "4224:175:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 2293,
+        "scope": 2299,
         "src": "818:3584:8"
       }
     ],
@@ -2104,14 +2104,14 @@
     "absolutePath": "/home/travis/build/MARKETProtocol/MARKETProtocol/contracts/mpx/MarketContractMPX.sol",
     "exportedSymbols": {
       "MarketContractMPX": [
-        2292
+        2298
       ]
     },
-    "id": 2293,
+    "id": 2299,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2166,
+        "id": 2172,
         "literals": [
           "solidity",
           "0.4",
@@ -2123,9 +2123,9 @@
       {
         "absolutePath": "/home/travis/build/MARKETProtocol/MARKETProtocol/contracts/MarketContract.sol",
         "file": "../MarketContract.sol",
-        "id": 2167,
+        "id": 2173,
         "nodeType": "ImportDirective",
-        "scope": 2293,
+        "scope": 2299,
         "sourceUnit": 975,
         "src": "633:31:8",
         "symbolAliases": [],
@@ -2137,7 +2137,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 2168,
+              "id": 2174,
               "name": "MarketContract",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 974,
@@ -2147,33 +2147,33 @@
                 "typeString": "contract MarketContract"
               }
             },
-            "id": 2169,
+            "id": 2175,
             "nodeType": "InheritanceSpecifier",
             "src": "848:14:8"
           }
         ],
         "contractDependencies": [
           974,
-          2902
+          2908
         ],
         "contractKind": "contract",
         "documentation": "@title MarketContractMPX - a MarketContract designed to be used with our internal oracle service\n @author Phil Elsasser <phil@marketprotocol.io>",
         "fullyImplemented": true,
-        "id": 2292,
+        "id": 2298,
         "linearizedBaseContracts": [
-          2292,
+          2298,
           974,
-          2902
+          2908
         ],
         "name": "MarketContractMPX",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 2171,
+            "id": 2177,
             "name": "ORACLE_HUB_ADDRESS",
             "nodeType": "VariableDeclaration",
-            "scope": 2292,
+            "scope": 2298,
             "src": "870:33:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2182,7 +2182,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 2170,
+              "id": 2176,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "870:7:8",
@@ -2196,10 +2196,10 @@
           },
           {
             "constant": false,
-            "id": 2173,
+            "id": 2179,
             "name": "ORACLE_URL",
             "nodeType": "VariableDeclaration",
-            "scope": 2292,
+            "scope": 2298,
             "src": "909:24:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2208,7 +2208,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 2172,
+              "id": 2178,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "909:6:8",
@@ -2222,10 +2222,10 @@
           },
           {
             "constant": false,
-            "id": 2175,
+            "id": 2181,
             "name": "ORACLE_STATISTIC",
             "nodeType": "VariableDeclaration",
-            "scope": 2292,
+            "scope": 2298,
             "src": "939:30:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2234,7 +2234,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 2174,
+              "id": 2180,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "939:6:8",
@@ -2248,25 +2248,25 @@
           },
           {
             "body": {
-              "id": 2211,
+              "id": 2217,
               "nodeType": "Block",
               "src": "2856:130:8",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2201,
+                    "id": 2207,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2199,
+                      "id": 2205,
                       "name": "ORACLE_URL",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2173,
+                      "referencedDeclaration": 2179,
                       "src": "2866:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -2277,11 +2277,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2200,
+                      "id": 2206,
                       "name": "oracleURL",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2189,
+                      "referencedDeclaration": 2195,
                       "src": "2879:9:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -2294,25 +2294,25 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 2202,
+                  "id": 2208,
                   "nodeType": "ExpressionStatement",
                   "src": "2866:22:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2205,
+                    "id": 2211,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2203,
+                      "id": 2209,
                       "name": "ORACLE_STATISTIC",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2175,
+                      "referencedDeclaration": 2181,
                       "src": "2898:16:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -2323,11 +2323,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2204,
+                      "id": 2210,
                       "name": "oracleStatistic",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2191,
+                      "referencedDeclaration": 2197,
                       "src": "2917:15:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -2340,25 +2340,25 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 2206,
+                  "id": 2212,
                   "nodeType": "ExpressionStatement",
                   "src": "2898:34:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2209,
+                    "id": 2215,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2207,
+                      "id": 2213,
                       "name": "ORACLE_HUB_ADDRESS",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2171,
+                      "referencedDeclaration": 2177,
                       "src": "2942:18:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -2369,11 +2369,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2208,
+                      "id": 2214,
                       "name": "oracleHubAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2183,
+                      "referencedDeclaration": 2189,
                       "src": "2963:16:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -2386,14 +2386,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 2210,
+                  "id": 2216,
                   "nodeType": "ExpressionStatement",
                   "src": "2942:37:8"
                 }
               ]
             },
             "documentation": "@param contractNames comma separated list of 3 names \"contractName,longTokenSymbol,shortTokenSymbol\"\n @param baseAddresses array of 2 addresses needed for our contract including:\n     ownerAddress                    address of the owner of these contracts.\n     collateralTokenAddress          address of the ERC20 token that will be used for collateral and pricing\n     collateralPoolAddress           address of our collateral pool contract\n @param oracleHubAddress     address of our oracle hub providing the callbacks\n @param contractSpecs array of unsigned integers including:\n     floorPrice              minimum tradeable price of this contract, contract enters settlement if breached\n     capPrice                maximum tradeable price of this contract, contract enters settlement if breached\n     priceDecimalPlaces      number of decimal places to convert our queried price from a floating point to\n                             an integer\n     qtyMultiplier           multiply traded qty by this value from base units of collateral token.\n     feeInBasisPoints    fee amount in basis points (Collateral token denominated) for minting.\n     mktFeeInBasisPoints fee amount in basis points (MKT denominated) for minting.\n     expirationTimeStamp     seconds from epoch that this contract expires and enters settlement\n @param oracleURL url of data\n @param oracleStatistic statistic type (lastPrice, vwap, etc)",
-            "id": 2212,
+            "id": 2218,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -2402,11 +2402,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 2194,
+                    "id": 2200,
                     "name": "contractNames",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2177,
+                    "referencedDeclaration": 2183,
                     "src": "2778:13:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -2415,11 +2415,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 2195,
+                    "id": 2201,
                     "name": "baseAddresses",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2181,
+                    "referencedDeclaration": 2187,
                     "src": "2801:13:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$3_memory_ptr",
@@ -2428,11 +2428,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 2196,
+                    "id": 2202,
                     "name": "contractSpecs",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2187,
+                    "referencedDeclaration": 2193,
                     "src": "2824:13:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$7_memory_ptr",
@@ -2440,10 +2440,10 @@
                     }
                   }
                 ],
-                "id": 2197,
+                "id": 2203,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 2193,
+                  "id": 2199,
                   "name": "MarketContract",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -2461,15 +2461,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2192,
+              "id": 2198,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2177,
+                  "id": 2183,
                   "name": "contractNames",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2535:27:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2478,7 +2478,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2176,
+                    "id": 2182,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2535:6:8",
@@ -2492,10 +2492,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2181,
+                  "id": 2187,
                   "name": "baseAddresses",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2572:31:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2505,7 +2505,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 2178,
+                      "id": 2184,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "2572:7:8",
@@ -2514,11 +2514,11 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 2180,
+                    "id": 2186,
                     "length": {
                       "argumentTypes": null,
                       "hexValue": "33",
-                      "id": 2179,
+                      "id": 2185,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2545,10 +2545,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2183,
+                  "id": 2189,
                   "name": "oracleHubAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2613:24:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2557,7 +2557,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2182,
+                    "id": 2188,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2613:7:8",
@@ -2571,10 +2571,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2187,
+                  "id": 2193,
                   "name": "contractSpecs",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2647:28:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2584,7 +2584,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 2184,
+                      "id": 2190,
                       "name": "uint",
                       "nodeType": "ElementaryTypeName",
                       "src": "2647:4:8",
@@ -2593,11 +2593,11 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 2186,
+                    "id": 2192,
                     "length": {
                       "argumentTypes": null,
                       "hexValue": "37",
-                      "id": 2185,
+                      "id": 2191,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2624,10 +2624,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2189,
+                  "id": 2195,
                   "name": "oracleURL",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2685:23:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2636,7 +2636,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2188,
+                    "id": 2194,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2685:6:8",
@@ -2650,10 +2650,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2191,
+                  "id": 2197,
                   "name": "oracleStatistic",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2212,
+                  "scope": 2218,
                   "src": "2718:29:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2662,7 +2662,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2190,
+                    "id": 2196,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2718:6:8",
@@ -2679,12 +2679,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2198,
+              "id": 2204,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2856:0:8"
             },
-            "scope": 2292,
+            "scope": 2298,
             "src": "2514:472:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2692,7 +2692,7 @@
           },
           {
             "body": {
-              "id": 2235,
+              "id": 2241,
               "nodeType": "Block",
               "src": "3242:195:8",
               "statements": [
@@ -2702,7 +2702,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2221,
+                        "id": 2227,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2713,7 +2713,7 @@
                         "src": "3260:10:8",
                         "subExpression": {
                           "argumentTypes": null,
-                          "id": 2220,
+                          "id": 2226,
                           "name": "isSettled",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -2737,21 +2737,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2219,
+                      "id": 2225,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "3252:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2222,
+                    "id": 2228,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2765,21 +2765,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2223,
+                  "id": 2229,
                   "nodeType": "ExpressionStatement",
                   "src": "3252:19:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2226,
+                    "id": 2232,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2224,
+                      "id": 2230,
                       "name": "lastPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -2794,11 +2794,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2225,
+                      "id": 2231,
                       "name": "price",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2214,
+                      "referencedDeclaration": 2220,
                       "src": "3293:5:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2811,7 +2811,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 2227,
+                  "id": 2233,
                   "nodeType": "ExpressionStatement",
                   "src": "3281:17:8"
                 },
@@ -2821,11 +2821,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2229,
+                        "id": 2235,
                         "name": "price",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2214,
+                        "referencedDeclaration": 2220,
                         "src": "3330:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2840,7 +2840,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 2228,
+                      "id": 2234,
                       "name": "UpdatedLastPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -2851,7 +2851,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 2230,
+                    "id": 2236,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2865,7 +2865,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2231,
+                  "id": 2237,
                   "nodeType": "EmitStatement",
                   "src": "3308:28:8"
                 },
@@ -2875,7 +2875,7 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 2232,
+                      "id": 2238,
                       "name": "checkSettlement",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -2886,7 +2886,7 @@
                         "typeString": "function ()"
                       }
                     },
-                    "id": 2233,
+                    "id": 2239,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2900,28 +2900,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2234,
+                  "id": 2240,
                   "nodeType": "ExpressionStatement",
                   "src": "3346:17:8"
                 }
               ]
             },
             "documentation": "@dev called only by our oracle hub when a new price is available provided by our oracle.\n @param price lastPrice provided by the oracle.",
-            "id": 2236,
+            "id": 2242,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 2217,
+                "id": 2223,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 2216,
+                  "id": 2222,
                   "name": "onlyOracleHub",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2271,
+                  "referencedDeclaration": 2277,
                   "src": "3228:13:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -2935,15 +2935,15 @@
             "name": "oracleCallBack",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2215,
+              "id": 2221,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2214,
+                  "id": 2220,
                   "name": "price",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2236,
+                  "scope": 2242,
                   "src": "3206:13:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2952,7 +2952,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2213,
+                    "id": 2219,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3206:7:8",
@@ -2969,12 +2969,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2218,
+              "id": 2224,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3242:0:8"
             },
-            "scope": 2292,
+            "scope": 2298,
             "src": "3182:255:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2982,21 +2982,21 @@
           },
           {
             "body": {
-              "id": 2259,
+              "id": 2265,
               "nodeType": "Block",
               "src": "3844:129:8",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2245,
+                    "id": 2251,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2243,
+                      "id": 2249,
                       "name": "lastPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -3011,11 +3011,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2244,
+                      "id": 2250,
                       "name": "price",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2238,
+                      "referencedDeclaration": 2244,
                       "src": "3866:5:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3028,7 +3028,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 2246,
+                  "id": 2252,
                   "nodeType": "ExpressionStatement",
                   "src": "3854:17:8"
                 },
@@ -3038,11 +3038,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2248,
+                        "id": 2254,
                         "name": "price",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2238,
+                        "referencedDeclaration": 2244,
                         "src": "3903:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3057,7 +3057,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 2247,
+                      "id": 2253,
                       "name": "UpdatedLastPrice",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -3068,7 +3068,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 2249,
+                    "id": 2255,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3082,7 +3082,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2250,
+                  "id": 2256,
                   "nodeType": "EmitStatement",
                   "src": "3881:28:8"
                 },
@@ -3092,11 +3092,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2252,
+                        "id": 2258,
                         "name": "price",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2238,
+                        "referencedDeclaration": 2244,
                         "src": "3934:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3111,7 +3111,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 2251,
+                      "id": 2257,
                       "name": "settleContract",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -3122,7 +3122,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 2253,
+                    "id": 2259,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3136,21 +3136,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2254,
+                  "id": 2260,
                   "nodeType": "ExpressionStatement",
                   "src": "3919:21:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2257,
+                    "id": 2263,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2255,
+                      "id": 2261,
                       "name": "isSettled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -3166,7 +3166,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 2256,
+                      "id": 2262,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3187,28 +3187,28 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 2258,
+                  "id": 2264,
                   "nodeType": "ExpressionStatement",
                   "src": "3950:16:8"
                 }
               ]
             },
             "documentation": "@dev allows us to arbitrate a settlement price by updating the settlement value, and resetting the\n delay for funds to be released. Could also be used to allow us to force a contract into early settlement\n if a dispute arises that we believe is best resolved by early settlement.\n @param price settlement price",
-            "id": 2260,
+            "id": 2266,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 2241,
+                "id": 2247,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 2240,
+                  "id": 2246,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2836,
+                  "referencedDeclaration": 2842,
                   "src": "3834:9:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -3222,15 +3222,15 @@
             "name": "arbitrateSettlement",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2239,
+              "id": 2245,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2238,
+                  "id": 2244,
                   "name": "price",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2260,
+                  "scope": 2266,
                   "src": "3812:13:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3239,7 +3239,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2237,
+                    "id": 2243,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3812:7:8",
@@ -3256,12 +3256,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2242,
+              "id": 2248,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3844:0:8"
             },
-            "scope": 2292,
+            "scope": 2298,
             "src": "3783:190:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3269,7 +3269,7 @@
           },
           {
             "body": {
-              "id": 2270,
+              "id": 2276,
               "nodeType": "Block",
               "src": "4056:69:8",
               "statements": [
@@ -3283,7 +3283,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 2266,
+                        "id": 2272,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3292,18 +3292,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 2263,
+                            "id": 2269,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3606,
+                            "referencedDeclaration": 3612,
                             "src": "4074:3:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 2264,
+                          "id": 2270,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3321,11 +3321,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 2265,
+                          "id": 2271,
                           "name": "ORACLE_HUB_ADDRESS",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2171,
+                          "referencedDeclaration": 2177,
                           "src": "4088:18:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -3346,21 +3346,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2262,
+                      "id": 2268,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "4066:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2267,
+                    "id": 2273,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3374,23 +3374,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2268,
+                  "id": 2274,
                   "nodeType": "ExpressionStatement",
                   "src": "4066:41:8"
                 },
                 {
-                  "id": 2269,
+                  "id": 2275,
                   "nodeType": "PlaceholderStatement",
                   "src": "4117:1:8"
                 }
               ]
             },
             "documentation": "@dev allows calls only from the oracle hub.",
-            "id": 2271,
+            "id": 2277,
             "name": "onlyOracleHub",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 2261,
+              "id": 2267,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "4053:2:8"
@@ -3400,7 +3400,7 @@
           },
           {
             "body": {
-              "id": 2290,
+              "id": 2296,
               "nodeType": "Block",
               "src": "4296:103:8",
               "statements": [
@@ -3414,18 +3414,18 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 2283,
+                        "id": 2289,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 2279,
+                          "id": 2285,
                           "name": "oracleHubAddress",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2273,
+                          "referencedDeclaration": 2279,
                           "src": "4314:16:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -3440,7 +3440,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 2281,
+                              "id": 2287,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -3463,7 +3463,7 @@
                                 "typeString": "int_const 0"
                               }
                             ],
-                            "id": 2280,
+                            "id": 2286,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -3476,7 +3476,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 2282,
+                          "id": 2288,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3504,21 +3504,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2278,
+                      "id": 2284,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3609,
-                        3610
+                        3615,
+                        3616
                       ],
-                      "referencedDeclaration": 3609,
+                      "referencedDeclaration": 3615,
                       "src": "4306:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2284,
+                    "id": 2290,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3532,25 +3532,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2285,
+                  "id": 2291,
                   "nodeType": "ExpressionStatement",
                   "src": "4306:39:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2288,
+                    "id": 2294,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2286,
+                      "id": 2292,
                       "name": "ORACLE_HUB_ADDRESS",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2171,
+                      "referencedDeclaration": 2177,
                       "src": "4355:18:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -3561,11 +3561,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2287,
+                      "id": 2293,
                       "name": "oracleHubAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2273,
+                      "referencedDeclaration": 2279,
                       "src": "4376:16:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -3578,28 +3578,28 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 2289,
+                  "id": 2295,
                   "nodeType": "ExpressionStatement",
                   "src": "4355:37:8"
                 }
               ]
             },
             "documentation": "@dev allows for the owner of the contract to change the oracle hub address if needed",
-            "id": 2291,
+            "id": 2297,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 2276,
+                "id": 2282,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 2275,
+                  "id": 2281,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2836,
+                  "referencedDeclaration": 2842,
                   "src": "4286:9:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -3613,15 +3613,15 @@
             "name": "setOracleHubAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2274,
+              "id": 2280,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2273,
+                  "id": 2279,
                   "name": "oracleHubAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2291,
+                  "scope": 2297,
                   "src": "4253:24:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3630,7 +3630,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2272,
+                    "id": 2278,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4253:7:8",
@@ -3647,19 +3647,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2277,
+              "id": 2283,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "4296:0:8"
             },
-            "scope": 2292,
+            "scope": 2298,
             "src": "4224:175:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 2293,
+        "scope": 2299,
         "src": "818:3584:8"
       }
     ],
@@ -3673,10 +3673,10 @@
     "42": {
       "events": {},
       "links": {
-        "MathLib": "0xe9c0553f3525acbc5e46e25ad9a6a9eb39612d61"
+        "MathLib": "0xfe8b5bcf5aca9c0d0648aa19567301737888ac3c"
       }
     }
   },
   "schemaVersion": "2.0.2",
-  "updatedAt": "2019-04-10T14:25:29.459Z"
+  "updatedAt": "2019-04-10T20:47:20.798Z"
 }
