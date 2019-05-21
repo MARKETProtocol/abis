@@ -18,6 +18,15 @@ module.exports = {
       network_id: 42,
       gasPrice: 1000000000 // Specified in Wei
     }
+  },
+  compilers: {
+    solc: {
+      version: '0.5.2',
+      optimizer: {
+        enabled: true,
+        runs: 200
+      }
+    }
   }
 };
 
