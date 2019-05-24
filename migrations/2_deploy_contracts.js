@@ -25,7 +25,7 @@ const CollateralToken = artifacts.require(
 
 module.exports = function (deployer, network) {
   if (network !== 'live') {
-    const mpxKovanOracleAddress = '0xe1408083Fab18bD024e4770f8907A2b39D2a4084';
+    const mpxKovanOracleAddress = '0xa9891a7004a0aac1e0fc7fc791dffede1375f210';
     return deployer.deploy(MathLib).then(function () {
       return deployer.deploy(MarketContractRegistry).then(function () {
 
@@ -61,7 +61,7 @@ module.exports = function (deployer, network) {
                   return factory
                     .deployMarketContractMPX(
                       [
-                        web3.utils.asciiToHex('BTC_USD_COINCAP_1559347199', 32),
+                        web3.utils.asciiToHex('BTC_USD_COINCAP_1559347199_BETA', 32),
                         web3.utils.asciiToHex('LBTC', 32),
                         web3.utils.asciiToHex('SBTC', 32)
                       ],
