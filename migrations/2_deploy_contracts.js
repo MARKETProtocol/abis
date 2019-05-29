@@ -16,16 +16,11 @@ const MarketCollateralPool = artifacts.require(
 const MarketContractRegistry = artifacts.require(
   '@marketprotocol/marketprotocol/MarketContractRegistry.sol'
 );
-const MarketToken = artifacts.require(
-  '@marketprotocol/marketprotocol/MarketToken.sol'
-);
-const CollateralToken = artifacts.require(
-  'InitialAllocationCollateralToken.sol'
-);
 
 module.exports = function (deployer, network) {
   if (network !== 'live') {
-    const mpxKovanOracleAddress = '0xe1408083Fab18bD024e4770f8907A2b39D2a4084';
+    const mpxKovanOracleAddress = '0xa9891a7004a0aac1e0fc7fc791dffede1375f210';
+    const marketTokenAddress = '0xfc17745b9fBaA8214f35670E9F6AA764a3B8E688';
     return deployer.deploy(MathLib).then(function () {
       return deployer.deploy(MarketContractRegistry).then(function () {
 
@@ -39,40 +34,23 @@ module.exports = function (deployer, network) {
           ]
         );
 
-        return deployer.deploy(MarketToken).then(function () {
-
-          // deploy the global collateral pool
+        // deploy the global collateral pool
+        return deployer.deploy(
+          MarketCollateralPool,
+          MarketContractRegistry.address,
+          marketTokenAddress
+        ).then(function () {
+          // deploy and set up main factory to create MARKET Protocol smart contracts.
           return deployer.deploy(
-            MarketCollateralPool,
+            MarketContractFactory,
             MarketContractRegistry.address,
-            MarketToken.address
-          ).then(function () {
-            // deploy and set up main factory to create MARKET Protocol smart contracts.
-            return deployer.deploy(
-              MarketContractFactory,
-              MarketContractRegistry.address,
-              MarketCollateralPool.address,
-              mpxKovanOracleAddress,
-              {gas: 6200000}
-            ).then(function (factory) {
-              return MarketContractRegistry.deployed().then(function (marketContractRegistry) {
-                // white list the factory
-                return marketContractRegistry.addFactoryAddress(factory.address).then(function () {
-                  return factory
-                    .deployMarketContractMPX(
-                      [
-                        web3.utils.asciiToHex('BTC_USD_COINCAP_1559347199', 32),
-                        web3.utils.asciiToHex('LBTC', 32),
-                        web3.utils.asciiToHex('SBTC', 32)
-                      ],
-                      CollateralToken.address,
-                      [50000000000000, 120000000000000, 10, 1000, 25, 100, 1559347199],
-                      'https://api.coincap.io/v2/rates/bitcoin',
-                      'rateUsd',
-                      {gas: 7000000}
-                    );
-                });
-              });
+            MarketCollateralPool.address,
+            mpxKovanOracleAddress,
+            {gas: 6200000}
+          ).then(function (factory) {
+            return MarketContractRegistry.deployed().then(function (marketContractRegistry) {
+              // white list the factory
+              return marketContractRegistry.addFactoryAddress(factory.address);
             });
           });
         });

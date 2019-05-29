@@ -803,10 +803,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3187,
-                        3188
+                        3189,
+                        3190
                       ],
-                      "referencedDeclaration": 3188,
+                      "referencedDeclaration": 3190,
                       "src": "1031:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1295,10 +1295,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3187,
-                        3188
+                        3189,
+                        3190
                       ],
-                      "referencedDeclaration": 3188,
+                      "referencedDeclaration": 3190,
                       "src": "1410:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1654,10 +1654,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3187,
-                        3188
+                        3189,
+                        3190
                       ],
-                      "referencedDeclaration": 3188,
+                      "referencedDeclaration": 3190,
                       "src": "1597:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -7763,10 +7763,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3187,
-                        3188
+                        3189,
+                        3190
                       ],
-                      "referencedDeclaration": 3188,
+                      "referencedDeclaration": 3190,
                       "src": "1031:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -8255,10 +8255,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3187,
-                        3188
+                        3189,
+                        3190
                       ],
-                      "referencedDeclaration": 3188,
+                      "referencedDeclaration": 3190,
                       "src": "1410:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -8614,10 +8614,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3187,
-                        3188
+                        3189,
+                        3190
                       ],
-                      "referencedDeclaration": 3188,
+                      "referencedDeclaration": 3190,
                       "src": "1597:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -14030,12 +14030,12 @@
     "42": {
       "events": {},
       "links": {},
-      "address": "0xB2657De2aD6ea6e3c47D11F5357c915BBEb0e0A2",
-      "transactionHash": "0x91059c9a1235d56f1156a38229028a2d0dc83f4269801be71eaa3e4521d88ba4"
+      "address": "0x3e5E1ACC4F5a49774772A172Aa093614fe189789",
+      "transactionHash": "0x7e18c64a64878986e5f5540c83eb69ed0f1550685e0382af0e0333899db62253"
     }
   },
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-05-21T01:32:36.353Z",
+  "updatedAt": "2019-05-29T01:20:49.415Z",
   "devdoc": {
     "methods": {},
     "title": "Math function library with overflow protection inspired by Open Zeppelin"
