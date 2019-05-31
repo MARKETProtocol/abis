@@ -86,8 +86,7 @@
         "literals": [
           "solidity",
           "0.5",
-          ".2",
-          ".23"
+          ".2"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:22:0"
@@ -123,11 +122,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "48:7:0",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -231,8 +230,7 @@
             "documentation": null,
             "id": 14,
             "implemented": true,
-            "isConstructor": true,
-            "isDeclaredConst": false,
+            "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
@@ -242,7 +240,6 @@
               "parameters": [],
               "src": "124:2:0"
             },
-            "payable": false,
             "returnParameters": {
               "id": 7,
               "nodeType": "ParameterList",
@@ -253,8 +250,7 @@
             "src": "113:50:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "constructor"
+            "visibility": "public"
           },
           {
             "body": {
@@ -406,8 +402,7 @@
             "documentation": null,
             "id": 35,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -464,7 +459,6 @@
               ],
               "src": "251:16:0"
             },
-            "payable": false,
             "returnParameters": {
               "id": 29,
               "nodeType": "ParameterList",
@@ -475,8 +469,7 @@
             "src": "230:103:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           },
           {
             "body": {
@@ -646,8 +639,7 @@
             "documentation": null,
             "id": 55,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -693,11 +685,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "354:7:0",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -705,7 +697,6 @@
               ],
               "src": "353:21:0"
             },
-            "payable": false,
             "returnParameters": {
               "id": 41,
               "nodeType": "ParameterList",
@@ -716,8 +707,7 @@
             "src": "337:165:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           }
         ],
         "scope": 57,
@@ -741,8 +731,7 @@
         "literals": [
           "solidity",
           "0.5",
-          ".2",
-          ".23"
+          ".2"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:22:0"
@@ -778,11 +767,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "48:7:0",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -886,8 +875,7 @@
             "documentation": null,
             "id": 14,
             "implemented": true,
-            "isConstructor": true,
-            "isDeclaredConst": false,
+            "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
@@ -897,7 +885,6 @@
               "parameters": [],
               "src": "124:2:0"
             },
-            "payable": false,
             "returnParameters": {
               "id": 7,
               "nodeType": "ParameterList",
@@ -908,8 +895,7 @@
             "src": "113:50:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "constructor"
+            "visibility": "public"
           },
           {
             "body": {
@@ -1061,8 +1047,7 @@
             "documentation": null,
             "id": 35,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -1119,7 +1104,6 @@
               ],
               "src": "251:16:0"
             },
-            "payable": false,
             "returnParameters": {
               "id": 29,
               "nodeType": "ParameterList",
@@ -1130,8 +1114,7 @@
             "src": "230:103:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           },
           {
             "body": {
@@ -1301,8 +1284,7 @@
             "documentation": null,
             "id": 55,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -1348,11 +1330,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "354:7:0",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -1360,7 +1342,6 @@
               ],
               "src": "353:21:0"
             },
-            "payable": false,
             "returnParameters": {
               "id": 41,
               "nodeType": "ParameterList",
@@ -1371,8 +1352,7 @@
             "src": "337:165:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           }
         ],
         "scope": 57,
@@ -1386,15 +1366,21 @@
     "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
   },
   "networks": {
+    "1": {
+      "events": {},
+      "links": {},
+      "address": "0x4E399544c6234229728Dd35BE1e25135eefEdEaa",
+      "transactionHash": "0x2ef715d101f724670e23e73cf16ff84d63b266455fd8aab67df9e5b925605aec"
+    },
     "42": {
       "events": {},
       "links": {},
-      "address": "0x2ffaAA90902406289FaB36DD66F4141e0503DC57",
-      "transactionHash": "0x0112519a41abb883583bd210dd163ffbf3a17a149354710d846731cc15484921"
+      "address": "0xC2fd08E198c271360Cf0067f5328DA46A09D5a7d",
+      "transactionHash": "0x55aa8b5a3d70b919f3e7c1881169b7ddfb283afd568cce856943759e1e961689"
     }
   },
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-05-29T01:20:49.498Z",
+  "updatedAt": "2019-05-30T22:06:41.027Z",
   "devdoc": {
     "methods": {}
   },

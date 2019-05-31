@@ -622,11 +622,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "870:7:8",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -832,8 +832,7 @@
             "documentation": "@param contractNames bytes32 array of names\n     contractName            name of the market contract\n     longTokenSymbol         symbol for the long token\n     shortTokenSymbol        symbol for the short token\n @param baseAddresses array of 2 addresses needed for our contract including:\n     ownerAddress                    address of the owner of these contracts.\n     collateralTokenAddress          address of the ERC20 token that will be used for collateral and pricing\n     collateralPoolAddress           address of our collateral pool contract\n @param oracleHubAddress     address of our oracle hub providing the callbacks\n @param contractSpecs array of unsigned integers including:\n     floorPrice              minimum tradeable price of this contract, contract enters settlement if breached\n     capPrice                maximum tradeable price of this contract, contract enters settlement if breached\n     priceDecimalPlaces      number of decimal places to convert our queried price from a floating point to\n                             an integer\n     qtyMultiplier           multiply traded qty by this value from base units of collateral token.\n     feeInBasisPoints    fee amount in basis points (Collateral token denominated) for minting.\n     mktFeeInBasisPoints fee amount in basis points (MKT denominated) for minting.\n     expirationTimeStamp     seconds from epoch that this contract expires and enters settlement\n @param oracleURL url of data\n @param oracleStatistic statistic type (lastPrice, vwap, etc)",
             "id": 1744,
             "implemented": true,
-            "isConstructor": true,
-            "isDeclaredConst": false,
+            "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
@@ -915,14 +914,6 @@
                     "typeString": "bytes32[3]"
                   },
                   "typeName": {
-                    "id": 1708,
-                    "name": "string",
-                    "nodeType": "ArrayTypeName",
-                    "src": "2667:10:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_bytes32_$3_storage_ptr",
-                      "typeString": "bytes32[3]"
-                    },
                     "baseType": {
                       "id": 1706,
                       "name": "bytes32",
@@ -933,6 +924,7 @@
                         "typeString": "bytes32"
                       }
                     },
+                    "id": 1708,
                     "length": {
                       "argumentTypes": null,
                       "hexValue": "33",
@@ -950,6 +942,12 @@
                         "typeString": null
                       },
                       "value": "3"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "2667:10:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$3_storage_ptr",
+                      "typeString": "bytes32[3]"
                     }
                   },
                   "value": null,
@@ -974,11 +972,11 @@
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "2708:7:8",
+                      "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
-                      },
-                      "stateMutability": "nonpayable"
+                      }
                     },
                     "id": 1712,
                     "length": {
@@ -1027,11 +1025,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2749:7:8",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -1144,7 +1142,6 @@
               ],
               "src": "2657:232:8"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1730,
               "nodeType": "ParameterList",
@@ -1155,8 +1152,7 @@
             "src": "2646:476:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "constructor"
+            "visibility": "public"
           },
           {
             "body": {
@@ -1377,8 +1373,7 @@
             "documentation": "@dev called only by our oracle hub when a new price is available provided by our oracle.\n @param price lastPrice provided by the oracle.",
             "id": 1768,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -1435,7 +1430,6 @@
               ],
               "src": "3340:15:8"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1750,
               "nodeType": "ParameterList",
@@ -1446,8 +1440,7 @@
             "src": "3317:255:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           },
           {
             "body": {
@@ -1458,44 +1451,6 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1784,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 2249,
-                      "name": "lastPrice",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 610,
-                      "src": "3854:9:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "nodeType": "FunctionCall",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 2250,
-                      "name": "price",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 2244,
-                      "src": "3866:5:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "src": "3989:103:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    },
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -1650,50 +1605,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "kind": "functionCall",
-                    "names": []
-                  },
-                  "id": 1785,
-                  "nodeType": "ExpressionStatement",
-                  "src": "3989:103:8"
-                },
-                {
-                  "eventCall": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "id": 2254,
-                        "name": "price",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 2244,
-                        "src": "3903:5:8",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      ],
-                      "id": 2253,
-                      "name": "UpdatedLastPrice",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 621,
-                      "src": "3886:16:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
-                        "typeString": "function (uint256)"
-                      }
-                    },
-                    "id": 2255,
+                    "id": 1784,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1701,15 +1613,17 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3886:23:8",
+                    "src": "3989:103:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1789,
+                  "id": 1785,
                   "nodeType": "ExpressionStatement",
-                  "src": "4102:17:8",
+                  "src": "3989:103:8"
+                },
+                {
                   "expression": {
                     "argumentTypes": null,
                     "id": 1788,
@@ -1750,61 +1664,12 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
-                  }
+                  },
+                  "id": 1789,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4102:17:8"
                 },
                 {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "id": 2258,
-                        "name": "price",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 2244,
-                        "src": "3934:5:8",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      ],
-                      "id": 2257,
-                      "name": "settleContract",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 962,
-                      "src": "3919:14:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
-                        "typeString": "function (uint256)"
-                      }
-                    },
-                    "id": 2259,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "3919:21:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 1793,
-                  "nodeType": "EmitStatement",
-                  "src": "4129:28:8",
                   "eventCall": {
                     "argumentTypes": null,
                     "arguments": [
@@ -1853,54 +1718,14 @@
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
-                  }
+                  },
+                  "id": 1793,
+                  "nodeType": "EmitStatement",
+                  "src": "4129:28:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1796,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 2261,
-                      "name": "isSettled",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 617,
-                      "src": "3950:9:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "nodeType": "FunctionCall",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "74727565",
-                      "id": 2262,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "bool",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "3962:4:8",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      },
-                      "value": "true"
-                    },
-                    "src": "4167:21:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    },
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -1934,8 +1759,19 @@
                         "typeString": "function (uint256)"
                       }
                     },
+                    "id": 1796,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
                     "kind": "functionCall",
-                    "names": []
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "4167:21:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
                   },
                   "id": 1797,
                   "nodeType": "ExpressionStatement",
@@ -1997,8 +1833,7 @@
             "documentation": "@dev allows us to arbitrate a settlement price by updating the settlement value, and resetting the\n delay for funds to be released. Could also be used to allow us to force a contract into early settlement\n if a dispute arises that we believe is best resolved by early settlement.\n @param price settlement price",
             "id": 1803,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -2055,7 +1890,6 @@
               ],
               "src": "3946:15:8"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1774,
               "nodeType": "ParameterList",
@@ -2066,8 +1900,7 @@
             "src": "3918:303:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           },
           {
             "body": {
@@ -2433,8 +2266,7 @@
             "documentation": "@dev allows for the owner of the contract to change the oracle hub address if needed",
             "id": 1836,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -2480,11 +2312,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4536:7:8",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -2492,7 +2324,6 @@
               ],
               "src": "4535:26:8"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1821,
               "nodeType": "ParameterList",
@@ -2503,8 +2334,7 @@
             "src": "4507:222:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           }
         ],
         "scope": 1838,
@@ -2599,11 +2429,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "870:7:8",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -2809,8 +2639,7 @@
             "documentation": "@param contractNames bytes32 array of names\n     contractName            name of the market contract\n     longTokenSymbol         symbol for the long token\n     shortTokenSymbol        symbol for the short token\n @param baseAddresses array of 2 addresses needed for our contract including:\n     ownerAddress                    address of the owner of these contracts.\n     collateralTokenAddress          address of the ERC20 token that will be used for collateral and pricing\n     collateralPoolAddress           address of our collateral pool contract\n @param oracleHubAddress     address of our oracle hub providing the callbacks\n @param contractSpecs array of unsigned integers including:\n     floorPrice              minimum tradeable price of this contract, contract enters settlement if breached\n     capPrice                maximum tradeable price of this contract, contract enters settlement if breached\n     priceDecimalPlaces      number of decimal places to convert our queried price from a floating point to\n                             an integer\n     qtyMultiplier           multiply traded qty by this value from base units of collateral token.\n     feeInBasisPoints    fee amount in basis points (Collateral token denominated) for minting.\n     mktFeeInBasisPoints fee amount in basis points (MKT denominated) for minting.\n     expirationTimeStamp     seconds from epoch that this contract expires and enters settlement\n @param oracleURL url of data\n @param oracleStatistic statistic type (lastPrice, vwap, etc)",
             "id": 1744,
             "implemented": true,
-            "isConstructor": true,
-            "isDeclaredConst": false,
+            "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
@@ -2892,14 +2721,6 @@
                     "typeString": "bytes32[3]"
                   },
                   "typeName": {
-                    "id": 1708,
-                    "name": "string",
-                    "nodeType": "ArrayTypeName",
-                    "src": "2667:10:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_bytes32_$3_storage_ptr",
-                      "typeString": "bytes32[3]"
-                    },
                     "baseType": {
                       "id": 1706,
                       "name": "bytes32",
@@ -2910,6 +2731,7 @@
                         "typeString": "bytes32"
                       }
                     },
+                    "id": 1708,
                     "length": {
                       "argumentTypes": null,
                       "hexValue": "33",
@@ -2927,6 +2749,12 @@
                         "typeString": null
                       },
                       "value": "3"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "2667:10:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$3_storage_ptr",
+                      "typeString": "bytes32[3]"
                     }
                   },
                   "value": null,
@@ -2951,11 +2779,11 @@
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "2708:7:8",
+                      "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
-                      },
-                      "stateMutability": "nonpayable"
+                      }
                     },
                     "id": 1712,
                     "length": {
@@ -3004,11 +2832,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2749:7:8",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -3121,7 +2949,6 @@
               ],
               "src": "2657:232:8"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1730,
               "nodeType": "ParameterList",
@@ -3132,8 +2959,7 @@
             "src": "2646:476:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "constructor"
+            "visibility": "public"
           },
           {
             "body": {
@@ -3354,8 +3180,7 @@
             "documentation": "@dev called only by our oracle hub when a new price is available provided by our oracle.\n @param price lastPrice provided by the oracle.",
             "id": 1768,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -3412,7 +3237,6 @@
               ],
               "src": "3340:15:8"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1750,
               "nodeType": "ParameterList",
@@ -3423,8 +3247,7 @@
             "src": "3317:255:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           },
           {
             "body": {
@@ -3435,44 +3258,6 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1784,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 2249,
-                      "name": "lastPrice",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 610,
-                      "src": "3854:9:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "nodeType": "FunctionCall",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 2250,
-                      "name": "price",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 2244,
-                      "src": "3866:5:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "src": "3989:103:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    },
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -3627,50 +3412,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "kind": "functionCall",
-                    "names": []
-                  },
-                  "id": 1785,
-                  "nodeType": "ExpressionStatement",
-                  "src": "3989:103:8"
-                },
-                {
-                  "eventCall": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "id": 2254,
-                        "name": "price",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 2244,
-                        "src": "3903:5:8",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      ],
-                      "id": 2253,
-                      "name": "UpdatedLastPrice",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 621,
-                      "src": "3886:16:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
-                        "typeString": "function (uint256)"
-                      }
-                    },
-                    "id": 2255,
+                    "id": 1784,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3678,15 +3420,17 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3886:23:8",
+                    "src": "3989:103:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1789,
+                  "id": 1785,
                   "nodeType": "ExpressionStatement",
-                  "src": "4102:17:8",
+                  "src": "3989:103:8"
+                },
+                {
                   "expression": {
                     "argumentTypes": null,
                     "id": 1788,
@@ -3727,61 +3471,12 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
-                  }
+                  },
+                  "id": 1789,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4102:17:8"
                 },
                 {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "id": 2258,
-                        "name": "price",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 2244,
-                        "src": "3934:5:8",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      ],
-                      "id": 2257,
-                      "name": "settleContract",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 962,
-                      "src": "3919:14:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
-                        "typeString": "function (uint256)"
-                      }
-                    },
-                    "id": 2259,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "3919:21:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 1793,
-                  "nodeType": "EmitStatement",
-                  "src": "4129:28:8",
                   "eventCall": {
                     "argumentTypes": null,
                     "arguments": [
@@ -3830,54 +3525,14 @@
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
-                  }
+                  },
+                  "id": 1793,
+                  "nodeType": "EmitStatement",
+                  "src": "4129:28:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1796,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 2261,
-                      "name": "isSettled",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 617,
-                      "src": "3950:9:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "nodeType": "FunctionCall",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "74727565",
-                      "id": 2262,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "bool",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "3962:4:8",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      },
-                      "value": "true"
-                    },
-                    "src": "4167:21:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    },
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -3911,8 +3566,19 @@
                         "typeString": "function (uint256)"
                       }
                     },
+                    "id": 1796,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
                     "kind": "functionCall",
-                    "names": []
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "4167:21:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
                   },
                   "id": 1797,
                   "nodeType": "ExpressionStatement",
@@ -3974,8 +3640,7 @@
             "documentation": "@dev allows us to arbitrate a settlement price by updating the settlement value, and resetting the\n delay for funds to be released. Could also be used to allow us to force a contract into early settlement\n if a dispute arises that we believe is best resolved by early settlement.\n @param price settlement price",
             "id": 1803,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -4032,7 +3697,6 @@
               ],
               "src": "3946:15:8"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1774,
               "nodeType": "ParameterList",
@@ -4043,8 +3707,7 @@
             "src": "3918:303:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           },
           {
             "body": {
@@ -4410,8 +4073,7 @@
             "documentation": "@dev allows for the owner of the contract to change the oracle hub address if needed",
             "id": 1836,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -4457,11 +4119,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4536:7:8",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -4469,7 +4131,6 @@
               ],
               "src": "4535:26:8"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1821,
               "nodeType": "ParameterList",
@@ -4480,8 +4141,7 @@
             "src": "4507:222:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           }
         ],
         "scope": 1838,
@@ -4494,16 +4154,9 @@
     "name": "solc",
     "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
   },
-  "networks": {
-    "42": {
-      "events": {},
-      "links": {
-        "MathLib": "0xfe8b5bcf5aca9c0d0648aa19567301737888ac3c"
-      }
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-05-29T01:20:49.427Z",
+  "updatedAt": "2019-05-30T22:06:40.975Z",
   "devdoc": {
     "author": "Phil Elsasser <phil@marketprotocol.io>",
     "methods": {

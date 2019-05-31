@@ -220,12 +220,7 @@
         }
       ],
       "name": "removeContractFromWhiteList",
-      "outputs": [
-        {
-          "name": "",
-          "type": "bool"
-        }
-      ],
+      "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
@@ -441,11 +436,11 @@
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "993:7:2",
+                "stateMutability": "nonpayable",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
-                },
-                "stateMutability": "nonpayable"
+                }
               },
               "id": 958,
               "length": null,
@@ -533,11 +528,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1249:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -576,11 +571,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1321:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -619,11 +614,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1385:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -662,11 +657,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1450:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -733,8 +728,7 @@
             "documentation": "@notice determines if an address is a valid MarketContract\n @return false if the address is not white listed.",
             "id": 991,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": true,
+            "kind": "function",
             "modifiers": [],
             "name": "isAddressWhiteListed",
             "nodeType": "FunctionDefinition",
@@ -760,11 +754,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1682:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -772,7 +766,6 @@
               ],
               "src": "1681:25:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 985,
               "nodeType": "ParameterList",
@@ -810,8 +803,7 @@
             "src": "1652:138:2",
             "stateMutability": "view",
             "superFunction": 1160,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -843,8 +835,7 @@
             "documentation": "@notice all currently whitelisted addresses\n returns array of addresses",
             "id": 1000,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": true,
+            "kind": "function",
             "modifiers": [],
             "name": "getAddressWhiteList",
             "nodeType": "FunctionDefinition",
@@ -854,7 +845,6 @@
               "parameters": [],
               "src": "1911:2:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 996,
               "nodeType": "ParameterList",
@@ -878,11 +868,11 @@
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "1937:7:2",
+                      "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
-                      },
-                      "stateMutability": "nonpayable"
+                      }
                     },
                     "id": 994,
                     "length": null,
@@ -903,8 +893,7 @@
             "src": "1883:112:2",
             "stateMutability": "view",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -1513,8 +1502,7 @@
             "documentation": "@dev allows for the owner to remove a white listed contract, eventually ownership could transition to\n a decentralized smart contract of community members to vote\n @param contractAddress contract to removed from white list\n @param whiteListIndex of the contractAddress in the addressWhiteList to be removed.",
             "id": 1053,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -1560,11 +1548,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2384:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -1598,46 +1586,17 @@
               ],
               "src": "2374:68:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1008,
               "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1039,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1083,
-                  "src": "2472:4:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
-                  },
-                  "typeName": {
-                    "id": 1038,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "2472:4:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
+              "parameters": [],
               "src": "2466:0:2"
             },
             "scope": 1146,
             "src": "2338:666:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -2145,8 +2104,7 @@
             "documentation": "@dev allows for the owner or factory to add a white listed contract, eventually ownership could transition to\n a decentralized smart contract of community members to vote\n @param contractAddress contract to removed from white list",
             "id": 1094,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [],
             "name": "addAddressToWhiteList",
             "nodeType": "FunctionDefinition",
@@ -2172,11 +2130,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3294:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -2184,7 +2142,6 @@
               ],
               "src": "3293:25:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1057,
               "nodeType": "ParameterList",
@@ -2195,8 +2152,7 @@
             "src": "3263:415:2",
             "stateMutability": "nonpayable",
             "superFunction": 1153,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -2463,8 +2419,7 @@
             "documentation": "@dev allows for the owner to add a new address of a factory responsible for creating new market contracts\n @param factoryAddress address of factory to be allowed to add contracts to whitelist",
             "id": 1120,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -2510,11 +2465,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3918:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -2522,7 +2477,6 @@
               ],
               "src": "3917:24:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1100,
               "nodeType": "ParameterList",
@@ -2533,8 +2487,7 @@
             "src": "3891:267:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -2785,8 +2738,7 @@
             "documentation": "@dev allows for the owner to remove an address of a factory\n @param factoryAddress address of factory to be removed",
             "id": 1145,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -2832,11 +2784,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4325:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -2844,7 +2796,6 @@
               ],
               "src": "4324:24:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1126,
               "nodeType": "ParameterList",
@@ -2855,8 +2806,7 @@
             "src": "4295:291:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           }
         ],
         "scope": 1147,
@@ -3026,11 +2976,11 @@
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "993:7:2",
+                "stateMutability": "nonpayable",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
-                },
-                "stateMutability": "nonpayable"
+                }
               },
               "id": 958,
               "length": null,
@@ -3118,11 +3068,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1249:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -3161,11 +3111,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1321:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -3204,11 +3154,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1385:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -3247,11 +3197,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1450:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -3318,8 +3268,7 @@
             "documentation": "@notice determines if an address is a valid MarketContract\n @return false if the address is not white listed.",
             "id": 991,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": true,
+            "kind": "function",
             "modifiers": [],
             "name": "isAddressWhiteListed",
             "nodeType": "FunctionDefinition",
@@ -3345,11 +3294,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1682:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -3357,7 +3306,6 @@
               ],
               "src": "1681:25:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 985,
               "nodeType": "ParameterList",
@@ -3395,8 +3343,7 @@
             "src": "1652:138:2",
             "stateMutability": "view",
             "superFunction": 1160,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -3428,8 +3375,7 @@
             "documentation": "@notice all currently whitelisted addresses\n returns array of addresses",
             "id": 1000,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": true,
+            "kind": "function",
             "modifiers": [],
             "name": "getAddressWhiteList",
             "nodeType": "FunctionDefinition",
@@ -3439,7 +3385,6 @@
               "parameters": [],
               "src": "1911:2:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 996,
               "nodeType": "ParameterList",
@@ -3463,11 +3408,11 @@
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "1937:7:2",
+                      "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
-                      },
-                      "stateMutability": "nonpayable"
+                      }
                     },
                     "id": 994,
                     "length": null,
@@ -3488,8 +3433,7 @@
             "src": "1883:112:2",
             "stateMutability": "view",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -4098,8 +4042,7 @@
             "documentation": "@dev allows for the owner to remove a white listed contract, eventually ownership could transition to\n a decentralized smart contract of community members to vote\n @param contractAddress contract to removed from white list\n @param whiteListIndex of the contractAddress in the addressWhiteList to be removed.",
             "id": 1053,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -4145,11 +4088,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2384:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -4183,46 +4126,17 @@
               ],
               "src": "2374:68:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1008,
               "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1039,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1083,
-                  "src": "2472:4:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
-                  },
-                  "typeName": {
-                    "id": 1038,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "2472:4:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
+              "parameters": [],
               "src": "2466:0:2"
             },
             "scope": 1146,
             "src": "2338:666:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -4730,8 +4644,7 @@
             "documentation": "@dev allows for the owner or factory to add a white listed contract, eventually ownership could transition to\n a decentralized smart contract of community members to vote\n @param contractAddress contract to removed from white list",
             "id": 1094,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [],
             "name": "addAddressToWhiteList",
             "nodeType": "FunctionDefinition",
@@ -4757,11 +4670,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3294:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -4769,7 +4682,6 @@
               ],
               "src": "3293:25:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1057,
               "nodeType": "ParameterList",
@@ -4780,8 +4692,7 @@
             "src": "3263:415:2",
             "stateMutability": "nonpayable",
             "superFunction": 1153,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -5048,8 +4959,7 @@
             "documentation": "@dev allows for the owner to add a new address of a factory responsible for creating new market contracts\n @param factoryAddress address of factory to be allowed to add contracts to whitelist",
             "id": 1120,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -5095,11 +5005,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3918:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -5107,7 +5017,6 @@
               ],
               "src": "3917:24:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1100,
               "nodeType": "ParameterList",
@@ -5118,8 +5027,7 @@
             "src": "3891:267:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -5370,8 +5278,7 @@
             "documentation": "@dev allows for the owner to remove an address of a factory\n @param factoryAddress address of factory to be removed",
             "id": 1145,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -5417,11 +5324,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4325:7:2",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -5429,7 +5336,6 @@
               ],
               "src": "4324:24:2"
             },
-            "payable": false,
             "returnParameters": {
               "id": 1126,
               "nodeType": "ParameterList",
@@ -5440,8 +5346,7 @@
             "src": "4295:291:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           }
         ],
         "scope": 1147,
@@ -5455,6 +5360,83 @@
     "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
   },
   "networks": {
+    "1": {
+      "events": {
+        "0x534d18c8ff24ba5980906d732f3075704749427353734fbbf05d50485643b124": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "contractAddress",
+              "type": "address"
+            }
+          ],
+          "name": "AddressAddedToWhitelist",
+          "type": "event",
+          "signature": "0x534d18c8ff24ba5980906d732f3075704749427353734fbbf05d50485643b124"
+        },
+        "0x535611fb62fa2a833988f283b779e417e996813e44046f521d76c17b5943b08c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "contractAddress",
+              "type": "address"
+            }
+          ],
+          "name": "AddressRemovedFromWhitelist",
+          "type": "event",
+          "signature": "0x535611fb62fa2a833988f283b779e417e996813e44046f521d76c17b5943b08c"
+        },
+        "0x960c6a67a1f0f46ddffd138f2b7f44cbc573d0e0a073363b287a257b121dc48a": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "factoryAddress",
+              "type": "address"
+            }
+          ],
+          "name": "FactoryAddressAdded",
+          "type": "event",
+          "signature": "0x960c6a67a1f0f46ddffd138f2b7f44cbc573d0e0a073363b287a257b121dc48a"
+        },
+        "0x5d6ac55db628f137c53a554c300a684dc6b3db9d8f24e9611ea5e84c282d177d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "factoryAddress",
+              "type": "address"
+            }
+          ],
+          "name": "FactoryAddressRemoved",
+          "type": "event",
+          "signature": "0x5d6ac55db628f137c53a554c300a684dc6b3db9d8f24e9611ea5e84c282d177d"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event",
+          "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+        }
+      },
+      "links": {},
+      "address": "0x94772CC6E33b186bfdd0719A287f12d3ca816657",
+      "transactionHash": "0x2bf02e5a1ed270ba8e0fbe462238ee10786001407f2066ce3fed319340559667"
+    },
     "42": {
       "events": {
         "0x534d18c8ff24ba5980906d732f3075704749427353734fbbf05d50485643b124": {
@@ -5529,12 +5511,12 @@
         }
       },
       "links": {},
-      "address": "0x3730eEb8F331B55f01d9274B8a375defcbB6bc86",
-      "transactionHash": "0xbb03bc512daa80b621eaef22a96ee3823976ad8dc25525d99bc2f3866256eb55"
+      "address": "0x07e959Ca7BDa2E7F99EEc54d94a57F2D3EEEA264",
+      "transactionHash": "0x9291937dc49ef4d2fd0f1db9e836eaf295d5d062638ed99a0c98a2ad95921075"
     }
   },
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-05-29T01:20:49.495Z",
+  "updatedAt": "2019-05-30T22:06:41.020Z",
   "devdoc": {
     "author": "Phil Elsasser <phil@marketprotocol.io>",
     "methods": {

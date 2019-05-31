@@ -17,6 +17,11 @@ module.exports = {
       //from: '0x0088BD180722C48602770d355E692D2EBFbA86Ac',
       network_id: 42,
       gasPrice: 1000000000 // Specified in Wei
+    },
+    mainnet: {
+      network_id: 1,
+      gasPrice: 10000000000, //
+      gas: 6300000,
     }
   },
   compilers: {

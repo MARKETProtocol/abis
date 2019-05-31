@@ -602,11 +602,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "1178:7:1",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -629,11 +629,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "1223:7:1",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -907,11 +907,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "1825:7:1",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -934,11 +934,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "1865:7:1",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -1769,76 +1769,6 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 668,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 681,
-                      "name": "COLLATERAL_TOKEN_ADDRESS",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 583,
-                      "src": "3968:24:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "nodeType": "FunctionCall",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "baseExpression": {
-                        "argumentTypes": null,
-                        "id": 682,
-                        "name": "baseAddresses",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 631,
-                        "src": "3995:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_address_$3_memory_ptr",
-                          "typeString": "address[3] memory"
-                        }
-                      },
-                      "id": 684,
-                      "indexExpression": {
-                        "argumentTypes": null,
-                        "hexValue": "31",
-                        "id": 683,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "number",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "4009:1:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_rational_1_by_1",
-                          "typeString": "int_const 1"
-                        },
-                        "value": "1"
-                      },
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "nodeType": "IndexAccess",
-                      "src": "3995:16:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "src": "4148:57:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    },
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -1934,8 +1864,19 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
+                    "id": 668,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
                     "kind": "functionCall",
-                    "names": []
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "4148:57:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
                   },
                   "id": 669,
                   "nodeType": "ExpressionStatement",
@@ -2044,102 +1985,6 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "arguments": [
-                        {
-                          "argumentTypes": null,
-                          "id": 696,
-                          "name": "PRICE_FLOOR",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 589,
-                          "src": "4128:11:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        {
-                          "argumentTypes": null,
-                          "id": 697,
-                          "name": "PRICE_CAP",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 587,
-                          "src": "4141:9:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        {
-                          "argumentTypes": null,
-                          "id": 698,
-                          "name": "QTY_MULTIPLIER",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 593,
-                          "src": "4152:14:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
-                          {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
-                          {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        ],
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 694,
-                          "name": "MathLib",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 1667,
-                          "src": "4095:7:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_MathLib_$1667_$",
-                            "typeString": "type(library MathLib)"
-                          }
-                        },
-                        "id": 695,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "calculateTotalCollateral",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1633,
-                        "src": "4095:32:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_function_delegatecall_pure$_t_uint256_$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
-                          "typeString": "function (uint256,uint256,uint256) pure returns (uint256)"
-                        }
-                      },
-                      "id": 679,
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "kind": "functionCall",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "IndexAccess",
-                      "src": "4295:16:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      },
                       "baseExpression": {
                         "argumentTypes": null,
                         "id": 677,
@@ -2153,6 +1998,7 @@
                           "typeString": "address[3] memory"
                         }
                       },
+                      "id": 679,
                       "indexExpression": {
                         "argumentTypes": null,
                         "hexValue": "32",
@@ -2170,6 +2016,16 @@
                           "typeString": "int_const 2"
                         },
                         "value": "2"
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "4295:16:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
                       }
                     },
                     "src": "4269:42:1",
@@ -2246,59 +2102,10 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
-                        },
-                        {
-                          "argumentTypes": null,
-                          "baseExpression": {
-                            "argumentTypes": null,
-                            "id": 708,
-                            "name": "contractSpecs",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 635,
-                            "src": "4326:13:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_uint256_$7_memory_ptr",
-                              "typeString": "uint256[7] memory"
-                            }
-                          },
-                          "id": 710,
-                          "indexExpression": {
-                            "argumentTypes": null,
-                            "hexValue": "34",
-                            "id": 709,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": true,
-                            "kind": "number",
-                            "lValueRequested": false,
-                            "nodeType": "Literal",
-                            "src": "4340:1:1",
-                            "subdenomination": null,
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_rational_4_by_1",
-                              "typeString": "int_const 4"
-                            },
-                            "value": "4"
-                          },
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "nodeType": "IndexAccess",
-                          "src": "4326:16:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
                         }
                       ],
                       "expression": {
                         "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
                           {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -2545,88 +2352,6 @@
                   "src": "4425:175:1"
                 },
                 {
-                  "assignments": [
-                    729
-                  ],
-                  "declarations": [
-                    {
-                      "constant": false,
-                      "id": 729,
-                      "name": "pathSlice",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 808,
-                      "src": "4581:32:1",
-                      "stateVariable": false,
-                      "storageLocation": "memory",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                        "typeString": "struct StringLib.slice"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 728,
-                        "name": "StringLib.slice",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1674,
-                        "src": "4581:15:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_slice_$1674_storage_ptr",
-                          "typeString": "struct StringLib.slice"
-                        }
-                      },
-                      "value": null,
-                      "visibility": "internal"
-                    }
-                  ],
-                  "id": 714,
-                  "initialValue": {
-                    "argumentTypes": null,
-                    "arguments": [],
-                    "expression": {
-                      "argumentTypes": [],
-                      "expression": {
-                        "argumentTypes": null,
-                        "id": 730,
-                        "name": "contractNames",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 627,
-                        "src": "4616:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      },
-                      "id": 731,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "memberName": "toSlice",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1734,
-                      "src": "4616:21:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$returns$_t_struct$_slice_$1674_memory_ptr_$bound_to$_t_string_memory_ptr_$",
-                        "typeString": "function (string memory) pure returns (struct StringLib.slice memory)"
-                      }
-                    },
-                    "id": 732,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "4616:23:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                      "typeString": "struct StringLib.slice memory"
-                    }
-                  },
-                  "nodeType": "ExpressionStatement",
-                  "src": "4610:168:1",
                   "expression": {
                     "argumentTypes": null,
                     "id": 713,
@@ -2802,96 +2527,12 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
-                  }
+                  },
+                  "id": 714,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4610:168:1"
                 },
                 {
-                  "assignments": [
-                    737
-                  ],
-                  "declarations": [
-                    {
-                      "constant": false,
-                      "id": 737,
-                      "name": "delim",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 808,
-                      "src": "4649:28:1",
-                      "stateVariable": false,
-                      "storageLocation": "memory",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                        "typeString": "struct StringLib.slice"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 736,
-                        "name": "StringLib.slice",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1674,
-                        "src": "4649:15:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_slice_$1674_storage_ptr",
-                          "typeString": "struct StringLib.slice"
-                        }
-                      },
-                      "value": null,
-                      "visibility": "internal"
-                    }
-                  ],
-                  "id": 722,
-                  "initialValue": {
-                    "argumentTypes": null,
-                    "arguments": [],
-                    "expression": {
-                      "argumentTypes": [],
-                      "expression": {
-                        "argumentTypes": null,
-                        "hexValue": "2c",
-                        "id": 738,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "string",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "4680:3:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_3e7a35b97029f9e0cf6effd71c1a7958822e9a217d3a3aec886668a7dd8231cb",
-                          "typeString": "literal_string \",\""
-                        },
-                        "value": ","
-                      },
-                      "id": 739,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "memberName": "toSlice",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1734,
-                      "src": "4680:11:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$returns$_t_struct$_slice_$1674_memory_ptr_$bound_to$_t_string_memory_ptr_$",
-                        "typeString": "function (string memory) pure returns (struct StringLib.slice memory)"
-                      }
-                    },
-                    "id": 740,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "4680:13:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                      "typeString": "struct StringLib.slice memory"
-                    }
-                  },
-                  "nodeType": "ExpressionStatement",
-                  "src": "4829:50:1",
                   "expression": {
                     "argumentTypes": null,
                     "id": 721,
@@ -2997,175 +2638,12 @@
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
-                  }
+                  },
+                  "id": 722,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4829:50:1"
                 },
                 {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "commonType": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        },
-                        "id": 748,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "leftExpression": {
-                          "argumentTypes": null,
-                          "arguments": [
-                            {
-                              "argumentTypes": null,
-                              "id": 745,
-                              "name": "delim",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 737,
-                              "src": "4727:5:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            }
-                          ],
-                          "expression": {
-                            "argumentTypes": [
-                              {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            ],
-                            "expression": {
-                              "argumentTypes": null,
-                              "id": 743,
-                              "name": "pathSlice",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 729,
-                              "src": "4711:9:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            },
-                            "id": 744,
-                            "isConstant": false,
-                            "isLValue": true,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "count",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2038,
-                            "src": "4711:15:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$_t_struct$_slice_$1674_memory_ptr_$returns$_t_uint256_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                              "typeString": "function (struct StringLib.slice memory,struct StringLib.slice memory) pure returns (uint256)"
-                            }
-                          },
-                          "id": 746,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "kind": "functionCall",
-                          "lValueRequested": false,
-                          "names": [],
-                          "nodeType": "FunctionCall",
-                          "src": "4711:22:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        "nodeType": "BinaryOperation",
-                        "operator": "==",
-                        "rightExpression": {
-                          "argumentTypes": null,
-                          "hexValue": "32",
-                          "id": 747,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": true,
-                          "kind": "number",
-                          "lValueRequested": false,
-                          "nodeType": "Literal",
-                          "src": "4737:1:1",
-                          "subdenomination": null,
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_rational_2_by_1",
-                            "typeString": "int_const 2"
-                          },
-                          "value": "2"
-                        },
-                        "src": "4711:27:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "436f6e74726163744e616d6573206d75737420636f6e7461696e2033206e616d6573",
-                        "id": 749,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "string",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "4740:36:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_97dffb202a759cad5c7162b49625fbc3dc683377d4a01c9ffe8396cca29a723b",
-                          "typeString": "literal_string \"ContractNames must contain 3 names\""
-                        },
-                        "value": "ContractNames must contain 3 names"
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        },
-                        {
-                          "typeIdentifier": "t_stringliteral_97dffb202a759cad5c7162b49625fbc3dc683377d4a01c9ffe8396cca29a723b",
-                          "typeString": "literal_string \"ContractNames must contain 3 names\""
-                        }
-                      ],
-                      "id": 742,
-                      "name": "require",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        3615,
-                        3616
-                      ],
-                      "referencedDeclaration": 3616,
-                      "src": "4703:7:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
-                        "typeString": "function (bool,string memory) pure"
-                      }
-                    },
-                    "id": 750,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "4703:74:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 739,
-                  "nodeType": "VariableDeclarationStatement",
-                  "src": "4889:205:1",
                   "assignments": [
                     724
                   ],
@@ -3199,6 +2677,7 @@
                       "visibility": "internal"
                     }
                   ],
+                  "id": 739,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -3434,138 +2913,11 @@
                       "typeIdentifier": "t_contract$_PositionToken_$2089",
                       "typeString": "contract PositionToken"
                     }
-                  }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "4889:205:1"
                 },
                 {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 759,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 752,
-                      "name": "CONTRACT_NAME",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 581,
-                      "src": "4825:13:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_string_storage",
-                        "typeString": "string storage ref"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "arguments": [],
-                      "expression": {
-                        "argumentTypes": [],
-                        "expression": {
-                          "argumentTypes": null,
-                          "arguments": [
-                            {
-                              "argumentTypes": null,
-                              "id": 755,
-                              "name": "delim",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 737,
-                              "src": "4857:5:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            }
-                          ],
-                          "expression": {
-                            "argumentTypes": [
-                              {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            ],
-                            "expression": {
-                              "argumentTypes": null,
-                              "id": 753,
-                              "name": "pathSlice",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 729,
-                              "src": "4841:9:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            },
-                            "id": 754,
-                            "isConstant": false,
-                            "isLValue": true,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "split",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1979,
-                            "src": "4841:15:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$_t_struct$_slice_$1674_memory_ptr_$returns$_t_struct$_slice_$1674_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                              "typeString": "function (struct StringLib.slice memory,struct StringLib.slice memory) pure returns (struct StringLib.slice memory)"
-                            }
-                          },
-                          "id": 756,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "kind": "functionCall",
-                          "lValueRequested": false,
-                          "names": [],
-                          "nodeType": "FunctionCall",
-                          "src": "4841:22:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                            "typeString": "struct StringLib.slice memory"
-                          }
-                        },
-                        "id": 757,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "toString",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1764,
-                        "src": "4841:31:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$returns$_t_string_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                          "typeString": "function (struct StringLib.slice memory) pure returns (string memory)"
-                        }
-                      },
-                      "id": 758,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "functionCall",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "4841:33:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_string_memory_ptr",
-                        "typeString": "string memory"
-                      }
-                    },
-                    "src": "4825:49:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage",
-                      "typeString": "string storage ref"
-                    }
-                  },
-                  "id": 756,
-                  "nodeType": "VariableDeclarationStatement",
-                  "src": "5104:208:1",
                   "assignments": [
                     741
                   ],
@@ -3599,6 +2951,7 @@
                       "visibility": "internal"
                     }
                   ],
+                  "id": 756,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -3834,236 +3187,11 @@
                       "typeIdentifier": "t_contract$_PositionToken_$2089",
                       "typeString": "contract PositionToken"
                     }
-                  }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "5104:208:1"
                 },
                 {
-                  "assignments": [
-                    762
-                  ],
-                  "declarations": [
-                    {
-                      "constant": false,
-                      "id": 762,
-                      "name": "longPosToken",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 808,
-                      "src": "4885:26:1",
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PositionToken_$2545",
-                        "typeString": "contract PositionToken"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 761,
-                        "name": "PositionToken",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2545,
-                        "src": "4885:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2545",
-                          "typeString": "contract PositionToken"
-                        }
-                      },
-                      "value": null,
-                      "visibility": "internal"
-                    }
-                  ],
-                  "id": 762,
-                  "initialValue": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "4d41524b45542050726f746f636f6c204c6f6e6720506f736974696f6e20546f6b656e",
-                        "id": 765,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "string",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "4932:37:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_dea80294dde7ccae15ed6914c7548c05f4e92f0b4f59b8de25e124060ecbb903",
-                          "typeString": "literal_string \"MARKET Protocol Long Position Token\""
-                        },
-                        "value": "MARKET Protocol Long Position Token"
-                      },
-                      {
-                        "argumentTypes": null,
-                        "arguments": [],
-                        "expression": {
-                          "argumentTypes": [],
-                          "expression": {
-                            "argumentTypes": null,
-                            "arguments": [
-                              {
-                                "argumentTypes": null,
-                                "id": 768,
-                                "name": "delim",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 737,
-                                "src": "4987:5:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              }
-                            ],
-                            "expression": {
-                              "argumentTypes": [
-                                {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              ],
-                              "expression": {
-                                "argumentTypes": null,
-                                "id": 766,
-                                "name": "pathSlice",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 729,
-                                "src": "4971:9:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              },
-                              "id": 767,
-                              "isConstant": false,
-                              "isLValue": true,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "memberName": "split",
-                              "nodeType": "MemberAccess",
-                              "referencedDeclaration": 1979,
-                              "src": "4971:15:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$_t_struct$_slice_$1674_memory_ptr_$returns$_t_struct$_slice_$1674_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                                "typeString": "function (struct StringLib.slice memory,struct StringLib.slice memory) pure returns (struct StringLib.slice memory)"
-                              }
-                            },
-                            "id": 769,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "kind": "functionCall",
-                            "lValueRequested": false,
-                            "names": [],
-                            "nodeType": "FunctionCall",
-                            "src": "4971:22:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                              "typeString": "struct StringLib.slice memory"
-                            }
-                          },
-                          "id": 770,
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "toString",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1764,
-                          "src": "4971:31:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$returns$_t_string_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                            "typeString": "function (struct StringLib.slice memory) pure returns (string memory)"
-                          }
-                        },
-                        "id": 771,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "kind": "functionCall",
-                        "lValueRequested": false,
-                        "names": [],
-                        "nodeType": "FunctionCall",
-                        "src": "4971:33:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "30",
-                        "id": 772,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "number",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "5006:1:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_rational_0_by_1",
-                          "typeString": "int_const 0"
-                        },
-                        "value": "0"
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_stringliteral_dea80294dde7ccae15ed6914c7548c05f4e92f0b4f59b8de25e124060ecbb903",
-                          "typeString": "literal_string \"MARKET Protocol Long Position Token\""
-                        },
-                        {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        },
-                        {
-                          "typeIdentifier": "t_rational_0_by_1",
-                          "typeString": "int_const 0"
-                        }
-                      ],
-                      "id": 764,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "nodeType": "NewExpression",
-                      "src": "4914:17:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2545_$",
-                        "typeString": "function (string memory,string memory,uint8) returns (contract PositionToken)"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 763,
-                        "name": "PositionToken",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2545,
-                        "src": "4918:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2545",
-                          "typeString": "contract PositionToken"
-                        }
-                      }
-                    },
-                    "id": 773,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "4914:94:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PositionToken_$2545",
-                      "typeString": "contract PositionToken"
-                    }
-                  },
-                  "nodeType": "ExpressionStatement",
-                  "src": "5323:43:1",
                   "expression": {
                     "argumentTypes": null,
                     "id": 761,
@@ -4142,236 +3270,12 @@
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
-                  }
+                  },
+                  "id": 762,
+                  "nodeType": "ExpressionStatement",
+                  "src": "5323:43:1"
                 },
                 {
-                  "assignments": [
-                    776
-                  ],
-                  "declarations": [
-                    {
-                      "constant": false,
-                      "id": 776,
-                      "name": "shortPosToken",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 808,
-                      "src": "5018:27:1",
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PositionToken_$2545",
-                        "typeString": "contract PositionToken"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 775,
-                        "name": "PositionToken",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2545,
-                        "src": "5018:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2545",
-                          "typeString": "contract PositionToken"
-                        }
-                      },
-                      "value": null,
-                      "visibility": "internal"
-                    }
-                  ],
-                  "id": 768,
-                  "initialValue": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "4d41524b45542050726f746f636f6c2053686f727420506f736974696f6e20546f6b656e",
-                        "id": 779,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "string",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "5066:38:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_009c769d34a2b670483d4ea52ce57207c6951c5b1278318933e41fe97729c64f",
-                          "typeString": "literal_string \"MARKET Protocol Short Position Token\""
-                        },
-                        "value": "MARKET Protocol Short Position Token"
-                      },
-                      {
-                        "argumentTypes": null,
-                        "arguments": [],
-                        "expression": {
-                          "argumentTypes": [],
-                          "expression": {
-                            "argumentTypes": null,
-                            "arguments": [
-                              {
-                                "argumentTypes": null,
-                                "id": 782,
-                                "name": "delim",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 737,
-                                "src": "5122:5:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              }
-                            ],
-                            "expression": {
-                              "argumentTypes": [
-                                {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              ],
-                              "expression": {
-                                "argumentTypes": null,
-                                "id": 780,
-                                "name": "pathSlice",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 729,
-                                "src": "5106:9:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              },
-                              "id": 781,
-                              "isConstant": false,
-                              "isLValue": true,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "memberName": "split",
-                              "nodeType": "MemberAccess",
-                              "referencedDeclaration": 1979,
-                              "src": "5106:15:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$_t_struct$_slice_$1674_memory_ptr_$returns$_t_struct$_slice_$1674_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                                "typeString": "function (struct StringLib.slice memory,struct StringLib.slice memory) pure returns (struct StringLib.slice memory)"
-                              }
-                            },
-                            "id": 783,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "kind": "functionCall",
-                            "lValueRequested": false,
-                            "names": [],
-                            "nodeType": "FunctionCall",
-                            "src": "5106:22:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                              "typeString": "struct StringLib.slice memory"
-                            }
-                          },
-                          "id": 784,
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "toString",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1764,
-                          "src": "5106:31:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$returns$_t_string_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                            "typeString": "function (struct StringLib.slice memory) pure returns (string memory)"
-                          }
-                        },
-                        "id": 785,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "kind": "functionCall",
-                        "lValueRequested": false,
-                        "names": [],
-                        "nodeType": "FunctionCall",
-                        "src": "5106:33:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "31",
-                        "id": 786,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "number",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "5141:1:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_rational_1_by_1",
-                          "typeString": "int_const 1"
-                        },
-                        "value": "1"
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_stringliteral_009c769d34a2b670483d4ea52ce57207c6951c5b1278318933e41fe97729c64f",
-                          "typeString": "literal_string \"MARKET Protocol Short Position Token\""
-                        },
-                        {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        },
-                        {
-                          "typeIdentifier": "t_rational_1_by_1",
-                          "typeString": "int_const 1"
-                        }
-                      ],
-                      "id": 778,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "nodeType": "NewExpression",
-                      "src": "5048:17:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2545_$",
-                        "typeString": "function (string memory,string memory,uint8) returns (contract PositionToken)"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 777,
-                        "name": "PositionToken",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2545,
-                        "src": "5052:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2545",
-                          "typeString": "contract PositionToken"
-                        }
-                      }
-                    },
-                    "id": 787,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "5048:95:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PositionToken_$2545",
-                      "typeString": "contract PositionToken"
-                    }
-                  },
-                  "nodeType": "ExpressionStatement",
-                  "src": "5376:45:1",
                   "expression": {
                     "argumentTypes": null,
                     "id": 767,
@@ -4450,87 +3354,14 @@
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
-                  }
+                  },
+                  "id": 768,
+                  "nodeType": "ExpressionStatement",
+                  "src": "5376:45:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 773,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 789,
-                      "name": "LONG_POSITION_TOKEN",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 606,
-                      "src": "5154:19:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "nodeType": "FunctionCall",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "arguments": [
-                        {
-                          "argumentTypes": null,
-                          "id": 791,
-                          "name": "longPosToken",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 762,
-                          "src": "5184:12:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_PositionToken_$2545",
-                            "typeString": "contract PositionToken"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_contract$_PositionToken_$2545",
-                            "typeString": "contract PositionToken"
-                          }
-                        ],
-                        "id": 790,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "lValueRequested": false,
-                        "nodeType": "ElementaryTypeNameExpression",
-                        "src": "5176:7:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_address_$",
-                          "typeString": "type(address)"
-                        },
-                        "typeName": "address"
-                      },
-                      "id": 792,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "typeConversion",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "5176:21:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "src": "5432:35:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    },
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -4596,166 +3427,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "kind": "functionCall",
-                    "names": []
-                  },
-                  "id": 774,
-                  "nodeType": "ExpressionStatement",
-                  "src": "5432:35:1"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 799,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 795,
-                      "name": "SHORT_POSITION_TOKEN",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 608,
-                      "src": "5207:20:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "arguments": [
-                        {
-                          "argumentTypes": null,
-                          "id": 797,
-                          "name": "shortPosToken",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 776,
-                          "src": "5238:13:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_PositionToken_$2545",
-                            "typeString": "contract PositionToken"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_contract$_PositionToken_$2545",
-                            "typeString": "contract PositionToken"
-                          }
-                        ],
-                        "id": 796,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "lValueRequested": false,
-                        "nodeType": "ElementaryTypeNameExpression",
-                        "src": "5230:7:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_address_$",
-                          "typeString": "type(address)"
-                        },
-                        "typeName": "address"
-                      },
-                      "id": 798,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "typeConversion",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "5230:22:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "src": "5207:45:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "id": 800,
-                  "nodeType": "ExpressionStatement",
-                  "src": "5207:45:1"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "baseExpression": {
-                          "argumentTypes": null,
-                          "id": 802,
-                          "name": "baseAddresses",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 631,
-                          "src": "5281:13:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_address_$3_memory_ptr",
-                            "typeString": "address[3] memory"
-                          }
-                        },
-                        "id": 804,
-                        "indexExpression": {
-                          "argumentTypes": null,
-                          "hexValue": "30",
-                          "id": 803,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": true,
-                          "kind": "number",
-                          "lValueRequested": false,
-                          "nodeType": "Literal",
-                          "src": "5295:1:1",
-                          "subdenomination": null,
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_rational_0_by_1",
-                            "typeString": "int_const 0"
-                          },
-                          "value": "0"
-                        },
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "nodeType": "IndexAccess",
-                        "src": "5281:16:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      ],
-                      "id": 801,
-                      "name": "transferOwnership",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 2884,
-                      "src": "5263:17:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
-                        "typeString": "function (address)"
-                      }
-                    },
-                    "id": 805,
+                    "id": 773,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4763,23 +3435,22 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "5263:35:1",
+                    "src": "5432:35:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 806,
+                  "id": 774,
                   "nodeType": "ExpressionStatement",
-                  "src": "5263:35:1"
+                  "src": "5432:35:1"
                 }
               ]
             },
             "documentation": "@param contractNames bytes32 array of names\n     contractName            name of the market contract\n     longTokenSymbol         symbol for the long token\n     shortTokenSymbol        symbol for the short token\n @param baseAddresses array of 2 addresses needed for our contract including:\n     ownerAddress                    address of the owner of these contracts.\n     collateralTokenAddress          address of the ERC20 token that will be used for collateral and pricing\n     collateralPoolAddress           address of our collateral pool contract\n @param contractSpecs array of unsigned integers including:\n     floorPrice          minimum tradeable price of this contract, contract enters settlement if breached\n     capPrice            maximum tradeable price of this contract, contract enters settlement if breached\n     priceDecimalPlaces  number of decimal places to convert our queried price from a floating point to\n                         an integer\n     qtyMultiplier       multiply traded qty by this value from base units of collateral token.\n     feeInBasisPoints    fee amount in basis points (Collateral token denominated) for minting.\n     mktFeeInBasisPoints fee amount in basis points (MKT denominated) for minting.\n     expirationTimeStamp seconds from epoch that this contract expires and enters settlement",
             "id": 776,
             "implemented": true,
-            "isConstructor": true,
-            "isDeclaredConst": false,
+            "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
@@ -4801,14 +3472,6 @@
                     "typeString": "bytes32[3]"
                   },
                   "typeName": {
-                    "id": 607,
-                    "name": "string",
-                    "nodeType": "ArrayTypeName",
-                    "src": "3641:10:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_bytes32_$3_storage_ptr",
-                      "typeString": "bytes32[3]"
-                    },
                     "baseType": {
                       "id": 605,
                       "name": "bytes32",
@@ -4819,6 +3482,7 @@
                         "typeString": "bytes32"
                       }
                     },
+                    "id": 607,
                     "length": {
                       "argumentTypes": null,
                       "hexValue": "33",
@@ -4836,6 +3500,12 @@
                         "typeString": null
                       },
                       "value": "3"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "3641:10:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$3_storage_ptr",
+                      "typeString": "bytes32[3]"
                     }
                   },
                   "value": null,
@@ -4860,11 +3530,11 @@
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "3682:7:1",
+                      "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
-                      },
-                      "stateMutability": "nonpayable"
+                      }
                     },
                     "id": 611,
                     "length": {
@@ -4951,7 +3621,6 @@
               ],
               "src": "3631:126:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 618,
               "nodeType": "ParameterList",
@@ -4962,8 +3631,7 @@
             "src": "3620:1854:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "constructor"
+            "visibility": "public"
           },
           {
             "body": {
@@ -5222,8 +3890,7 @@
             "documentation": "@notice called only by our collateral pool to create long and short position tokens\n @param qtyToMint    qty in base units of how many short and long tokens to mint\n @param minter       address of minter to receive tokens",
             "id": 802,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -5295,11 +3962,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "5848:7:1",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -5307,7 +3974,6 @@
               ],
               "src": "5811:57:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 784,
               "nodeType": "ParameterList",
@@ -5318,8 +3984,7 @@
             "src": "5784:361:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -5455,8 +4120,7 @@
             "documentation": "@notice called only by our collateral pool to redeem long position tokens\n @param qtyToRedeem  qty in base units of how many tokens to redeem\n @param redeemer     address of person redeeming tokens",
             "id": 820,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -5528,11 +4192,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "6434:7:1",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -5540,7 +4204,6 @@
               ],
               "src": "6395:61:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 810,
               "nodeType": "ParameterList",
@@ -5551,8 +4214,7 @@
             "src": "6371:280:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -5688,8 +4350,7 @@
             "documentation": "@notice called only by our collateral pool to redeem short position tokens\n @param qtyToRedeem  qty in base units of how many tokens to redeem\n @param redeemer     address of person redeeming tokens",
             "id": 838,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -5761,11 +4422,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "6942:7:1",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -5773,7 +4434,6 @@
               ],
               "src": "6903:61:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 828,
               "nodeType": "ParameterList",
@@ -5784,8 +4444,7 @@
             "src": "6878:282:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -5947,8 +4606,7 @@
             "documentation": "@notice checks to see if a contract is settled, and that the settlement delay has passed",
             "id": 854,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": true,
+            "kind": "function",
             "modifiers": [],
             "name": "isPostSettlementDelay",
             "nodeType": "FunctionDefinition",
@@ -5958,7 +4616,6 @@
               "parameters": [],
               "src": "7330:2:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 842,
               "nodeType": "ParameterList",
@@ -5996,8 +4653,7 @@
             "src": "7300:146:1",
             "stateMutability": "view",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           },
           {
             "body": {
@@ -6685,8 +5341,7 @@
             "documentation": "@dev checks our last query price to see if our contract should enter settlement due to it being past our",
             "id": 913,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [],
             "name": "checkSettlement",
             "nodeType": "FunctionDefinition",
@@ -6696,7 +5351,6 @@
               "parameters": [],
               "src": "7687:2:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 856,
               "nodeType": "ParameterList",
@@ -6707,8 +5361,7 @@
             "src": "7663:866:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "internal",
-            "kind": "function"
+            "visibility": "internal"
           },
           {
             "body": {
@@ -6867,8 +5520,7 @@
             "documentation": "@dev records our final settlement price and fires needed events.\n @param finalSettlementPrice final query price at time of settlement",
             "id": 931,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [],
             "name": "settleContract",
             "nodeType": "FunctionDefinition",
@@ -6905,7 +5557,6 @@
               ],
               "src": "8707:27:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 917,
               "nodeType": "ParameterList",
@@ -6916,8 +5567,7 @@
             "src": "8684:202:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "internal",
-            "kind": "function"
+            "visibility": "internal"
           },
           {
             "body": {
@@ -7241,11 +5891,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "1178:7:1",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -7268,11 +5918,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "1223:7:1",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -7546,11 +6196,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "1825:7:1",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -7573,11 +6223,11 @@
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "1865:7:1",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
-              },
-              "stateMutability": "nonpayable"
+              }
             },
             "value": null,
             "visibility": "public"
@@ -8408,76 +7058,6 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 668,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 681,
-                      "name": "COLLATERAL_TOKEN_ADDRESS",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 583,
-                      "src": "3968:24:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "nodeType": "FunctionCall",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "baseExpression": {
-                        "argumentTypes": null,
-                        "id": 682,
-                        "name": "baseAddresses",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 631,
-                        "src": "3995:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_address_$3_memory_ptr",
-                          "typeString": "address[3] memory"
-                        }
-                      },
-                      "id": 684,
-                      "indexExpression": {
-                        "argumentTypes": null,
-                        "hexValue": "31",
-                        "id": 683,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "number",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "4009:1:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_rational_1_by_1",
-                          "typeString": "int_const 1"
-                        },
-                        "value": "1"
-                      },
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "nodeType": "IndexAccess",
-                      "src": "3995:16:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "src": "4148:57:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    },
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -8573,8 +7153,19 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
+                    "id": 668,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
                     "kind": "functionCall",
-                    "names": []
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "4148:57:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
                   },
                   "id": 669,
                   "nodeType": "ExpressionStatement",
@@ -8683,102 +7274,6 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "arguments": [
-                        {
-                          "argumentTypes": null,
-                          "id": 696,
-                          "name": "PRICE_FLOOR",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 589,
-                          "src": "4128:11:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        {
-                          "argumentTypes": null,
-                          "id": 697,
-                          "name": "PRICE_CAP",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 587,
-                          "src": "4141:9:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        {
-                          "argumentTypes": null,
-                          "id": 698,
-                          "name": "QTY_MULTIPLIER",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 593,
-                          "src": "4152:14:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
-                          {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
-                          {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        ],
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 694,
-                          "name": "MathLib",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 1667,
-                          "src": "4095:7:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_MathLib_$1667_$",
-                            "typeString": "type(library MathLib)"
-                          }
-                        },
-                        "id": 695,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "calculateTotalCollateral",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1633,
-                        "src": "4095:32:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_function_delegatecall_pure$_t_uint256_$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
-                          "typeString": "function (uint256,uint256,uint256) pure returns (uint256)"
-                        }
-                      },
-                      "id": 679,
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "kind": "functionCall",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "IndexAccess",
-                      "src": "4295:16:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      },
                       "baseExpression": {
                         "argumentTypes": null,
                         "id": 677,
@@ -8792,6 +7287,7 @@
                           "typeString": "address[3] memory"
                         }
                       },
+                      "id": 679,
                       "indexExpression": {
                         "argumentTypes": null,
                         "hexValue": "32",
@@ -8809,6 +7305,16 @@
                           "typeString": "int_const 2"
                         },
                         "value": "2"
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "4295:16:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
                       }
                     },
                     "src": "4269:42:1",
@@ -8885,59 +7391,10 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
-                        },
-                        {
-                          "argumentTypes": null,
-                          "baseExpression": {
-                            "argumentTypes": null,
-                            "id": 708,
-                            "name": "contractSpecs",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 635,
-                            "src": "4326:13:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_uint256_$7_memory_ptr",
-                              "typeString": "uint256[7] memory"
-                            }
-                          },
-                          "id": 710,
-                          "indexExpression": {
-                            "argumentTypes": null,
-                            "hexValue": "34",
-                            "id": 709,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": true,
-                            "kind": "number",
-                            "lValueRequested": false,
-                            "nodeType": "Literal",
-                            "src": "4340:1:1",
-                            "subdenomination": null,
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_rational_4_by_1",
-                              "typeString": "int_const 4"
-                            },
-                            "value": "4"
-                          },
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "nodeType": "IndexAccess",
-                          "src": "4326:16:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
                         }
                       ],
                       "expression": {
                         "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
                           {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -9184,88 +7641,6 @@
                   "src": "4425:175:1"
                 },
                 {
-                  "assignments": [
-                    729
-                  ],
-                  "declarations": [
-                    {
-                      "constant": false,
-                      "id": 729,
-                      "name": "pathSlice",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 808,
-                      "src": "4581:32:1",
-                      "stateVariable": false,
-                      "storageLocation": "memory",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                        "typeString": "struct StringLib.slice"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 728,
-                        "name": "StringLib.slice",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1674,
-                        "src": "4581:15:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_slice_$1674_storage_ptr",
-                          "typeString": "struct StringLib.slice"
-                        }
-                      },
-                      "value": null,
-                      "visibility": "internal"
-                    }
-                  ],
-                  "id": 714,
-                  "initialValue": {
-                    "argumentTypes": null,
-                    "arguments": [],
-                    "expression": {
-                      "argumentTypes": [],
-                      "expression": {
-                        "argumentTypes": null,
-                        "id": 730,
-                        "name": "contractNames",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 627,
-                        "src": "4616:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      },
-                      "id": 731,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "memberName": "toSlice",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1734,
-                      "src": "4616:21:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$returns$_t_struct$_slice_$1674_memory_ptr_$bound_to$_t_string_memory_ptr_$",
-                        "typeString": "function (string memory) pure returns (struct StringLib.slice memory)"
-                      }
-                    },
-                    "id": 732,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "4616:23:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                      "typeString": "struct StringLib.slice memory"
-                    }
-                  },
-                  "nodeType": "ExpressionStatement",
-                  "src": "4610:168:1",
                   "expression": {
                     "argumentTypes": null,
                     "id": 713,
@@ -9441,96 +7816,12 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
-                  }
+                  },
+                  "id": 714,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4610:168:1"
                 },
                 {
-                  "assignments": [
-                    737
-                  ],
-                  "declarations": [
-                    {
-                      "constant": false,
-                      "id": 737,
-                      "name": "delim",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 808,
-                      "src": "4649:28:1",
-                      "stateVariable": false,
-                      "storageLocation": "memory",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                        "typeString": "struct StringLib.slice"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 736,
-                        "name": "StringLib.slice",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1674,
-                        "src": "4649:15:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_slice_$1674_storage_ptr",
-                          "typeString": "struct StringLib.slice"
-                        }
-                      },
-                      "value": null,
-                      "visibility": "internal"
-                    }
-                  ],
-                  "id": 722,
-                  "initialValue": {
-                    "argumentTypes": null,
-                    "arguments": [],
-                    "expression": {
-                      "argumentTypes": [],
-                      "expression": {
-                        "argumentTypes": null,
-                        "hexValue": "2c",
-                        "id": 738,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "string",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "4680:3:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_3e7a35b97029f9e0cf6effd71c1a7958822e9a217d3a3aec886668a7dd8231cb",
-                          "typeString": "literal_string \",\""
-                        },
-                        "value": ","
-                      },
-                      "id": 739,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "memberName": "toSlice",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1734,
-                      "src": "4680:11:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$returns$_t_struct$_slice_$1674_memory_ptr_$bound_to$_t_string_memory_ptr_$",
-                        "typeString": "function (string memory) pure returns (struct StringLib.slice memory)"
-                      }
-                    },
-                    "id": 740,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "4680:13:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                      "typeString": "struct StringLib.slice memory"
-                    }
-                  },
-                  "nodeType": "ExpressionStatement",
-                  "src": "4829:50:1",
                   "expression": {
                     "argumentTypes": null,
                     "id": 721,
@@ -9636,175 +7927,12 @@
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
-                  }
+                  },
+                  "id": 722,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4829:50:1"
                 },
                 {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "commonType": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        },
-                        "id": 748,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "leftExpression": {
-                          "argumentTypes": null,
-                          "arguments": [
-                            {
-                              "argumentTypes": null,
-                              "id": 745,
-                              "name": "delim",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 737,
-                              "src": "4727:5:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            }
-                          ],
-                          "expression": {
-                            "argumentTypes": [
-                              {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            ],
-                            "expression": {
-                              "argumentTypes": null,
-                              "id": 743,
-                              "name": "pathSlice",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 729,
-                              "src": "4711:9:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            },
-                            "id": 744,
-                            "isConstant": false,
-                            "isLValue": true,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "count",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2038,
-                            "src": "4711:15:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$_t_struct$_slice_$1674_memory_ptr_$returns$_t_uint256_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                              "typeString": "function (struct StringLib.slice memory,struct StringLib.slice memory) pure returns (uint256)"
-                            }
-                          },
-                          "id": 746,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "kind": "functionCall",
-                          "lValueRequested": false,
-                          "names": [],
-                          "nodeType": "FunctionCall",
-                          "src": "4711:22:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        "nodeType": "BinaryOperation",
-                        "operator": "==",
-                        "rightExpression": {
-                          "argumentTypes": null,
-                          "hexValue": "32",
-                          "id": 747,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": true,
-                          "kind": "number",
-                          "lValueRequested": false,
-                          "nodeType": "Literal",
-                          "src": "4737:1:1",
-                          "subdenomination": null,
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_rational_2_by_1",
-                            "typeString": "int_const 2"
-                          },
-                          "value": "2"
-                        },
-                        "src": "4711:27:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "436f6e74726163744e616d6573206d75737420636f6e7461696e2033206e616d6573",
-                        "id": 749,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "string",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "4740:36:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_97dffb202a759cad5c7162b49625fbc3dc683377d4a01c9ffe8396cca29a723b",
-                          "typeString": "literal_string \"ContractNames must contain 3 names\""
-                        },
-                        "value": "ContractNames must contain 3 names"
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        },
-                        {
-                          "typeIdentifier": "t_stringliteral_97dffb202a759cad5c7162b49625fbc3dc683377d4a01c9ffe8396cca29a723b",
-                          "typeString": "literal_string \"ContractNames must contain 3 names\""
-                        }
-                      ],
-                      "id": 742,
-                      "name": "require",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        3615,
-                        3616
-                      ],
-                      "referencedDeclaration": 3616,
-                      "src": "4703:7:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
-                        "typeString": "function (bool,string memory) pure"
-                      }
-                    },
-                    "id": 750,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "4703:74:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 739,
-                  "nodeType": "VariableDeclarationStatement",
-                  "src": "4889:205:1",
                   "assignments": [
                     724
                   ],
@@ -9838,6 +7966,7 @@
                       "visibility": "internal"
                     }
                   ],
+                  "id": 739,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -10073,138 +8202,11 @@
                       "typeIdentifier": "t_contract$_PositionToken_$2089",
                       "typeString": "contract PositionToken"
                     }
-                  }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "4889:205:1"
                 },
                 {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 759,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 752,
-                      "name": "CONTRACT_NAME",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 581,
-                      "src": "4825:13:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_string_storage",
-                        "typeString": "string storage ref"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "arguments": [],
-                      "expression": {
-                        "argumentTypes": [],
-                        "expression": {
-                          "argumentTypes": null,
-                          "arguments": [
-                            {
-                              "argumentTypes": null,
-                              "id": 755,
-                              "name": "delim",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 737,
-                              "src": "4857:5:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            }
-                          ],
-                          "expression": {
-                            "argumentTypes": [
-                              {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            ],
-                            "expression": {
-                              "argumentTypes": null,
-                              "id": 753,
-                              "name": "pathSlice",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 729,
-                              "src": "4841:9:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                "typeString": "struct StringLib.slice memory"
-                              }
-                            },
-                            "id": 754,
-                            "isConstant": false,
-                            "isLValue": true,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "split",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1979,
-                            "src": "4841:15:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$_t_struct$_slice_$1674_memory_ptr_$returns$_t_struct$_slice_$1674_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                              "typeString": "function (struct StringLib.slice memory,struct StringLib.slice memory) pure returns (struct StringLib.slice memory)"
-                            }
-                          },
-                          "id": 756,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "kind": "functionCall",
-                          "lValueRequested": false,
-                          "names": [],
-                          "nodeType": "FunctionCall",
-                          "src": "4841:22:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                            "typeString": "struct StringLib.slice memory"
-                          }
-                        },
-                        "id": 757,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "toString",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1764,
-                        "src": "4841:31:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$returns$_t_string_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                          "typeString": "function (struct StringLib.slice memory) pure returns (string memory)"
-                        }
-                      },
-                      "id": 758,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "functionCall",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "4841:33:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_string_memory_ptr",
-                        "typeString": "string memory"
-                      }
-                    },
-                    "src": "4825:49:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage",
-                      "typeString": "string storage ref"
-                    }
-                  },
-                  "id": 756,
-                  "nodeType": "VariableDeclarationStatement",
-                  "src": "5104:208:1",
                   "assignments": [
                     741
                   ],
@@ -10238,6 +8240,7 @@
                       "visibility": "internal"
                     }
                   ],
+                  "id": 756,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -10473,236 +8476,11 @@
                       "typeIdentifier": "t_contract$_PositionToken_$2089",
                       "typeString": "contract PositionToken"
                     }
-                  }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "5104:208:1"
                 },
                 {
-                  "assignments": [
-                    762
-                  ],
-                  "declarations": [
-                    {
-                      "constant": false,
-                      "id": 762,
-                      "name": "longPosToken",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 808,
-                      "src": "4885:26:1",
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PositionToken_$2545",
-                        "typeString": "contract PositionToken"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 761,
-                        "name": "PositionToken",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2545,
-                        "src": "4885:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2545",
-                          "typeString": "contract PositionToken"
-                        }
-                      },
-                      "value": null,
-                      "visibility": "internal"
-                    }
-                  ],
-                  "id": 762,
-                  "initialValue": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "4d41524b45542050726f746f636f6c204c6f6e6720506f736974696f6e20546f6b656e",
-                        "id": 765,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "string",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "4932:37:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_dea80294dde7ccae15ed6914c7548c05f4e92f0b4f59b8de25e124060ecbb903",
-                          "typeString": "literal_string \"MARKET Protocol Long Position Token\""
-                        },
-                        "value": "MARKET Protocol Long Position Token"
-                      },
-                      {
-                        "argumentTypes": null,
-                        "arguments": [],
-                        "expression": {
-                          "argumentTypes": [],
-                          "expression": {
-                            "argumentTypes": null,
-                            "arguments": [
-                              {
-                                "argumentTypes": null,
-                                "id": 768,
-                                "name": "delim",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 737,
-                                "src": "4987:5:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              }
-                            ],
-                            "expression": {
-                              "argumentTypes": [
-                                {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              ],
-                              "expression": {
-                                "argumentTypes": null,
-                                "id": 766,
-                                "name": "pathSlice",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 729,
-                                "src": "4971:9:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              },
-                              "id": 767,
-                              "isConstant": false,
-                              "isLValue": true,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "memberName": "split",
-                              "nodeType": "MemberAccess",
-                              "referencedDeclaration": 1979,
-                              "src": "4971:15:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$_t_struct$_slice_$1674_memory_ptr_$returns$_t_struct$_slice_$1674_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                                "typeString": "function (struct StringLib.slice memory,struct StringLib.slice memory) pure returns (struct StringLib.slice memory)"
-                              }
-                            },
-                            "id": 769,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "kind": "functionCall",
-                            "lValueRequested": false,
-                            "names": [],
-                            "nodeType": "FunctionCall",
-                            "src": "4971:22:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                              "typeString": "struct StringLib.slice memory"
-                            }
-                          },
-                          "id": 770,
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "toString",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1764,
-                          "src": "4971:31:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$returns$_t_string_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                            "typeString": "function (struct StringLib.slice memory) pure returns (string memory)"
-                          }
-                        },
-                        "id": 771,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "kind": "functionCall",
-                        "lValueRequested": false,
-                        "names": [],
-                        "nodeType": "FunctionCall",
-                        "src": "4971:33:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "30",
-                        "id": 772,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "number",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "5006:1:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_rational_0_by_1",
-                          "typeString": "int_const 0"
-                        },
-                        "value": "0"
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_stringliteral_dea80294dde7ccae15ed6914c7548c05f4e92f0b4f59b8de25e124060ecbb903",
-                          "typeString": "literal_string \"MARKET Protocol Long Position Token\""
-                        },
-                        {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        },
-                        {
-                          "typeIdentifier": "t_rational_0_by_1",
-                          "typeString": "int_const 0"
-                        }
-                      ],
-                      "id": 764,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "nodeType": "NewExpression",
-                      "src": "4914:17:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2545_$",
-                        "typeString": "function (string memory,string memory,uint8) returns (contract PositionToken)"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 763,
-                        "name": "PositionToken",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2545,
-                        "src": "4918:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2545",
-                          "typeString": "contract PositionToken"
-                        }
-                      }
-                    },
-                    "id": 773,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "4914:94:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PositionToken_$2545",
-                      "typeString": "contract PositionToken"
-                    }
-                  },
-                  "nodeType": "ExpressionStatement",
-                  "src": "5323:43:1",
                   "expression": {
                     "argumentTypes": null,
                     "id": 761,
@@ -10781,236 +8559,12 @@
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
-                  }
+                  },
+                  "id": 762,
+                  "nodeType": "ExpressionStatement",
+                  "src": "5323:43:1"
                 },
                 {
-                  "assignments": [
-                    776
-                  ],
-                  "declarations": [
-                    {
-                      "constant": false,
-                      "id": 776,
-                      "name": "shortPosToken",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 808,
-                      "src": "5018:27:1",
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PositionToken_$2545",
-                        "typeString": "contract PositionToken"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 775,
-                        "name": "PositionToken",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2545,
-                        "src": "5018:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2545",
-                          "typeString": "contract PositionToken"
-                        }
-                      },
-                      "value": null,
-                      "visibility": "internal"
-                    }
-                  ],
-                  "id": 768,
-                  "initialValue": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "4d41524b45542050726f746f636f6c2053686f727420506f736974696f6e20546f6b656e",
-                        "id": 779,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "string",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "5066:38:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_stringliteral_009c769d34a2b670483d4ea52ce57207c6951c5b1278318933e41fe97729c64f",
-                          "typeString": "literal_string \"MARKET Protocol Short Position Token\""
-                        },
-                        "value": "MARKET Protocol Short Position Token"
-                      },
-                      {
-                        "argumentTypes": null,
-                        "arguments": [],
-                        "expression": {
-                          "argumentTypes": [],
-                          "expression": {
-                            "argumentTypes": null,
-                            "arguments": [
-                              {
-                                "argumentTypes": null,
-                                "id": 782,
-                                "name": "delim",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 737,
-                                "src": "5122:5:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              }
-                            ],
-                            "expression": {
-                              "argumentTypes": [
-                                {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              ],
-                              "expression": {
-                                "argumentTypes": null,
-                                "id": 780,
-                                "name": "pathSlice",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 729,
-                                "src": "5106:9:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                                  "typeString": "struct StringLib.slice memory"
-                                }
-                              },
-                              "id": 781,
-                              "isConstant": false,
-                              "isLValue": true,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "memberName": "split",
-                              "nodeType": "MemberAccess",
-                              "referencedDeclaration": 1979,
-                              "src": "5106:15:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$_t_struct$_slice_$1674_memory_ptr_$returns$_t_struct$_slice_$1674_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                                "typeString": "function (struct StringLib.slice memory,struct StringLib.slice memory) pure returns (struct StringLib.slice memory)"
-                              }
-                            },
-                            "id": 783,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "kind": "functionCall",
-                            "lValueRequested": false,
-                            "names": [],
-                            "nodeType": "FunctionCall",
-                            "src": "5106:22:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_slice_$1674_memory_ptr",
-                              "typeString": "struct StringLib.slice memory"
-                            }
-                          },
-                          "id": 784,
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "toString",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1764,
-                          "src": "5106:31:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_pure$_t_struct$_slice_$1674_memory_ptr_$returns$_t_string_memory_ptr_$bound_to$_t_struct$_slice_$1674_memory_ptr_$",
-                            "typeString": "function (struct StringLib.slice memory) pure returns (string memory)"
-                          }
-                        },
-                        "id": 785,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "kind": "functionCall",
-                        "lValueRequested": false,
-                        "names": [],
-                        "nodeType": "FunctionCall",
-                        "src": "5106:33:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "hexValue": "31",
-                        "id": 786,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "kind": "number",
-                        "lValueRequested": false,
-                        "nodeType": "Literal",
-                        "src": "5141:1:1",
-                        "subdenomination": null,
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_rational_1_by_1",
-                          "typeString": "int_const 1"
-                        },
-                        "value": "1"
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_stringliteral_009c769d34a2b670483d4ea52ce57207c6951c5b1278318933e41fe97729c64f",
-                          "typeString": "literal_string \"MARKET Protocol Short Position Token\""
-                        },
-                        {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        },
-                        {
-                          "typeIdentifier": "t_rational_1_by_1",
-                          "typeString": "int_const 1"
-                        }
-                      ],
-                      "id": 778,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "nodeType": "NewExpression",
-                      "src": "5048:17:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$returns$_t_contract$_PositionToken_$2545_$",
-                        "typeString": "function (string memory,string memory,uint8) returns (contract PositionToken)"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 777,
-                        "name": "PositionToken",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2545,
-                        "src": "5052:13:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PositionToken_$2545",
-                          "typeString": "contract PositionToken"
-                        }
-                      }
-                    },
-                    "id": 787,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "5048:95:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PositionToken_$2545",
-                      "typeString": "contract PositionToken"
-                    }
-                  },
-                  "nodeType": "ExpressionStatement",
-                  "src": "5376:45:1",
                   "expression": {
                     "argumentTypes": null,
                     "id": 767,
@@ -11089,87 +8643,14 @@
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
-                  }
+                  },
+                  "id": 768,
+                  "nodeType": "ExpressionStatement",
+                  "src": "5376:45:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 773,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 789,
-                      "name": "LONG_POSITION_TOKEN",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 606,
-                      "src": "5154:19:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "nodeType": "FunctionCall",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "arguments": [
-                        {
-                          "argumentTypes": null,
-                          "id": 791,
-                          "name": "longPosToken",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 762,
-                          "src": "5184:12:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_PositionToken_$2545",
-                            "typeString": "contract PositionToken"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_contract$_PositionToken_$2545",
-                            "typeString": "contract PositionToken"
-                          }
-                        ],
-                        "id": 790,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "lValueRequested": false,
-                        "nodeType": "ElementaryTypeNameExpression",
-                        "src": "5176:7:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_address_$",
-                          "typeString": "type(address)"
-                        },
-                        "typeName": "address"
-                      },
-                      "id": 792,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "typeConversion",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "5176:21:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "src": "5432:35:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    },
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -11235,166 +8716,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "kind": "functionCall",
-                    "names": []
-                  },
-                  "id": 774,
-                  "nodeType": "ExpressionStatement",
-                  "src": "5432:35:1"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 799,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 795,
-                      "name": "SHORT_POSITION_TOKEN",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 608,
-                      "src": "5207:20:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "arguments": [
-                        {
-                          "argumentTypes": null,
-                          "id": 797,
-                          "name": "shortPosToken",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 776,
-                          "src": "5238:13:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_PositionToken_$2545",
-                            "typeString": "contract PositionToken"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_contract$_PositionToken_$2545",
-                            "typeString": "contract PositionToken"
-                          }
-                        ],
-                        "id": 796,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": true,
-                        "lValueRequested": false,
-                        "nodeType": "ElementaryTypeNameExpression",
-                        "src": "5230:7:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_address_$",
-                          "typeString": "type(address)"
-                        },
-                        "typeName": "address"
-                      },
-                      "id": 798,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "typeConversion",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "5230:22:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "src": "5207:45:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "id": 800,
-                  "nodeType": "ExpressionStatement",
-                  "src": "5207:45:1"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "baseExpression": {
-                          "argumentTypes": null,
-                          "id": 802,
-                          "name": "baseAddresses",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 631,
-                          "src": "5281:13:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_address_$3_memory_ptr",
-                            "typeString": "address[3] memory"
-                          }
-                        },
-                        "id": 804,
-                        "indexExpression": {
-                          "argumentTypes": null,
-                          "hexValue": "30",
-                          "id": 803,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": true,
-                          "kind": "number",
-                          "lValueRequested": false,
-                          "nodeType": "Literal",
-                          "src": "5295:1:1",
-                          "subdenomination": null,
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_rational_0_by_1",
-                            "typeString": "int_const 0"
-                          },
-                          "value": "0"
-                        },
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "nodeType": "IndexAccess",
-                        "src": "5281:16:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      ],
-                      "id": 801,
-                      "name": "transferOwnership",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 2884,
-                      "src": "5263:17:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
-                        "typeString": "function (address)"
-                      }
-                    },
-                    "id": 805,
+                    "id": 773,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -11402,23 +8724,22 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "5263:35:1",
+                    "src": "5432:35:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 806,
+                  "id": 774,
                   "nodeType": "ExpressionStatement",
-                  "src": "5263:35:1"
+                  "src": "5432:35:1"
                 }
               ]
             },
             "documentation": "@param contractNames bytes32 array of names\n     contractName            name of the market contract\n     longTokenSymbol         symbol for the long token\n     shortTokenSymbol        symbol for the short token\n @param baseAddresses array of 2 addresses needed for our contract including:\n     ownerAddress                    address of the owner of these contracts.\n     collateralTokenAddress          address of the ERC20 token that will be used for collateral and pricing\n     collateralPoolAddress           address of our collateral pool contract\n @param contractSpecs array of unsigned integers including:\n     floorPrice          minimum tradeable price of this contract, contract enters settlement if breached\n     capPrice            maximum tradeable price of this contract, contract enters settlement if breached\n     priceDecimalPlaces  number of decimal places to convert our queried price from a floating point to\n                         an integer\n     qtyMultiplier       multiply traded qty by this value from base units of collateral token.\n     feeInBasisPoints    fee amount in basis points (Collateral token denominated) for minting.\n     mktFeeInBasisPoints fee amount in basis points (MKT denominated) for minting.\n     expirationTimeStamp seconds from epoch that this contract expires and enters settlement",
             "id": 776,
             "implemented": true,
-            "isConstructor": true,
-            "isDeclaredConst": false,
+            "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
@@ -11440,14 +8761,6 @@
                     "typeString": "bytes32[3]"
                   },
                   "typeName": {
-                    "id": 607,
-                    "name": "string",
-                    "nodeType": "ArrayTypeName",
-                    "src": "3641:10:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_bytes32_$3_storage_ptr",
-                      "typeString": "bytes32[3]"
-                    },
                     "baseType": {
                       "id": 605,
                       "name": "bytes32",
@@ -11458,6 +8771,7 @@
                         "typeString": "bytes32"
                       }
                     },
+                    "id": 607,
                     "length": {
                       "argumentTypes": null,
                       "hexValue": "33",
@@ -11475,6 +8789,12 @@
                         "typeString": null
                       },
                       "value": "3"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "3641:10:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$3_storage_ptr",
+                      "typeString": "bytes32[3]"
                     }
                   },
                   "value": null,
@@ -11499,11 +8819,11 @@
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "3682:7:1",
+                      "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
-                      },
-                      "stateMutability": "nonpayable"
+                      }
                     },
                     "id": 611,
                     "length": {
@@ -11590,7 +8910,6 @@
               ],
               "src": "3631:126:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 618,
               "nodeType": "ParameterList",
@@ -11601,8 +8920,7 @@
             "src": "3620:1854:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "constructor"
+            "visibility": "public"
           },
           {
             "body": {
@@ -11861,8 +9179,7 @@
             "documentation": "@notice called only by our collateral pool to create long and short position tokens\n @param qtyToMint    qty in base units of how many short and long tokens to mint\n @param minter       address of minter to receive tokens",
             "id": 802,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -11934,11 +9251,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "5848:7:1",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -11946,7 +9263,6 @@
               ],
               "src": "5811:57:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 784,
               "nodeType": "ParameterList",
@@ -11957,8 +9273,7 @@
             "src": "5784:361:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -12094,8 +9409,7 @@
             "documentation": "@notice called only by our collateral pool to redeem long position tokens\n @param qtyToRedeem  qty in base units of how many tokens to redeem\n @param redeemer     address of person redeeming tokens",
             "id": 820,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -12167,11 +9481,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "6434:7:1",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -12179,7 +9493,6 @@
               ],
               "src": "6395:61:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 810,
               "nodeType": "ParameterList",
@@ -12190,8 +9503,7 @@
             "src": "6371:280:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -12327,8 +9639,7 @@
             "documentation": "@notice called only by our collateral pool to redeem short position tokens\n @param qtyToRedeem  qty in base units of how many tokens to redeem\n @param redeemer     address of person redeeming tokens",
             "id": 838,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
@@ -12400,11 +9711,11 @@
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "6942:7:1",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
-                    },
-                    "stateMutability": "nonpayable"
+                    }
                   },
                   "value": null,
                   "visibility": "internal"
@@ -12412,7 +9723,6 @@
               ],
               "src": "6903:61:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 828,
               "nodeType": "ParameterList",
@@ -12423,8 +9733,7 @@
             "src": "6878:282:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "external",
-            "kind": "function"
+            "visibility": "external"
           },
           {
             "body": {
@@ -12586,8 +9895,7 @@
             "documentation": "@notice checks to see if a contract is settled, and that the settlement delay has passed",
             "id": 854,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": true,
+            "kind": "function",
             "modifiers": [],
             "name": "isPostSettlementDelay",
             "nodeType": "FunctionDefinition",
@@ -12597,7 +9905,6 @@
               "parameters": [],
               "src": "7330:2:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 842,
               "nodeType": "ParameterList",
@@ -12635,8 +9942,7 @@
             "src": "7300:146:1",
             "stateMutability": "view",
             "superFunction": null,
-            "visibility": "public",
-            "kind": "function"
+            "visibility": "public"
           },
           {
             "body": {
@@ -13324,8 +10630,7 @@
             "documentation": "@dev checks our last query price to see if our contract should enter settlement due to it being past our",
             "id": 913,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [],
             "name": "checkSettlement",
             "nodeType": "FunctionDefinition",
@@ -13335,7 +10640,6 @@
               "parameters": [],
               "src": "7687:2:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 856,
               "nodeType": "ParameterList",
@@ -13346,8 +10650,7 @@
             "src": "7663:866:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "internal",
-            "kind": "function"
+            "visibility": "internal"
           },
           {
             "body": {
@@ -13506,8 +10809,7 @@
             "documentation": "@dev records our final settlement price and fires needed events.\n @param finalSettlementPrice final query price at time of settlement",
             "id": 931,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [],
             "name": "settleContract",
             "nodeType": "FunctionDefinition",
@@ -13544,7 +10846,6 @@
               ],
               "src": "8707:27:1"
             },
-            "payable": false,
             "returnParameters": {
               "id": 917,
               "nodeType": "ParameterList",
@@ -13555,8 +10856,7 @@
             "src": "8684:202:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
-            "visibility": "internal",
-            "kind": "function"
+            "visibility": "internal"
           },
           {
             "body": {
@@ -13722,16 +11022,9 @@
     "name": "solc",
     "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
   },
-  "networks": {
-    "42": {
-      "events": {},
-      "links": {
-        "MathLib": "0xfe8b5bcf5aca9c0d0648aa19567301737888ac3c"
-      }
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-05-29T01:20:49.445Z",
+  "updatedAt": "2019-05-30T22:06:40.986Z",
   "devdoc": {
     "author": "Phil Elsasser <phil@marketprotocol.io>",
     "methods": {
