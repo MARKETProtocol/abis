@@ -4811,100 +4811,11 @@
     "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
   },
   "networks": {
-    "4447": {
-      "events": {
-        "0x534d18c8ff24ba5980906d732f3075704749427353734fbbf05d50485643b124": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "contractAddress",
-              "type": "address"
-            }
-          ],
-          "name": "AddressAddedToWhitelist",
-          "type": "event",
-          "signature": "0x534d18c8ff24ba5980906d732f3075704749427353734fbbf05d50485643b124"
-        },
-        "0x535611fb62fa2a833988f283b779e417e996813e44046f521d76c17b5943b08c": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "contractAddress",
-              "type": "address"
-            }
-          ],
-          "name": "AddressRemovedFromWhitelist",
-          "type": "event",
-          "signature": "0x535611fb62fa2a833988f283b779e417e996813e44046f521d76c17b5943b08c"
-        },
-        "0x960c6a67a1f0f46ddffd138f2b7f44cbc573d0e0a073363b287a257b121dc48a": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "factoryAddress",
-              "type": "address"
-            }
-          ],
-          "name": "FactoryAddressAdded",
-          "type": "event",
-          "signature": "0x960c6a67a1f0f46ddffd138f2b7f44cbc573d0e0a073363b287a257b121dc48a"
-        },
-        "0x5d6ac55db628f137c53a554c300a684dc6b3db9d8f24e9611ea5e84c282d177d": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "factoryAddress",
-              "type": "address"
-            }
-          ],
-          "name": "FactoryAddressRemoved",
-          "type": "event",
-          "signature": "0x5d6ac55db628f137c53a554c300a684dc6b3db9d8f24e9611ea5e84c282d177d"
-        },
-        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "previousOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "OwnershipTransferred",
-          "type": "event",
-          "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
-        },
-        "0x33479be51d1deb9c4907cc0dbacb4ec2c15bc1dab3f8da1e24f29059fdbcec5e": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": false,
-              "name": "ownerAddress",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "name": "contractAddress",
-              "type": "address"
-            }
-          ],
-          "name": "OwnerContractAdded",
-          "type": "event",
-          "signature": "0x33479be51d1deb9c4907cc0dbacb4ec2c15bc1dab3f8da1e24f29059fdbcec5e"
-        }
-      },
+    "42": {
+      "events": {},
       "links": {},
-      "address": "0xF5a85F3d1B19B3351D90946F43AF66A27bda2603",
-      "transactionHash": "0xc32e52470ae48bbc3b560ee7dcafac73b669b34adba281877be0562fc15b2e86"
+      "address": "0x3b4B455013af9Fca1Ed71099603F8245BEA155bd",
+      "transactionHash": "0x32dc7efb4410ad26741918f75878b0b2c29e8660a1f56def875fb3c985f3639a"
     }
   },
   "schemaVersion": "3.0.1",

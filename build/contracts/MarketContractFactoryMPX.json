@@ -3766,48 +3766,11 @@
     "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
   },
   "networks": {
-    "4447": {
-      "events": {
-        "0x38ee3ff13b5d3453452a79e0799d83b2c8207bf126b2798fa512343680f643ee": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "creator",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "contractAddress",
-              "type": "address"
-            }
-          ],
-          "name": "MarketContractCreated",
-          "type": "event",
-          "signature": "0x38ee3ff13b5d3453452a79e0799d83b2c8207bf126b2798fa512343680f643ee"
-        },
-        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "previousOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "OwnershipTransferred",
-          "type": "event",
-          "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
-        }
-      },
+    "42": {
+      "events": {},
       "links": {},
-      "address": "0xae58558C52aF2803b62897f40d8965A9476EAd53",
-      "transactionHash": "0x3e91b1f45eaef0dbf1c3a5c253d77fd75492a2de017253ac02908e3371ab86e5"
+      "address": "0x02096f2670592A4bb2fdc43A2df975065a60cCDC",
+      "transactionHash": "0x28cc2ca3b190e3ad2fded3c41f95713db3f2417af15ee5c5f351840d64b22185"
     }
   },
   "schemaVersion": "3.0.1",
