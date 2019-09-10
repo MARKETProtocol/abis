@@ -498,14 +498,14 @@
     "absolutePath": "/home/market/code/marketprotocol/contracts/tokens/MarketToken.sol",
     "exportedSymbols": {
       "MarketToken": [
-        1974
+        2028
       ]
     },
-    "id": 1975,
+    "id": 2029,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1942,
+        "id": 1996,
         "literals": [
           "solidity",
           "0.5",
@@ -517,10 +517,10 @@
       {
         "absolutePath": "/home/market/code/marketprotocol/contracts/tokens/UpgradableToken.sol",
         "file": "./UpgradableToken.sol",
-        "id": 1943,
+        "id": 1997,
         "nodeType": "ImportDirective",
-        "scope": 1975,
-        "sourceUnit": 2129,
+        "scope": 2029,
+        "sourceUnit": 2183,
         "src": "628:31:11",
         "symbolAliases": [],
         "unitAlias": ""
@@ -531,49 +531,49 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1944,
+              "id": 1998,
               "name": "UpgradeableToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2128,
+              "referencedDeclaration": 2182,
               "src": "950:16:11",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_UpgradeableToken_$2128",
+                "typeIdentifier": "t_contract$_UpgradeableToken_$2182",
                 "typeString": "contract UpgradeableToken"
               }
             },
-            "id": 1945,
+            "id": 1999,
             "nodeType": "InheritanceSpecifier",
             "src": "950:16:11"
           }
         ],
         "contractDependencies": [
-          2128,
-          2417,
-          2800,
-          2831,
-          2900
+          2182,
+          2471,
+          2854,
+          2885,
+          2954
         ],
         "contractKind": "contract",
         "documentation": "@title Market Token\n @notice Our membership token.  Users must lock tokens to enable trading for a given Market Contract\n as well as have a minimum balance of tokens to create new Market Contracts.\n @author MARKET Protocol <support@marketprotocol.io>",
         "fullyImplemented": true,
-        "id": 1974,
+        "id": 2028,
         "linearizedBaseContracts": [
-          1974,
-          2128,
-          2831,
-          2800,
-          2900,
-          2417
+          2028,
+          2182,
+          2885,
+          2854,
+          2954,
+          2471
         ],
         "name": "MarketToken",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 1948,
+            "id": 2002,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 1974,
+            "scope": 2028,
             "src": "974:53:11",
             "stateVariable": true,
             "storageLocation": "default",
@@ -582,7 +582,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 1946,
+              "id": 2000,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "974:6:11",
@@ -594,7 +594,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4d41524b45542050726f746f636f6c20546f6b656e",
-              "id": 1947,
+              "id": 2001,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -613,10 +613,10 @@
           },
           {
             "constant": true,
-            "id": 1951,
+            "id": 2005,
             "name": "symbol",
             "nodeType": "VariableDeclaration",
-            "scope": 1974,
+            "scope": 2028,
             "src": "1033:37:11",
             "stateVariable": true,
             "storageLocation": "default",
@@ -625,7 +625,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 1949,
+              "id": 2003,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "1033:6:11",
@@ -637,7 +637,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4d4b54",
-              "id": 1950,
+              "id": 2004,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -656,10 +656,10 @@
           },
           {
             "constant": true,
-            "id": 1954,
+            "id": 2008,
             "name": "decimals",
             "nodeType": "VariableDeclaration",
-            "scope": 1974,
+            "scope": 2028,
             "src": "1076:35:11",
             "stateVariable": true,
             "storageLocation": "default",
@@ -668,7 +668,7 @@
               "typeString": "uint8"
             },
             "typeName": {
-              "id": 1952,
+              "id": 2006,
               "name": "uint8",
               "nodeType": "ElementaryTypeName",
               "src": "1076:5:11",
@@ -680,7 +680,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3138",
-              "id": 1953,
+              "id": 2007,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -699,10 +699,10 @@
           },
           {
             "constant": true,
-            "id": 1963,
+            "id": 2017,
             "name": "INITIAL_SUPPLY",
             "nodeType": "VariableDeclaration",
-            "scope": 1974,
+            "scope": 2028,
             "src": "1118:68:11",
             "stateVariable": true,
             "storageLocation": "default",
@@ -711,7 +711,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1955,
+              "id": 2009,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "1118:4:11",
@@ -726,7 +726,7 @@
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
               },
-              "id": 1962,
+              "id": 2016,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -734,7 +734,7 @@
               "leftExpression": {
                 "argumentTypes": null,
                 "hexValue": "363030303030303030",
-                "id": 1956,
+                "id": 2010,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -757,7 +757,7 @@
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 },
-                "id": 1961,
+                "id": 2015,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -765,7 +765,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "3130",
-                  "id": 1957,
+                  "id": 2011,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -787,11 +787,11 @@
                   "arguments": [
                     {
                       "argumentTypes": null,
-                      "id": 1959,
+                      "id": 2013,
                       "name": "decimals",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1954,
+                      "referencedDeclaration": 2008,
                       "src": "1177:8:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint8",
@@ -806,7 +806,7 @@
                         "typeString": "uint8"
                       }
                     ],
-                    "id": 1958,
+                    "id": 2012,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -819,7 +819,7 @@
                     },
                     "typeName": "uint"
                   },
-                  "id": 1960,
+                  "id": 2014,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -849,7 +849,7 @@
           },
           {
             "body": {
-              "id": 1972,
+              "id": 2026,
               "nodeType": "Block",
               "src": "1261:50:11",
               "statements": [
@@ -861,18 +861,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 1967,
+                          "id": 2021,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3149,
+                          "referencedDeclaration": 3203,
                           "src": "1277:3:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 1968,
+                        "id": 2022,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -888,11 +888,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 1969,
+                        "id": 2023,
                         "name": "INITIAL_SUPPLY",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1963,
+                        "referencedDeclaration": 2017,
                         "src": "1289:14:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -911,18 +911,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 1966,
+                      "id": 2020,
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2689,
+                      "referencedDeclaration": 2743,
                       "src": "1271:5:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 1970,
+                    "id": 2024,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -936,39 +936,39 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1971,
+                  "id": 2025,
                   "nodeType": "ExpressionStatement",
                   "src": "1271:33:11"
                 }
               ]
             },
             "documentation": null,
-            "id": 1973,
+            "id": 2027,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1964,
+              "id": 2018,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1251:2:11"
             },
             "returnParameters": {
-              "id": 1965,
+              "id": 2019,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1261:0:11"
             },
-            "scope": 1974,
+            "scope": 2028,
             "src": "1240:71:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1975,
+        "scope": 2029,
         "src": "926:387:11"
       }
     ],
@@ -978,14 +978,14 @@
     "absolutePath": "/home/market/code/marketprotocol/contracts/tokens/MarketToken.sol",
     "exportedSymbols": {
       "MarketToken": [
-        1974
+        2028
       ]
     },
-    "id": 1975,
+    "id": 2029,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1942,
+        "id": 1996,
         "literals": [
           "solidity",
           "0.5",
@@ -997,10 +997,10 @@
       {
         "absolutePath": "/home/market/code/marketprotocol/contracts/tokens/UpgradableToken.sol",
         "file": "./UpgradableToken.sol",
-        "id": 1943,
+        "id": 1997,
         "nodeType": "ImportDirective",
-        "scope": 1975,
-        "sourceUnit": 2129,
+        "scope": 2029,
+        "sourceUnit": 2183,
         "src": "628:31:11",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1011,49 +1011,49 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1944,
+              "id": 1998,
               "name": "UpgradeableToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2128,
+              "referencedDeclaration": 2182,
               "src": "950:16:11",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_UpgradeableToken_$2128",
+                "typeIdentifier": "t_contract$_UpgradeableToken_$2182",
                 "typeString": "contract UpgradeableToken"
               }
             },
-            "id": 1945,
+            "id": 1999,
             "nodeType": "InheritanceSpecifier",
             "src": "950:16:11"
           }
         ],
         "contractDependencies": [
-          2128,
-          2417,
-          2800,
-          2831,
-          2900
+          2182,
+          2471,
+          2854,
+          2885,
+          2954
         ],
         "contractKind": "contract",
         "documentation": "@title Market Token\n @notice Our membership token.  Users must lock tokens to enable trading for a given Market Contract\n as well as have a minimum balance of tokens to create new Market Contracts.\n @author MARKET Protocol <support@marketprotocol.io>",
         "fullyImplemented": true,
-        "id": 1974,
+        "id": 2028,
         "linearizedBaseContracts": [
-          1974,
-          2128,
-          2831,
-          2800,
-          2900,
-          2417
+          2028,
+          2182,
+          2885,
+          2854,
+          2954,
+          2471
         ],
         "name": "MarketToken",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 1948,
+            "id": 2002,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 1974,
+            "scope": 2028,
             "src": "974:53:11",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1062,7 +1062,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 1946,
+              "id": 2000,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "974:6:11",
@@ -1074,7 +1074,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4d41524b45542050726f746f636f6c20546f6b656e",
-              "id": 1947,
+              "id": 2001,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1093,10 +1093,10 @@
           },
           {
             "constant": true,
-            "id": 1951,
+            "id": 2005,
             "name": "symbol",
             "nodeType": "VariableDeclaration",
-            "scope": 1974,
+            "scope": 2028,
             "src": "1033:37:11",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1105,7 +1105,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 1949,
+              "id": 2003,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "1033:6:11",
@@ -1117,7 +1117,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4d4b54",
-              "id": 1950,
+              "id": 2004,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1136,10 +1136,10 @@
           },
           {
             "constant": true,
-            "id": 1954,
+            "id": 2008,
             "name": "decimals",
             "nodeType": "VariableDeclaration",
-            "scope": 1974,
+            "scope": 2028,
             "src": "1076:35:11",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1148,7 +1148,7 @@
               "typeString": "uint8"
             },
             "typeName": {
-              "id": 1952,
+              "id": 2006,
               "name": "uint8",
               "nodeType": "ElementaryTypeName",
               "src": "1076:5:11",
@@ -1160,7 +1160,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3138",
-              "id": 1953,
+              "id": 2007,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1179,10 +1179,10 @@
           },
           {
             "constant": true,
-            "id": 1963,
+            "id": 2017,
             "name": "INITIAL_SUPPLY",
             "nodeType": "VariableDeclaration",
-            "scope": 1974,
+            "scope": 2028,
             "src": "1118:68:11",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1191,7 +1191,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1955,
+              "id": 2009,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "1118:4:11",
@@ -1206,7 +1206,7 @@
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
               },
-              "id": 1962,
+              "id": 2016,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1214,7 +1214,7 @@
               "leftExpression": {
                 "argumentTypes": null,
                 "hexValue": "363030303030303030",
-                "id": 1956,
+                "id": 2010,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1237,7 +1237,7 @@
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 },
-                "id": 1961,
+                "id": 2015,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1245,7 +1245,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "3130",
-                  "id": 1957,
+                  "id": 2011,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1267,11 +1267,11 @@
                   "arguments": [
                     {
                       "argumentTypes": null,
-                      "id": 1959,
+                      "id": 2013,
                       "name": "decimals",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1954,
+                      "referencedDeclaration": 2008,
                       "src": "1177:8:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint8",
@@ -1286,7 +1286,7 @@
                         "typeString": "uint8"
                       }
                     ],
-                    "id": 1958,
+                    "id": 2012,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1299,7 +1299,7 @@
                     },
                     "typeName": "uint"
                   },
-                  "id": 1960,
+                  "id": 2014,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1329,7 +1329,7 @@
           },
           {
             "body": {
-              "id": 1972,
+              "id": 2026,
               "nodeType": "Block",
               "src": "1261:50:11",
               "statements": [
@@ -1341,18 +1341,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 1967,
+                          "id": 2021,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3149,
+                          "referencedDeclaration": 3203,
                           "src": "1277:3:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 1968,
+                        "id": 2022,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1368,11 +1368,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 1969,
+                        "id": 2023,
                         "name": "INITIAL_SUPPLY",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1963,
+                        "referencedDeclaration": 2017,
                         "src": "1289:14:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1391,18 +1391,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 1966,
+                      "id": 2020,
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2689,
+                      "referencedDeclaration": 2743,
                       "src": "1271:5:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 1970,
+                    "id": 2024,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1416,39 +1416,39 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1971,
+                  "id": 2025,
                   "nodeType": "ExpressionStatement",
                   "src": "1271:33:11"
                 }
               ]
             },
             "documentation": null,
-            "id": 1973,
+            "id": 2027,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1964,
+              "id": 2018,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1251:2:11"
             },
             "returnParameters": {
-              "id": 1965,
+              "id": 2019,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1261:0:11"
             },
-            "scope": 1974,
+            "scope": 2028,
             "src": "1240:71:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1975,
+        "scope": 2029,
         "src": "926:387:11"
       }
     ],
@@ -1462,12 +1462,12 @@
     "42": {
       "events": {},
       "links": {},
-      "address": "0x64F895A7359A8D5Bc7A7312ef8FD116aF2544061",
-      "transactionHash": "0x039a34490cf1c7b11f764a3c22365c18aefd5197459eb71a431269a2c09a96c2"
+      "address": "0xE4CC1d3b8332A342907D1dE8a275ED8EA4891814",
+      "transactionHash": "0x85f4c4ce7c3a363dc457a57f0bd05afcdc82f7fdd03b3d762e87704b61632532"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-09-10T13:16:32.432Z",
+  "updatedAt": "2019-09-10T16:37:04.963Z",
   "devdoc": {
     "author": "MARKET Protocol <support@marketprotocol.io>",
     "methods": {
