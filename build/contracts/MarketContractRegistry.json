@@ -4812,14 +4812,77 @@
   },
   "networks": {
     "42": {
-      "events": {},
+      "events": {
+        "0x33479be51d1deb9c4907cc0dbacb4ec2c15bc1dab3f8da1e24f29059fdbcec5e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "ownerAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "contractAddress",
+              "type": "address"
+            }
+          ],
+          "name": "OwnerContractAdded",
+          "type": "event",
+          "signature": "0x33479be51d1deb9c4907cc0dbacb4ec2c15bc1dab3f8da1e24f29059fdbcec5e"
+        },
+        "0x960c6a67a1f0f46ddffd138f2b7f44cbc573d0e0a073363b287a257b121dc48a": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "factoryAddress",
+              "type": "address"
+            }
+          ],
+          "name": "FactoryAddressAdded",
+          "type": "event",
+          "signature": "0x960c6a67a1f0f46ddffd138f2b7f44cbc573d0e0a073363b287a257b121dc48a"
+        },
+        "0x5d6ac55db628f137c53a554c300a684dc6b3db9d8f24e9611ea5e84c282d177d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "factoryAddress",
+              "type": "address"
+            }
+          ],
+          "name": "FactoryAddressRemoved",
+          "type": "event",
+          "signature": "0x5d6ac55db628f137c53a554c300a684dc6b3db9d8f24e9611ea5e84c282d177d"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event",
+          "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+        }
+      },
       "links": {},
-      "address": "0x994DeAeB23b5721AC25F80fdb7B3a65278857a30",
-      "transactionHash": "0xdb4008211331aab0600042e5a4710b6f883c8d4d6caa2736edf44cb1f03a4353"
+      "address": "0x691A35A428a42EA23fe7043D1cB084a014b37850",
+      "transactionHash": "0x1e2b26f9ec657d6160a3c25bf64b70d0baed8fb66a626ed6e913010911dc3ba8"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-09-06T23:02:43.331Z",
+  "updatedAt": "2019-09-10T13:16:32.445Z",
   "devdoc": {
     "author": "MARKET Protocol <support@marketprotocol.io>",
     "methods": {

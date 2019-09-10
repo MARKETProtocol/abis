@@ -3769,12 +3769,12 @@
     "42": {
       "events": {},
       "links": {},
-      "address": "0xdf7e7df7defe5b2023e8df56cb3f7aa835e4569c",
-      "transactionHash": "0x6d546f2effcb7d20d2509f4d36ea2caab875bac9cd72f62f4a6154baec61173f"
+      "address": "0xDA056869a69298C55d628C0899018F8e9F5B74AB",
+      "transactionHash": "0xd6a78fb63985e5d21bf6afd6f9d3d94c96e1ca7950b731ae13afe977ba5d2e4c"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-09-06T23:02:43.334Z",
+  "updatedAt": "2019-09-10T13:16:32.454Z",
   "devdoc": {
     "author": "MARKET Protocol <support@marketprotocol.io>",
     "methods": {
